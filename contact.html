@@ -282,7 +282,14 @@
                   >Download Now</a
                 >.
               </p>
-              <form>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="220ba6eb-8726-417b-9dd7-b2bb95d6796a"
+                />
+                <input type="hidden" name="redirect" value="../success.html" />
+
                 <div class="row g-3">
                   <div class="col-lg-12 col-xl-6">
                     <div class="form-floating">
@@ -290,7 +297,9 @@
                         type="text"
                         class="form-control border-0"
                         id="name"
+                        name="name"
                         placeholder="Your Name"
+                        required
                       />
                       <label for="name">Your Name</label>
                     </div>
@@ -301,7 +310,9 @@
                         type="email"
                         class="form-control border-0"
                         id="email"
+                        name="email"
                         placeholder="Your Email"
+                        required
                       />
                       <label for="email">Your Email</label>
                     </div>
@@ -312,6 +323,7 @@
                         type="phone"
                         class="form-control border-0"
                         id="phone"
+                        name="phone"
                         placeholder="Phone"
                       />
                       <label for="phone">Your Phone</label>
@@ -323,6 +335,7 @@
                         type="text"
                         class="form-control border-0"
                         id="project"
+                        name="project"
                         placeholder="Project"
                       />
                       <label for="project">Your Project</label>
@@ -334,6 +347,7 @@
                         type="text"
                         class="form-control border-0"
                         id="subject"
+                        name="subject"
                         placeholder="Subject"
                       />
                       <label for="subject">Subject</label>
@@ -345,6 +359,7 @@
                         class="form-control border-0"
                         placeholder="Leave a message here"
                         id="message"
+                        name="message"
                         style="height: 120px"
                       ></textarea>
                       <label for="message">Message</label>
