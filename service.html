@@ -62,7 +62,10 @@
           <div class="col-lg-8 text-center text-lg-start mb-lg-0">
             <div class="d-flex flex-wrap">
               <div class="border-end border-primary pe-3">
-                <a href="#" class="text-muted small"
+                <a
+                  href="https://maps.app.goo.gl/W2kiYUfe354usWtDA"
+                  target="_blank"
+                  class="text-muted small"
                   ><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A
                   Location</a
                 >
@@ -742,17 +745,33 @@
                 ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <div class="position-relative rounded-pill mb-4">
-                <input
-                  class="form-control rounded-pill w-100 py-3 ps-4 pe-5"
-                  type="text"
-                  placeholder="Enter your email"
-                />
-                <button
-                  type="button"
-                  class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
-                >
-                  SignUp
-                </button>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="220ba6eb-8726-417b-9dd7-b2bb95d6796a"
+                  />
+
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://sidz111.github.io/thank-you/"
+                  />
+
+                  <input
+                    class="form-control rounded-pill w-100 py-3 ps-2 pe-4"
+                    type="text"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"
+                  >
+                    Subscribe
+                  </button>
+                </form>
               </div>
               <div class="d-flex flex-shrink-0">
                 <div class="footer-btn">
