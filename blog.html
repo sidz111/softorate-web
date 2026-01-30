@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -35,6 +35,121 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Page Container */
+      .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 30px;
+      }
+
+      /* Headings */
+      h1 {
+        text-align: center;
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #555;
+      }
+
+      /* Switch Buttons */
+      .switch-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      .switch-buttons button {
+        padding: 12px 30px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 1rem;
+        background: #2c5364;
+        color: #fff;
+        transition: 0.3s;
+      }
+
+      .switch-buttons button:hover {
+        background: #203a43;
+      }
+
+      /* Docs Section */
+      .docs {
+        display: none;
+        background: #f9f9f9;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .docs.active {
+        display: block;
+      }
+
+      /* Text */
+      .docs p {
+        margin-bottom: 15px;
+        line-height: 1.7;
+      }
+
+      .docs h2 {
+        margin-bottom: 15px;
+      }
+
+      .docs h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      /* Code Block */
+      pre {
+        background: #1e1e1e;
+        color: #00ffcc;
+        padding: 20px;
+        border-radius: 12px;
+        overflow-x: auto;
+        margin-bottom: 20px;
+      }
+
+      code {
+        font-family: "Courier New", monospace;
+        font-size: 0.95rem;
+      }
+
+      /* List */
+      ul {
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin-bottom: 8px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.9rem;
+        }
+
+        .container {
+          padding: 20px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -103,49 +218,8 @@
     </div>
     <!-- Navbar & Hero End -->
 
-    <!-- Modal Search Start -->
-    <!-- <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center bg-primary">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span
-                id="search-icon-1"
-                class="btn bg-light border nput-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Modal Search End -->
-
     <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
+    <!-- <div class="container-fluid bg-breadcrumb">
       <div class="container text-center py-5" style="max-width: 900px">
         <h4
           class="text-white display-4 mb-4 wow fadeInDown"
@@ -154,144 +228,72 @@
           Our Blog
         </h4>
       </div>
-    </div>
+    </div> -->
     <!-- Header End -->
 
     <!-- Blog Start -->
-    <div class="container-fluid blog py-5">
-      <div class="container py-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">From Blog</h4>
-          <h1 class="display-4 mb-4">News And Updates</h1>
-          <p class="mb-0">
-            At Softorate Coders, we build future-ready solutions with precision,
-            creativity, and expertise. From custom development to scalable and
-            secure applications, we turn ideas into reality! 🚀
-          </p>
-        </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="blog-item">
-              <div class="blog-img">
-                <img
-                  src="img/blog-1.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="blog-categiry py-2 px-4">
-                  <span>Business</span>
-                </div>
-              </div>
-              <div class="blog-content p-4">
-                <div class="blog-comment d-flex justify-content-between mb-3">
-                  <div class="small">
-                    <span class="fa fa-user text-primary"></span> Martin.C
-                  </div>
-                  <div class="small">
-                    <span class="fa fa-calendar text-primary"></span> 30 Dec
-                    2025
-                  </div>
-                  <div class="small">
-                    <span class="fa fa-comment-alt text-primary"></span> 6
-                    Comments
-                  </div>
-                </div>
-                <a href="#" class="h4 d-inline-block mb-3"
-                  >Which allows you to pay down insurance bills</a
-                >
-                <p class="mb-3">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
-                  libero soluta impedit eligendi? Quibusdam, laudantium.
-                </p>
-                <a href="#" class="btn p-0"
-                  >Read More <i class="fa fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
-            <div class="blog-item">
-              <div class="blog-img">
-                <img
-                  src="img/blog-2.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="blog-categiry py-2 px-4">
-                  <span>Business</span>
-                </div>
-              </div>
-              <div class="blog-content p-4">
-                <div class="blog-comment d-flex justify-content-between mb-3">
-                  <div class="small">
-                    <span class="fa fa-user text-primary"></span> Martin.C
-                  </div>
-                  <div class="small">
-                    <span class="fa fa-calendar text-primary"></span> 30 Dec
-                    2025
-                  </div>
-                  <div class="small">
-                    <span class="fa fa-comment-alt text-primary"></span> 6
-                    Comments
-                  </div>
-                </div>
-                <a href="#" class="h4 d-inline-block mb-3"
-                  >Leverage agile frameworks to provide</a
-                >
-                <p class="mb-3">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
-                  libero soluta impedit eligendi? Quibusdam, laudantium.
-                </p>
-                <a href="#" class="btn p-0"
-                  >Read More <i class="fa fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="blog-item">
-              <div class="blog-img">
-                <img
-                  src="img/blog-3.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="blog-categiry py-2 px-4">
-                  <span>Business</span>
-                </div>
-              </div>
-              <div class="blog-content p-4">
-                <div class="blog-comment d-flex justify-content-between mb-3">
-                  <div class="small">
-                    <span class="fa fa-user text-primary"></span> Martin.C
-                  </div>
-                  <div class="small">
-                    <span class="fa fa-calendar text-primary"></span> 30 Dec
-                    2025
-                  </div>
-                  <div class="small">
-                    <span class="fa fa-comment-alt text-primary"></span> 6
-                    Comments
-                  </div>
-                </div>
-                <a href="#" class="h4 d-inline-block mb-3"
-                  >Leverage agile frameworks to provide</a
-                >
-                <p class="mb-3">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
-                  libero soluta impedit eligendi? Quibusdam, laudantium.
-                </p>
-                <a href="#" class="btn p-0"
-                  >Read More <i class="fa fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="container">
+      <h1>Programming Documentation</h1>
+      <p class="subtitle">Switch between Java and Golang documentation</p>
+
+      <!-- Switch Buttons -->
+      <div class="switch-buttons">
+        <button onclick="showJava()">Java</button>
+        <button onclick="showGolang()">Golang</button>
+      </div>
+
+      <!-- Java Docs -->
+      <div id="java-docs" class="docs active">
+        <h2>Java Documentation</h2>
+
+        <p>
+          Java is a high-level, object-oriented programming language widely used
+          for enterprise applications, backend systems, and Android development.
+        </p>
+
+        <h3>Hello World Example</h3>
+        <pre><code>
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java!");
+    }
+}
+        </code></pre>
+
+        <h3>Why Java?</h3>
+        <ul>
+          <li>Platform Independent (JVM)</li>
+          <li>Strong OOP concepts</li>
+          <li>Huge ecosystem (Spring Boot, Hibernate)</li>
+        </ul>
+      </div>
+
+      <!-- Golang Docs -->
+      <div id="golang-docs" class="docs">
+        <h2>Golang Documentation</h2>
+
+        <p>
+          Go (Golang) is a fast, statically typed language developed by Google,
+          designed for simplicity and high performance.
+        </p>
+
+        <h3>Hello World Example</h3>
+        <pre><code>
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, Golang!")
+}
+        </code></pre>
+
+        <h3>Why Golang?</h3>
+        <ul>
+          <li>Very fast compilation</li>
+          <li>Built-in concurrency (goroutines)</li>
+          <li>Great for microservices</li>
+        </ul>
       </div>
     </div>
     <!-- Blog End -->
@@ -466,6 +468,17 @@
     ></a>
 
     <!-- JavaScript Libraries -->
+    <script>
+      function showJava() {
+        document.getElementById("java-docs").classList.add("active");
+        document.getElementById("golang-docs").classList.remove("active");
+      }
+
+      function showGolang() {
+        document.getElementById("golang-docs").classList.add("active");
+        document.getElementById("java-docs").classList.remove("active");
+      }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>

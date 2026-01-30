@@ -567,7 +567,7 @@
 
 
 /*** Blog Start ***/
-.blog .blog-item {
+/* .blog .blog-item {
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -636,7 +636,7 @@
 
 .blog .blog-item:hover .blog-content a.btn:hover {
     color: var(--bs-primary);
-}
+} */
 
 /*** Blog End ***/
 
