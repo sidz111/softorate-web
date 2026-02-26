@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>softorate.com</title>
+    <title>Our Team - Softorate Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta content="software development team, expert developers, tech team, software engineers, agency team" name="keywords" />
+    <meta content="Meet the expert team behind Softorate - passionate developers, designers, and strategists dedicated to delivering innovative software solutions." name="description" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,6 +35,275 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+      /* Page Header - Matching hero section style */
+      .page-header {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 60px 40px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        text-align: center;
+      }
+      
+      .page-header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      
+      .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.95;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      
+      .breadcrumb {
+        background: transparent;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .breadcrumb-item,
+      .breadcrumb-item a {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      
+      .breadcrumb-item.active {
+        color: #fff;
+      }
+      
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      
+      /* Team Section */
+      .team-item {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 100%;
+      }
+      
+      .team-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      }
+      
+      .team-img {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+      }
+      
+      .team-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+      }
+      
+      .team-item:hover .team-img img {
+        transform: scale(1.1);
+      }
+      
+      .team-icon {
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        transition: 0.3s;
+        z-index: 2;
+      }
+      
+      .team-item:hover .team-icon {
+        bottom: 20px;
+      }
+      
+      .team-icon a {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0f2027;
+        transition: 0.3s;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      
+      .team-item:hover .team-icon a {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .team-icon a:nth-child(1) { transition-delay: 0.1s; }
+      .team-icon a:nth-child(2) { transition-delay: 0.2s; }
+      .team-icon a:nth-child(3) { transition-delay: 0.3s; }
+      .team-icon a:nth-child(4) { transition-delay: 0.4s; }
+      
+      .team-icon a:hover {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        transform: translateY(-3px);
+      }
+      
+      .team-title {
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        position: relative;
+      }
+      
+      .team-title h4 {
+        color: #16243d;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        font-weight: 600;
+      }
+      
+      .team-title p {
+        color: var(--bs-primary);
+        font-size: 0.9rem;
+        margin-bottom: 0;
+      }
+      
+      .team-social {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+      
+      .team-social a {
+        width: 32px;
+        height: 32px;
+        background: #f8f9fa;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        transition: 0.3s;
+      }
+      
+      .team-social a:hover {
+        background: var(--bs-primary);
+        color: white;
+      }
+      
+      /* Culture Section */
+      .culture-item {
+        text-align: center;
+        padding: 30px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 100%;
+      }
+      
+      .culture-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      }
+      
+      .culture-icon {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: white;
+        font-size: 1.8rem;
+      }
+      
+      .culture-item h4 {
+        color: #16243d;
+        margin-bottom: 15px;
+      }
+      
+      .culture-item p {
+        color: #787878;
+        margin-bottom: 0;
+        line-height: 1.6;
+      }
+      
+      /* Join Team Section */
+      .join-team {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        border-radius: 18px;
+        padding: 60px;
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      .join-team h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      
+      .join-team p {
+        font-size: 1.1rem;
+        opacity: 0.95;
+        max-width: 700px;
+        margin: 0 auto 30px;
+      }
+      
+      .join-team .btn-light {
+        background: white;
+        color: #0f2027;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+      
+      .join-team .btn-light:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+      
+      @media (max-width: 768px) {
+        .page-header {
+          padding: 40px 25px;
+        }
+        
+        .page-header h1 {
+          font-size: 2rem;
+        }
+        
+        .team-img {
+          height: 250px;
+        }
+        
+        .join-team {
+          padding: 40px 25px;
+        }
+        
+        .join-team h2 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -53,11 +322,11 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar Start -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="#" class="navbar-brand p-0">
+          <a href="index.html" class="navbar-brand p-0">
             <h1 class="text-primary mb-0">
               <i class="fab fa-free-code-camp me-2"></i> Softorate
             </h1>
@@ -72,9 +341,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav bg-white mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
+              <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+              <a href="blog.html" class="nav-item nav-link">Blog</a>
               <a href="FAQ.html" class="nav-item nav-link">FAQs</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
@@ -87,7 +358,7 @@
             >
               <i class="fa fa-phone-alt fa-2x"></i>
               <div class="position-absolute" style="top: 7px; right: 12px">
-                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                <span><i class="fa fa-comment-dots"></i></span>
               </div>
             </a>
             <div class="d-flex flex-column ms-3">
@@ -100,61 +371,22 @@
         </nav>
       </div>
     </div>
-    <!-- Navbar & Hero End -->
+    <!-- Navbar End -->
 
-    <!-- Modal Search Start -->
-    <!-- <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center bg-primary">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span
-                id="search-icon-1"
-                class="btn bg-light border nput-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Modal Search End -->
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-      <div class="container text-center py-5" style="max-width: 900px">
-        <h4
-          class="text-white display-4 mb-4 wow fadeInDown"
-          data-wow-delay="0.1s"
-        >
-          Our Team
-        </h4>
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Our Team</h1>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">Meet the passionate experts behind your digital success</p>
+        <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="about.html">About</a></li>
+            <li class="breadcrumb-item active">Our Team</li>
+          </ol>
+        </nav>
       </div>
     </div>
-    <!-- Header End -->
 
     <!-- Team Start -->
     <div class="container-fluid team py-5">
@@ -164,172 +396,235 @@
           data-wow-delay="0.2s"
           style="max-width: 800px"
         >
-          <h4 class="text-primary">Our Team</h4>
-          <h1 class="display-4 mb-4">Meet Our Expert Team Members</h1>
+          <h4 class="text-primary">Our Leadership</h4>
+          <h1 class="display-4 mb-4">Meet the Minds Behind Softorate</h1>
           <p class="mb-0">
-            At Softorate Coders, we build future-ready solutions with precision,
-            creativity, and expertise. From custom development to scalable and
-            secure applications, we turn ideas into reality! 🚀
+            Our team consists of passionate developers, creative designers, and strategic thinkers dedicated to delivering exceptional software solutions that drive business growth.
           </p>
         </div>
+
+        <!-- Leadership Team -->
+        <div class="row g-4 mb-5">
+          <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" class="img-fluid w-100" alt="John Smith" onerror="this.src='https://via.placeholder.com/400x400/0f2027/ffffff?text=John+Smith'">
+                <div class="team-icon">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-title">
+                <h4>John Smith</h4>
+                <p>Founder & CEO</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-2.jpg" class="img-fluid w-100" alt="Sarah Johnson" onerror="this.src='https://via.placeholder.com/400x400/203a43/ffffff?text=Sarah+Johnson'">
+                <div class="team-icon">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-title">
+                <h4>Sarah Johnson</h4>
+                <p>CTO</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-3.jpg" class="img-fluid w-100" alt="Mike Chen" onerror="this.src='https://via.placeholder.com/400x400/2c5364/ffffff?text=Mike+Chen'">
+                <div class="team-icon">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-title">
+                <h4>Mike Chen</h4>
+                <p>Head of Engineering</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-4.jpg" class="img-fluid w-100" alt="Emily Davis" onerror="this.src='https://via.placeholder.com/400x400/0f2027/ffffff?text=Emily+Davis'">
+                <div class="team-icon">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-title">
+                <h4>Emily Davis</h4>
+                <p>Creative Director</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Development Team -->
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+          <h4 class="text-primary">Development Team</h4>
+          <h2 class="mb-4">Our Expert Engineers</h2>
+        </div>
+
         <div class="row g-4">
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
+          <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
             <div class="team-item">
               <div class="team-img">
-                <img
-                  src="img/team-1.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="team-icon">
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-0"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
+                <img src="img/team-1.jpg" class="img-fluid w-100" alt="David Wilson" onerror="this.src='https://via.placeholder.com/400x400/0f2027/ffffff?text=David+Wilson'">
               </div>
-              <div class="team-title p-4">
-                <h4 class="mb-0">David James</h4>
-                <p class="mb-0">Profession</p>
+              <div class="team-title">
+                <h4>David Wilson</h4>
+                <p>Senior Backend Developer</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.4s"
-          >
+
+          <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
             <div class="team-item">
               <div class="team-img">
-                <img
-                  src="img/team-2.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="team-icon">
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-0"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
+                <img src="img/team-2.jpg" class="img-fluid w-100" alt="Lisa Anderson" onerror="this.src='https://via.placeholder.com/400x400/203a43/ffffff?text=Lisa+Anderson'">
               </div>
-              <div class="team-title p-4">
-                <h4 class="mb-0">David James</h4>
-                <p class="mb-0">Profession</p>
+              <div class="team-title">
+                <h4>Lisa Anderson</h4>
+                <p>Frontend Lead</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.6s"
-          >
+
+          <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
             <div class="team-item">
               <div class="team-img">
-                <img
-                  src="img/team-3.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="team-icon">
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-0"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
+                <img src="img/team-3.jpg" class="img-fluid w-100" alt="Robert Taylor" onerror="this.src='https://via.placeholder.com/400x400/2c5364/ffffff?text=Robert+Taylor'">
               </div>
-              <div class="team-title p-4">
-                <h4 class="mb-0">David James</h4>
-                <p class="mb-0">Profession</p>
+              <div class="team-title">
+                <h4>Robert Taylor</h4>
+                <p>Mobile App Developer</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
+
+          <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
             <div class="team-item">
               <div class="team-img">
-                <img
-                  src="img/team-4.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="team-icon">
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-0"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
+                <img src="img/team-4.jpg" class="img-fluid w-100" alt="Maria Garcia" onerror="this.src='https://via.placeholder.com/400x400/0f2027/ffffff?text=Maria+Garcia'">
+              </div>
+              <div class="team-title">
+                <h4>Maria Garcia</h4>
+                <p>DevOps Engineer</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
                 </div>
               </div>
-              <div class="team-title p-4">
-                <h4 class="mb-0">David James</h4>
-                <p class="mb-0">Profession</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" class="img-fluid w-100" alt="James Brown" onerror="this.src='https://via.placeholder.com/400x400/203a43/ffffff?text=James+Brown'">
+              </div>
+              <div class="team-title">
+                <h4>James Brown</h4>
+                <p>Full Stack Developer</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-2.jpg" class="img-fluid w-100" alt="Anna Lee" onerror="this.src='https://via.placeholder.com/400x400/2c5364/ffffff?text=Anna+Lee'">
+              </div>
+              <div class="team-title">
+                <h4>Anna Lee</h4>
+                <p>UI/UX Designer</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-3.jpg" class="img-fluid w-100" alt="Tom Harris" onerror="this.src='https://via.placeholder.com/400x400/0f2027/ffffff?text=Tom+Harris'">
+              </div>
+              <div class="team-title">
+                <h4>Tom Harris</h4>
+                <p>QA Engineer</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="0.9s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-4.jpg" class="img-fluid w-100" alt="Sophie Turner" onerror="this.src='https://via.placeholder.com/400x400/203a43/ffffff?text=Sophie+Turner'">
+              </div>
+              <div class="team-title">
+                <h4>Sophie Turner</h4>
+                <p>Project Manager</p>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -337,6 +632,68 @@
       </div>
     </div>
     <!-- Team End -->
+
+    <!-- Culture Start -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+          <h4 class="text-primary">Our Culture</h4>
+          <h1 class="display-4 mb-4">Life at Softorate</h1>
+          <p class="mb-0">We believe in fostering an environment where creativity meets technology, and every team member can thrive.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="culture-item">
+              <div class="culture-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h4>Innovation</h4>
+              <p>We encourage creative thinking and bold ideas that push boundaries.</p>
+            </div>
+          </div>
+          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="culture-item">
+              <div class="culture-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Collaboration</h4>
+              <p>Teamwork and knowledge sharing are at the heart of everything we do.</p>
+            </div>
+          </div>
+          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="culture-item">
+              <div class="culture-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h4>Growth</h4>
+              <p>Continuous learning and professional development opportunities.</p>
+            </div>
+          </div>
+          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="culture-item">
+              <div class="culture-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h4>Work-Life Balance</h4>
+              <p>We value our team's well-being and maintain a healthy balance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Culture End -->
+
+    <!-- Join Team Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="join-team wow fadeInUp" data-wow-delay="0.2s">
+          <h2>Join Our Growing Team</h2>
+          <p>We're always looking for passionate individuals who want to make a difference through technology. If you're excited about building innovative solutions and working with a talented team, we'd love to hear from you.</p>
+          <a href="contact.html" class="btn btn-light">View Open Positions <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Join Team End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -351,9 +708,7 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation
-                solutions—high performance, scalable, and user-friendly to help
-                your business grow.
+                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -362,9 +717,6 @@
                   target="_blank"
                   ><i class="fab fa-github"></i
                 ></a>
-                <!-- <a class="btn btn-sm-square rounded-circle me-2" href="#"
-                  ><i class="fab fa-facebook-f"></i
-                ></a> -->
                 <a
                   class="btn btn-sm-square rounded-circle me-2"
                   href="https://www.instagram.com/_softorate/"
@@ -385,21 +737,13 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="/about.html"
-                ><i class="fas fa-angle-right me-2"></i> About Us</a
-              >
-              <a href="/feature.html"
-                ><i class="fas fa-angle-right me-2"></i> Features</a
-              >
-              <a href="/service.html"
-                ><i class="fas fa-angle-right me-2"></i> Services</a
-              >
-              <a href="/FAQ.html"
-                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
-              >
-              <a href="/contact.html"
-                ><i class="fas fa-angle-right me-2"></i> Contact</a
-              >
+              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
+              <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
+              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+              <a href="team.html"><i class="fas fa-angle-right me-2"></i> Our Team</a>
             </div>
           </div>
 
@@ -492,8 +836,7 @@
           <div class="col-md-6 text-center text-md-end mb-md-0">
             <span class="text-body"
               ><a href="#" class="border-bottom text-white"
-                ><i class="fas fa-copyright text-light me-2"></i>Softorate
-                Coder</a
+                ><i class="fas fa-copyright text-light me-2"></i>Softorate</a
               >, All right reserved.</span
             >
           </div>
@@ -519,5 +862,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Hide spinner
+        setTimeout(() => {
+          document.getElementById('spinner').classList.remove('show');
+        }, 1000);
+        
+        // Initialize WOW
+        new WOW().init();
+      });
+    </script>
   </body>
 </html>

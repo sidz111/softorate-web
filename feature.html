@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>softorate.com</title>
+    <title>Features - Softorate Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta content="software features, agency benefits, why choose us, software development advantages, agency strengths" name="keywords" />
+    <meta content="Discover the key features that make Softorate your ideal software development partner. Learn about our approach, benefits, and what sets us apart." name="description" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,6 +35,348 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+      /* Page Header - Matching hero section style */
+      .page-header {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 60px 40px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        text-align: center;
+      }
+      
+      .page-header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      
+      .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.95;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      
+      .breadcrumb {
+        background: transparent;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .breadcrumb-item,
+      .breadcrumb-item a {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      
+      .breadcrumb-item.active {
+        color: #fff;
+      }
+      
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      
+      /* Feature Cards Enhancement */
+      .feature-item {
+        background: white;
+        border-radius: 16px;
+        padding: 30px 25px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .feature-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        transform: scaleX(0);
+        transition: 0.3s;
+      }
+      
+      .feature-item:hover::before {
+        transform: scaleX(1);
+      }
+      
+      .feature-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      }
+      
+      .feature-icon {
+        width: 90px;
+        height: 90px;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 25px;
+        color: white;
+        font-size: 2.2rem;
+        transition: 0.3s;
+      }
+      
+      .feature-item:hover .feature-icon {
+        transform: rotateY(360deg);
+      }
+      
+      .feature-item h4 {
+        color: #16243d;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      
+      .feature-item p {
+        color: #787878;
+        margin-bottom: 20px;
+        line-height: 1.7;
+      }
+      
+      .feature-link {
+        color: var(--bs-primary);
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        transition: 0.3s;
+      }
+      
+      .feature-link i {
+        margin-left: 5px;
+        transition: 0.3s;
+      }
+      
+      .feature-link:hover {
+        color: #0f2027;
+      }
+      
+      .feature-link:hover i {
+        transform: translateX(5px);
+      }
+      
+      /* Stats Section */
+      .stats-section {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        padding: 60px 0;
+        margin: 40px 0;
+        border-radius: 18px;
+      }
+      
+      .stat-item {
+        text-align: center;
+      }
+      
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      
+      .stat-label {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+      
+      /* Why Choose Us Section */
+      .why-choose-card {
+        background: white;
+        border-radius: 16px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      
+      .why-choose-card:hover {
+        transform: translateX(10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      }
+      
+      .why-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+      }
+      
+      .why-content h4 {
+        color: #16243d;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+      
+      .why-content p {
+        color: #787878;
+        margin-bottom: 0;
+        line-height: 1.6;
+      }
+      
+      /* Comparison Table */
+      .comparison-section {
+        background: #f8f9fa;
+      }
+      
+      .comparison-table {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .comparison-table table {
+        margin-bottom: 0;
+      }
+      
+      .comparison-table th {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        font-weight: 600;
+        padding: 20px;
+        border: none;
+      }
+      
+      .comparison-table td {
+        padding: 15px 20px;
+        color: #787878;
+        border-color: #e9ecef;
+      }
+      
+      .comparison-table .feature-yes {
+        color: #28a745;
+        font-size: 1.2rem;
+      }
+      
+      .comparison-table .feature-no {
+        color: #dc3545;
+        font-size: 1.2rem;
+      }
+      
+      .comparison-table tr:hover td {
+        background: #f8f9fa;
+      }
+      
+      /* CTA Section */
+      .cta-section {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        border-radius: 18px;
+        padding: 60px;
+        color: white;
+        text-align: center;
+      }
+      
+      .cta-section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+      }
+      
+      .cta-section p {
+        font-size: 1.1rem;
+        opacity: 0.95;
+        max-width: 700px;
+        margin: 0 auto 30px;
+      }
+      
+      .cta-section .btn-light {
+        background: white;
+        color: #0f2027;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: 0.3s;
+        margin: 0 10px;
+      }
+      
+      .cta-section .btn-light:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+      
+      .cta-section .btn-outline-light {
+        border: 2px solid white;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: 0.3s;
+        margin: 0 10px;
+        background: transparent;
+      }
+      
+      .cta-section .btn-outline-light:hover {
+        background: white;
+        color: #0f2027;
+        transform: scale(1.05);
+      }
+      
+      @media (max-width: 768px) {
+        .page-header {
+          padding: 40px 25px;
+        }
+        
+        .page-header h1 {
+          font-size: 2rem;
+        }
+        
+        .stat-number {
+          font-size: 2rem;
+        }
+        
+        .why-choose-card {
+          flex-direction: column;
+          text-align: center;
+        }
+        
+        .why-icon {
+          margin: 0 auto;
+        }
+        
+        .cta-section {
+          padding: 40px 25px;
+        }
+        
+        .cta-section h2 {
+          font-size: 1.8rem;
+        }
+        
+        .cta-section .btn-light,
+        .cta-section .btn-outline-light {
+          display: block;
+          width: 100%;
+          margin: 10px 0;
+        }
+        
+        .comparison-table {
+          overflow-x: auto;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -53,11 +395,11 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar Start -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="#" class="navbar-brand p-0">
+          <a href="index.html" class="navbar-brand p-0">
             <h1 class="text-primary mb-0">
               <i class="fab fa-free-code-camp me-2"></i> Softorate
             </h1>
@@ -72,9 +414,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav bg-white mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
+              <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+              <a href="blog.html" class="nav-item nav-link">Blog</a>
               <a href="FAQ.html" class="nav-item nav-link">FAQs</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
@@ -87,7 +431,7 @@
             >
               <i class="fa fa-phone-alt fa-2x"></i>
               <div class="position-absolute" style="top: 7px; right: 12px">
-                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                <span><i class="fa fa-comment-dots"></i></span>
               </div>
             </a>
             <div class="d-flex flex-column ms-3">
@@ -100,155 +444,376 @@
         </nav>
       </div>
     </div>
-    <!-- Navbar & Hero End -->
+    <!-- Navbar End -->
 
-    <!-- Modal Search Start -->
-    <!-- <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center bg-primary">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span
-                id="search-icon-1"
-                class="btn bg-light border nput-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Our Features</h1>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">Discover what makes Softorate the preferred choice for businesses worldwide</p>
+        <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Features</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="container-fluid py-3">
+      <div class="container">
+        <div class="stats-section wow fadeInUp" data-wow-delay="0.2s">
+          <div class="row g-4">
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number"><span class="counter" data-target="100">0</span>+</div>
+                <div class="stat-label">Projects Delivered</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number"><span class="counter" data-target="50">0</span>+</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number"><span class="counter" data-target="5">0</span>+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number"><span class="counter" data-target="24">0</span>/7</div>
+                <div class="stat-label">Support</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
-    <!-- Modal Search End -->
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-      <div class="container text-center py-5" style="max-width: 900px">
-        <h4
-          class="text-white display-4 mb-4 wow fadeInDown"
-          data-wow-delay="0.1s"
-        >
-          Our Features
-        </h4>
-      </div>
     </div>
-    <!-- Header End -->
 
-    <!-- Feature Start -->
-    <div class="container-fluid feature bg-light py-5">
+    <!-- Main Features Start -->
+    <div class="container-fluid feature py-5">
       <div class="container py-5">
         <div
           class="text-center mx-auto pb-5 wow fadeInUp"
           data-wow-delay="0.2s"
           style="max-width: 800px"
         >
-          <h4 class="text-primary">Our Features</h4>
+          <h4 class="text-primary">Why Choose Us</h4>
           <h1 class="display-4 mb-4">Powering Innovation with Code</h1>
           <p class="mb-0">
-            At Softorate Coders, we build future-ready solutions with precision,
-            creativity, and expertise. From custom development to scalable and
-            secure applications, we turn ideas into reality! 🚀
+            At Softorate, we combine technical expertise with business understanding to deliver solutions that drive real growth. Here's what makes us different.
           </p>
         </div>
         <div class="row g-4">
+          <!-- Feature 1 -->
           <div
             class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
             data-wow-delay="0.2s"
           >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="far fa-handshake fa-3x"></i>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-rocket"></i>
               </div>
-              <h4 class="mb-4">Trusted Company</h4>
-              <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
-                laborum odit pariatur...
+              <h4>Fast Delivery</h4>
+              <p>
+                Agile methodology ensures quick turnaround without compromising quality. We deliver projects on time, every time.
               </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
+              <a class="feature-link" href="#"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
+          <!-- Feature 2 -->
           <div
             class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
             data-wow-delay="0.4s"
           >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fa fa-dollar-sign fa-3x"></i>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
               </div>
-              <h4 class="mb-4">Anytime Money Back</h4>
-              <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
-                laborum odit pariatur...
+              <h4>Secure & Scalable</h4>
+              <p>
+                Enterprise-grade security and scalable architecture that grows with your business. Future-proof your investment.
               </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
+              <a class="feature-link" href="#"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
+          <!-- Feature 3 -->
           <div
             class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
             data-wow-delay="0.6s"
           >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fa fa-bullseye fa-3x"></i>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-code"></i>
               </div>
-              <h4 class="mb-4">Flexible Plans</h4>
-              <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
-                laborum odit pariatur...
+              <h4>Expert Team</h4>
+              <p>
+                Skilled developers, designers, and strategists working together to deliver excellence in every project.
               </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
+              <a class="feature-link" href="#"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
+          <!-- Feature 4 -->
           <div
             class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
             data-wow-delay="0.8s"
           >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fa fa-headphones fa-3x"></i>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-headset"></i>
               </div>
-              <h4 class="mb-4">24/7 Fast Support</h4>
-              <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic
-                laborum odit pariatur...
+              <h4>24/7 Support</h4>
+              <p>
+                Round-the-clock technical support and maintenance services. We're always here when you need us.
               </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
+              <a class="feature-link" href="#"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Feature 5 -->
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.2s"
+          >
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4>Trusted Partner</h4>
+              <p>
+                Long-term relationships built on trust and results. Our clients stay with us because we deliver.
+              </p>
+              <a class="feature-link" href="#"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Feature 6 -->
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.4s"
+          >
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h4>Flexible Pricing</h4>
+              <p>
+                Transparent pricing with flexible payment options. Get the best value for your investment.
+              </p>
+              <a class="feature-link" href="#"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Feature 7 -->
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.6s"
+          >
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h4>Results-Driven</h4>
+              <p>
+                We focus on delivering measurable results that impact your bottom line and business growth.
+              </p>
+              <a class="feature-link" href="#"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Feature 8 -->
+          <div
+            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
+            data-wow-delay="0.8s"
+          >
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h4>Cloud Native</h4>
+              <p>
+                Modern cloud-native architecture ensuring high availability, performance, and reliability.
+              </p>
+              <a class="feature-link" href="#"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Feature End -->
+    <!-- Main Features End -->
+
+    <!-- Why Choose Us Start -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+            <h4 class="text-primary">Why Choose Us</h4>
+            <h1 class="display-4 mb-4">We're More Than Just a Development Agency</h1>
+            <p class="mb-4">We're your technology partner, committed to your success from concept to launch and beyond.</p>
+            
+            <div class="why-choose-card mb-3">
+              <div class="why-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="why-content">
+                <h4>100% Client Satisfaction</h4>
+                <p>We don't just deliver projects; we build lasting relationships with our clients.</p>
+              </div>
+            </div>
+            
+            <div class="why-choose-card mb-3">
+              <div class="why-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="why-content">
+                <h4>Industry Best Practices</h4>
+                <p>We follow the latest standards and methodologies to ensure quality and reliability.</p>
+              </div>
+            </div>
+            
+            <div class="why-choose-card mb-3">
+              <div class="why-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="why-content">
+                <h4>Dedicated Support</h4>
+                <p>Your success is our success. We provide ongoing support and maintenance.</p>
+              </div>
+            </div>
+            
+            <div class="why-choose-card">
+              <div class="why-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <div class="why-content">
+                <h4>Transparent Communication</h4>
+                <p>Regular updates, clear milestones, and open communication throughout the project.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+            <img src="img/about-company-1.png" class="img-fluid rounded-3" alt="Why Choose Us" onerror="this.src='https://via.placeholder.com/600x500/0f2027/ffffff?text=Why+Choose+Softorate'">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Why Choose Us End -->
+
+    <!-- Comparison Table Start -->
+    <div class="container-fluid comparison-section py-5">
+      <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+          <h4 class="text-primary">Comparison</h4>
+          <h1 class="display-4 mb-4">Why Softorate Stands Out</h1>
+          <p class="mb-0">See how we compare to traditional development agencies and freelancers.</p>
+        </div>
+        
+        <div class="comparison-table wow fadeInUp" data-wow-delay="0.4s">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Features</th>
+                <th>Softorate</th>
+                <th>Traditional Agency</th>
+                <th>Freelancer</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dedicated Project Manager</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-times feature-no"></i></td>
+              </tr>
+              <tr>
+                <td>Quality Assurance Team</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-times feature-no"></i></td>
+              </tr>
+              <tr>
+                <td>24/7 Support</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-times feature-no"></i></td>
+                <td><i class="fas fa-times feature-no"></i></td>
+              </tr>
+              <tr>
+                <td>Transparent Pricing</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+              </tr>
+              <tr>
+                <td>Full-Stack Expertise</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-times feature-no"></i></td>
+              </tr>
+              <tr>
+                <td>UI/UX Design Team</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-times feature-no"></i></td>
+              </tr>
+              <tr>
+                <td>Post-Launch Maintenance</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+              </tr>
+              <tr>
+                <td>Scalability Planning</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-times feature-no"></i></td>
+              </tr>
+              <tr>
+                <td>Security Audits</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-times feature-no"></i></td>
+              </tr>
+              <tr>
+                <td>Multiple Technology Stack</td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+                <td><i class="fas fa-check feature-yes"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Comparison Table End -->
+
+    <!-- CTA Section Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-3">
+        <div class="cta-section wow fadeInUp" data-wow-delay="0.2s">
+          <h2>Ready to Experience the Softorate Difference?</h2>
+          <p>Join 50+ happy clients who've already transformed their businesses with our solutions.</p>
+          <a href="contact.html" class="btn-light">Start Your Project</a>
+          <a href="portfolio.html" class="btn-outline-light">View Our Work</a>
+        </div>
+      </div>
+    </div>
+    <!-- CTA Section End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -263,9 +828,7 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation
-                solutions—high performance, scalable, and user-friendly to help
-                your business grow.
+                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -274,9 +837,6 @@
                   target="_blank"
                   ><i class="fab fa-github"></i
                 ></a>
-                <!-- <a class="btn btn-sm-square rounded-circle me-2" href="#"
-                  ><i class="fab fa-facebook-f"></i
-                ></a> -->
                 <a
                   class="btn btn-sm-square rounded-circle me-2"
                   href="https://www.instagram.com/_softorate/"
@@ -297,21 +857,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="/about.html"
-                ><i class="fas fa-angle-right me-2"></i> About Us</a
-              >
-              <a href="/feature.html"
-                ><i class="fas fa-angle-right me-2"></i> Features</a
-              >
-              <a href="/service.html"
-                ><i class="fas fa-angle-right me-2"></i> Services</a
-              >
-              <a href="/FAQ.html"
-                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
-              >
-              <a href="/contact.html"
-                ><i class="fas fa-angle-right me-2"></i> Contact</a
-              >
+              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
+              <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
+              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+              <a href="team.html"><i class="fas fa-angle-right me-2"></i> Our Team</a>
+              <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonials</a>
             </div>
           </div>
 
@@ -404,8 +957,7 @@
           <div class="col-md-6 text-center text-md-end mb-md-0">
             <span class="text-body"
               ><a href="#" class="border-bottom text-white"
-                ><i class="fas fa-copyright text-light me-2"></i>Softorate
-                Coder</a
+                ><i class="fas fa-copyright text-light me-2"></i>Softorate</a
               >, All right reserved.</span
             >
           </div>
@@ -431,5 +983,23 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Hide spinner
+        setTimeout(() => {
+          document.getElementById('spinner').classList.remove('show');
+        }, 1000);
+        
+        // Initialize WOW
+        new WOW().init();
+        
+        // Counter Up initialization
+        $('[data-toggle="counter-up"]').counterUp({
+          delay: 10,
+          time: 2000
+        });
+      });
+    </script>
   </body>
 </html>

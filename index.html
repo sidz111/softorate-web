@@ -2,10 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>softorate.com</title>
+    <title>Softorate - Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta
+      content="software development, web development, mobile apps, social media management, digital agency"
+      name="keywords"
+    />
+    <meta
+      content="Softorate provides professional software solutions including web development, mobile apps, and social media management services."
+      name="description"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,19 +41,20 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
     <style>
+      /* Your original hero section styles - preserved exactly */
       .hero-section {
         width: 100%;
         max-width: 1200px;
         margin: 40px auto;
         padding: 50px 40px;
         border-radius: 18px;
-        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         color: #ffffff;
       }
 
-      /* Layout */
       .hero-content {
         display: flex;
         gap: 40px;
@@ -56,7 +63,6 @@
         flex-wrap: wrap;
       }
 
-      /* Left Side */
       .hero-text {
         flex: 1;
         min-width: 280px;
@@ -74,7 +80,6 @@
         margin-bottom: 20px;
       }
 
-      /* Buttons */
       .hero-buttons {
         display: flex;
         gap: 15px;
@@ -100,7 +105,6 @@
         transform: scale(1.05);
       }
 
-      /* Right Side Cards */
       .hero-cards {
         flex: 1;
         min-width: 280px;
@@ -109,7 +113,7 @@
         gap: 20px;
       }
 
-      .card {
+      .hero-cards .card {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(8px);
         border-radius: 16px;
@@ -118,21 +122,48 @@
         transition: 0.3s;
       }
 
-      .card:hover {
+      .hero-cards .card:hover {
         transform: translateY(-5px);
       }
 
-      .card h3 {
+      .hero-cards .card h3 {
         margin-bottom: 10px;
         font-size: 1.2rem;
       }
 
-      .card p {
+      .hero-cards .card p {
         font-size: 0.95rem;
         line-height: 1.5;
       }
 
-      /* Responsive */
+      /* Stats Section */
+      .stats-section {
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        color: white;
+        padding: 60px 0;
+        margin: 40px 0;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      .stat-label {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+
+      .counter {
+        display: inline-block;
+        min-width: 60px;
+      }
+
       @media (max-width: 768px) {
         .hero-section {
           padding: 35px 25px;
@@ -140,6 +171,10 @@
 
         .hero-text h1 {
           font-size: 1.8rem;
+        }
+
+        .stat-number {
+          font-size: 2rem;
         }
       }
     </style>
@@ -183,6 +218,7 @@
               <a href="index.html" class="nav-item nav-link active">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
+              <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
               <a href="FAQ.html" class="nav-item nav-link">FAQs</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
@@ -209,103 +245,115 @@
       </div>
     </div>
 
-    <!-- Carousel Start -->
-    <!-- <div class="header-carousel owl-carousel">
-      <div class="header-carousel-item bg-primary">
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="row g-4 align-items-center">
-              <div class="col-lg-7">
-                <div class="text-sm-center text-md-start">
-                  <h4 class="text-white text-uppercase fw-bold mb-4">
-                    Welcome To Softorate
-                  </h4>
-                  <h1 class="display-1 text-white mb-4">
-                    Welcome to Softorate Innovating the Future with Code! 🚀
-                  </h1>
-                  <p class="mb-5 fs-5">
-                    we craft cutting-edge solutions, turning ideas into reality
-                    with precision and innovation. 💡💻
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-5">
-                <div class="calrousel-img" style="object-fit: cover">
-                  <img src="img/carosel.png" class="img-fluid w-100" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-carousel-item bg-primary">
-        <div class="carousel-caption">
-          <div class="container">
-            <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
-              <div class="col-lg-5">
-                <div class="calrousel-img">
-                  <img src="img/carosel.png" class="img-fluid w-100" alt="" />
-                </div>
-              </div>
-              <div class="col-lg-7">
-                <div class="text-sm-center text-md-end">
-                  <h4 class="text-white text-uppercase fw-bold mb-4">
-                    Welcome To Softorate
-                  </h4>
-                  <h1 class="display-1 text-white mb-4">
-                    Welcome to Softorate Innovating the Future with Code! 🚀
-                  </h1>
-                  <p class="mb-5 fs-5">
-                    we craft cutting-edge solutions, turning ideas into reality
-                    with precision and innovation. 💡💻
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    <!-- Hero Section - Updated with agency content but your original design -->
     <div class="hero-section">
       <div class="hero-content">
         <!-- Left Content -->
         <div class="hero-text">
-          <h1>Freelancing & Study Blogs</h1>
+          <h1>
+            Transform Your Business With
+            <span style="color: #ffd700">Expert Software Solutions</span>
+          </h1>
           <p>
-            I provide professional freelancing services along with
-            easy-to-understand study blogs on Java, Spring Boot, Golang, APIs,
-            Databases and software development best practices.
+            We help businesses grow with custom web applications, mobile apps,
+            social media management, and digital transformation services. Our
+            expert team delivers innovative solutions that drive results.
           </p>
 
           <div class="hero-buttons">
-            <a href="/service.html"><button>View Services</button></a>
-            <a href="/blog.html"><button>Read Blogs</button></a>
+            <a href="service.html"><button>Explore Services</button></a>
+            <a href="contact.html"><button>Get Free Consultation</button></a>
           </div>
         </div>
 
-        <!-- Right Cards -->
+        <!-- Right Cards - Your original design -->
         <div class="hero-cards">
           <div class="card">
-            <h3>Freelancing</h3>
+            <i
+              class="fas fa-laptop-code"
+              style="font-size: 2rem; margin-bottom: 15px"
+            ></i>
+            <h3>Web Development</h3>
             <p>
-              Web development, backend APIs, database design and scalable
-              solutions.
+              Custom websites and web applications built with modern
+              technologies.
             </p>
           </div>
 
           <div class="card">
-            <h3>Study Blogs</h3>
+            <i
+              class="fas fa-mobile-alt"
+              style="font-size: 2rem; margin-bottom: 15px"
+            ></i>
+            <h3>Mobile Apps</h3>
             <p>
-              Beginner-friendly tutorials with real-world examples and projects.
+              Native and cross-platform mobile applications for iOS and Android.
             </p>
+          </div>
+
+          <div class="card">
+            <i
+              class="fas fa-hashtag"
+              style="font-size: 2rem; margin-bottom: 15px"
+            ></i>
+            <h3>Social Media Mgmt</h3>
+            <p>
+              Strategic social media management to boost your brand's online
+              presence.
+            </p>
+          </div>
+
+          <div class="card">
+            <i
+              class="fas fa-cloud"
+              style="font-size: 2rem; margin-bottom: 15px"
+            ></i>
+            <h3>Cloud Solutions</h3>
+            <p>Scalable cloud infrastructure and deployment services.</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Carousel End -->
 
-    <!-- Feature Start -->
-    <!-- Start Features -->
+    <!-- Stats Section - With spinning numbers -->
+    <div class="stats-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">
+                <span class="counter" data-target="100">0</span>+
+              </div>
+              <div class="stat-label">Projects Delivered</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">
+                <span class="counter" data-target="50">0</span>+
+              </div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">
+                <span class="counter" data-target="3">0</span>+
+              </div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Start - Using your style.css classes -->
     <div class="container-fluid feature bg-light py-5">
       <div class="container py-5">
         <div
@@ -314,11 +362,10 @@
           style="max-width: 800px"
         >
           <h4 class="text-primary">Our Features</h4>
-          <h1 class="display-4 mb-4">Powering Innovation with Code</h1>
+          <h1 class="display-4 mb-4">Why Choose Softorate?</h1>
           <p class="mb-0">
-            At Softorate Coders, we build future-ready solutions with precision,
-            creativity, and expertise. From custom development to scalable and
-            secure applications, we turn ideas into reality! 🚀
+            We combine technical expertise with business understanding to
+            deliver solutions that drive real growth.
           </p>
         </div>
 
@@ -330,11 +377,14 @@
           >
             <div class="feature-item">
               <div class="feature-icon">
-                <i class="far fa-handshake fa-3x"></i>
+                <i class="fas fa-rocket fa-3x"></i>
               </div>
               <div class="feature-content">
-                <h4 class="mb-3">Innovative Solutions</h4>
-                <p>We craft cutting-edge software tailored to your needs.</p>
+                <h4 class="mb-3">Fast Delivery</h4>
+                <p>
+                  Agile methodology ensures quick turnaround without
+                  compromising quality.
+                </p>
               </div>
             </div>
           </div>
@@ -350,7 +400,10 @@
               </div>
               <div class="feature-content">
                 <h4 class="mb-3">Scalable & Secure</h4>
-                <p>Robust solutions built for performance and security.</p>
+                <p>
+                  Enterprise-grade security and scalable architecture for
+                  growing businesses.
+                </p>
               </div>
             </div>
           </div>
@@ -365,8 +418,11 @@
                 <i class="fa fa-code fa-3x"></i>
               </div>
               <div class="feature-content">
-                <h4 class="mb-3">Custom Development</h4>
-                <p>Tailored web and software solutions for businesses.</p>
+                <h4 class="mb-3">Expert Team</h4>
+                <p>
+                  Skilled developers, designers, and strategists working for
+                  your success.
+                </p>
               </div>
             </div>
           </div>
@@ -382,16 +438,18 @@
               </div>
               <div class="feature-content">
                 <h4 class="mb-3">24/7 Support</h4>
-                <p>Dedicated assistance whenever you need it.</p>
+                <p>
+                  Round-the-clock technical support and maintenance services.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Features -->
+    <!-- Feature End -->
 
-    <!-- Start Projects -->
+    <!-- Projects Start - Using your style.css classes -->
     <div class="container-fluid project py-5">
       <div class="container py-5">
         <div
@@ -400,15 +458,10 @@
           style="max-width: 800px"
         >
           <h4 class="text-primary">Our Projects</h4>
-          <h1 class="display-4 mb-4">
-            Explore our Latest Projects and Innovations 🚀
-          </h1>
+          <h1 class="display-4 mb-4">Latest Innovations</h1>
           <p class="mb-0">
-            We specialize in delivering top-notch software solutions, WhatsApp &
-            Telegram bots, websites, and web applications tailored to your
-            needs. Whether it's automating workflows, enhancing customer
-            engagement, or building robust digital platforms, our projects
-            showcase innovation, efficiency, and seamless user experiences. 🚀💡
+            We specialize in delivering top-notch software solutions, websites,
+            and web applications tailored to your needs.
           </p>
         </div>
 
@@ -422,12 +475,11 @@
               <div class="project-img">
                 <img
                   src="img/custom-software.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
+                  class="img-fluid w-100"
+                  alt="Custom Software"
                 />
-                <div class="project-icon p-3"></div>
               </div>
-              <div class="project-content p-4">
+              <div class="project-content">
                 <div class="project-content-inner">
                   <a href="#" class="d-inline-block h4 mb-4"
                     >Custom Software Development</a
@@ -435,7 +487,9 @@
                   <p class="mb-4">
                     Tailored solutions to streamline your business operations.
                   </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="portfolio.html"
                     >Read More</a
                   >
                 </div>
@@ -452,12 +506,11 @@
               <div class="project-img">
                 <img
                   src="img/web-app-dev.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
+                  class="img-fluid w-100"
+                  alt="Web & App Development"
                 />
-                <div class="project-icon p-3"></div>
               </div>
-              <div class="project-content p-4">
+              <div class="project-content">
                 <div class="project-content-inner">
                   <a href="#" class="d-inline-block h4 mb-4"
                     >Web & App Development</a
@@ -465,7 +518,9 @@
                   <p class="mb-4">
                     Modern, responsive, and user-friendly applications.
                   </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="portfolio.html"
                     >Read More</a
                   >
                 </div>
@@ -482,12 +537,11 @@
               <div class="project-img">
                 <img
                   src="img/enterprise-sol.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
+                  class="img-fluid w-100"
+                  alt="Enterprise Solutions"
                 />
-                <div class="project-icon p-3"></div>
               </div>
-              <div class="project-content p-4">
+              <div class="project-content">
                 <div class="project-content-inner">
                   <a href="#" class="d-inline-block h4 mb-4"
                     >Enterprise Solutions</a
@@ -495,7 +549,9 @@
                   <p class="mb-4">
                     Scalable and secure systems for growing businesses.
                   </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
+                  <a
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="portfolio.html"
                     >Read More</a
                   >
                 </div>
@@ -512,12 +568,11 @@
               <div class="project-img">
                 <img
                   src="img/ai.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
+                  class="img-fluid w-100"
+                  alt="AI & Cloud Integration"
                 />
-                <div class="project-icon p-3"></div>
               </div>
-              <div class="project-content p-4">
+              <div class="project-content">
                 <div class="project-content-inner">
                   <a href="#" class="d-inline-block h4 mb-4"
                     >AI & Cloud Integration</a
@@ -526,8 +581,8 @@
                     Advanced technology to enhance efficiency and performance.
                   </p>
                   <a
-                    class="btn btn-primary rounded-pill py-2 mt-5 px-4"
-                    href="#"
+                    class="btn btn-primary rounded-pill py-2 px-4"
+                    href="portfolio.html"
                     >Read More</a
                   >
                 </div>
@@ -535,9 +590,17 @@
             </div>
           </div>
         </div>
+
+        <div class="text-center mt-5">
+          <a
+            href="portfolio.html"
+            class="btn btn-primary rounded-pill py-3 px-5"
+            >View All Projects</a
+          >
+        </div>
       </div>
     </div>
-    <!-- End Projects -->
+    <!-- Projects End -->
 
     <!-- Service Start -->
     <div class="container-fluid service py-5">
@@ -548,12 +611,10 @@
           style="max-width: 800px"
         >
           <h4 class="text-primary fw-bold">Our Services</h4>
-          <h1 class="display-4 mb-4">Transforming Ideas into Reality 🚀</h1>
+          <h1 class="display-4 mb-4">Transforming Ideas into Reality</h1>
           <p class="mb-0">
-            At Softorate Coders, we offer top-notch development services to help
-            businesses thrive in the digital world. Our expertise ensures
-            innovative, scalable, and high-performance solutions tailored to
-            your needs.
+            At Softorate, we offer top-notch development services to help
+            businesses thrive in the digital world.
           </p>
         </div>
 
@@ -571,13 +632,12 @@
                   src="img/custom-software.png"
                   class="img-fluid w-100"
                   alt="Custom Software Development"
-                  loading="lazy"
                   style="object-fit: cover; height: 100%"
                 />
               </div>
               <div class="card-body p-4 pt-5 text-center">
                 <a
-                  href="#"
+                  href="service.html"
                   class="d-inline-block h4 mb-3 text-dark text-decoration-none"
                 >
                   Custom Software Development
@@ -602,13 +662,12 @@
                   src="img/web-app-dev.png"
                   class="img-fluid w-100"
                   alt="Web and App Development"
-                  loading="lazy"
                   style="object-fit: cover; height: 100%"
                 />
               </div>
               <div class="card-body p-4 pt-5 text-center">
                 <a
-                  href="#"
+                  href="service.html"
                   class="d-inline-block h4 mb-3 text-dark text-decoration-none"
                 >
                   Web & App Development
@@ -633,13 +692,12 @@
                   src="img/enterprise-sol.png"
                   class="img-fluid w-100"
                   alt="Enterprise Solutions"
-                  loading="lazy"
                   style="object-fit: cover; height: 100%"
                 />
               </div>
               <div class="card-body p-4 pt-5 text-center">
                 <a
-                  href="#"
+                  href="service.html"
                   class="d-inline-block h4 mb-3 text-dark text-decoration-none"
                 >
                   Enterprise Solutions
@@ -664,13 +722,12 @@
                   src="img/ai.png"
                   class="img-fluid w-100"
                   alt="AI and Cloud Integration"
-                  loading="lazy"
                   style="object-fit: cover; height: 100%"
                 />
               </div>
               <div class="card-body p-4 pt-5 text-center">
                 <a
-                  href="#"
+                  href="service.html"
                   class="d-inline-block h4 mb-3 text-dark text-decoration-none"
                 >
                   AI & Cloud Integration
@@ -685,7 +742,193 @@
       </div>
     </div>
     <!-- Service End -->
+    <!-- Testimonials Start -->
+<div class="container-fluid testimonial py-5">
+  <div class="container py-5">
+    <div
+      class="text-center mx-auto pb-5 wow fadeInUp"
+      data-wow-delay="0.2s"
+      style="max-width: 800px"
+    >
+      <h4 class="text-primary">Client Testimonials</h4>
+      <h1 class="display-4 mb-4">What Our Clients Say About Us</h1>
+      <p class="mb-0">
+        Real feedback from businesses we've helped transform through
+        innovative software solutions.
+      </p>
+    </div>
+    <div
+      class="owl-carousel testimonial-carousel wow fadeInUp"
+      data-wow-delay="0.2s"
+    >
+      <!-- Testimonial 1 - Shubham Sagar (Investment Banker & Author) -->
+      <div class="testimonial-item">
+        <div class="d-flex align-items-center mb-3">
+          <div
+            class="rounded-circle d-flex align-items-center justify-content-center bg-primary text-white"
+            style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 600;"
+          >
+            SS
+          </div>
+          <div class="ms-3">
+            <h5 class="mb-1">Shubham Sagar</h5>
+            <p class="mb-0 text-primary">Investment Banker & Author</p>
+            <small class="text-muted">shubhamsagar.com</small>
+          </div>
+        </div>
+        <div class="rating mb-3">
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+        </div>
+        <p class="mb-0">
+          "As an Investment Banker and author, I require a very high level of accuracy, strategy, and design elegance in all my endeavors. Softorate has met this requirement perfectly in creating my website, shubhamsagar.com. The team at Softorate has been outstanding in capturing the intricate themes of my writings and creating a website experience that is both functional and effective. They have not only offered a service but also a partnership that has resulted in the creation of a technically sound website with a seamless and elegant user interface."
+        </p>
+      </div>
 
+      <!-- Testimonial 2 - Pranav Kotak (AUR Coffee) -->
+      <div class="testimonial-item">
+        <div class="d-flex align-items-center mb-3">
+          <div
+            class="rounded-circle d-flex align-items-center justify-content-center bg-primary text-white"
+            style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 600;"
+          >
+            PK
+          </div>
+          <div class="ms-3">
+            <h5 class="mb-1">Pranav Kotak</h5>
+            <p class="mb-0 text-primary">Founder, AUR Coffee – Pune</p>
+          </div>
+        </div>
+        <div class="rating mb-3">
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+        </div>
+        <p class="mb-0">
+          "When we started AUR Coffee, our focus was always on creating a minimal, experience-driven café space. We wanted our website to reflect that same warmth and design philosophy. Softorate truly understood our vision and translated it beautifully into a digital experience. From structuring our brand story to building a clean, high-performance website, their team handled everything seamlessly. The process was smooth, timelines were respected, and the final result felt authentically 'AUR'. Going live felt like opening another outlet — this time online."
+        </p>
+      </div>
+
+      <!-- Testimonial 3 - Sushant More (TECHNOPATH) -->
+      <div class="testimonial-item">
+        <div class="d-flex align-items-center mb-3">
+          <div
+            class="rounded-circle d-flex align-items-center justify-content-center bg-primary text-white"
+            style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 600;"
+          >
+            SM
+          </div>
+          <div class="ms-3">
+            <h5 class="mb-1">Sushant More</h5>
+            <p class="mb-0 text-primary">Founder & CEO, TECHNOPATH</p>
+            <small class="text-muted">technopath.in</small>
+          </div>
+        </div>
+        <div class="rating mb-3">
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+        </div>
+        <p class="mb-0">
+          "We at TechnoPath.in are extremely pleased with the outstanding website designed and developed by Softorate. From the initial consultation to the final launch, their team demonstrated exceptional creativity, technical expertise, and attention to detail. They perfectly understood our vision and transformed it into a modern, user-friendly, and performance-driven website that truly represents our brand. What impressed us most was their commitment to quality, timely delivery, and proactive communication throughout the project."
+        </p>
+      </div>
+
+      <!-- Testimonial 4 - Rushikesh Rane (Tatya App) -->
+      <div class="testimonial-item">
+        <div class="d-flex align-items-center mb-3">
+          <div
+            class="rounded-circle d-flex align-items-center justify-content-center bg-primary text-white"
+            style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 600;"
+          >
+            RR
+          </div>
+          <div class="ms-3">
+            <h5 class="mb-1">Rushikesh Rane</h5>
+            <p class="mb-0 text-primary">Founder, Tatya App</p>
+          </div>
+        </div>
+        <div class="rating mb-3">
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+        </div>
+        <p class="mb-0">
+          "We at Tatya App are extremely pleased with the outstanding app development services provided by Softorate. From concept to deployment, their team demonstrated strong technical expertise, creativity, and a clear understanding of our requirements. They transformed our vision into a smooth, user-friendly, and high-performing mobile application that truly represents our brand. Their attention to detail, timely communication, and commitment to quality made the entire development process seamless."
+        </p>
+      </div>
+
+      <!-- Testimonial 5 - Mr. Jayesh Badnakhe (Solomon & Co.) -->
+      <div class="testimonial-item">
+        <div class="d-flex align-items-center mb-3">
+          <div
+            class="rounded-circle d-flex align-items-center justify-content-center bg-primary text-white"
+            style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 600;"
+          >
+            JB
+          </div>
+          <div class="ms-3">
+            <h5 class="mb-1">Mr. Jayesh Badnakhe</h5>
+            <p class="mb-0 text-primary">Partner, Solomon & Co., Pune</p>
+          </div>
+        </div>
+        <div class="rating mb-3">
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+        </div>
+        <p class="mb-0">
+          "In the legal profession, credibility and clarity are everything. When we decided to strengthen our digital presence, we wanted a website that reflected our legacy, professionalism, and depth of expertise. Softorate understood these expectations perfectly. Their team ensured that our website was structured with precision — clear practice areas, detailed team profiles, and an interface that communicates trust and authority. Softorate delivered exactly what a law firm requires — sophistication, security, and simplicity."
+        </p>
+      </div>
+
+      <!-- Testimonial 6 - Leena Loungani (Qubic Properties) -->
+      <div class="testimonial-item">
+        <div class="d-flex align-items-center mb-3">
+          <div
+            class="rounded-circle d-flex align-items-center justify-content-center bg-primary text-white"
+            style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: 600;"
+          >
+            LL
+          </div>
+          <div class="ms-3">
+            <h5 class="mb-1">Leena Loungani</h5>
+            <p class="mb-0 text-primary">Founder & MD, Qubic Properties</p>
+          </div>
+        </div>
+        <div class="rating mb-3">
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+          <i class="fas fa-star text-warning"></i>
+        </div>
+        <p class="mb-0">
+          "In the real estate industry, credibility and presentation play a crucial role in building client trust. When we decided to strengthen our online presence, we needed a website that reflected our professionalism, portfolio strength, and client-first approach. Softorate delivered exactly that. Their team understood the nuances of real estate marketing — from showcasing projects clearly to structuring information in a way that builds confidence among buyers and investors. The design is clean, modern, and aligned with our brand positioning."
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a
+        href="testimonial.html"
+        class="btn btn-primary rounded-pill py-3 px-5"
+        >View All Testimonials</a
+      >
+    </div>
+  </div>
+</div>
+<!-- Testimonials End -->
     <!-- FAQs Start -->
     <div class="container-fluid faq-section bg-light py-5">
       <div class="container py-5">
@@ -693,8 +936,8 @@
           <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
             <div class="h-100">
               <div class="mb-5">
-                <h4 class="text-primary">Some Important FAQ's</h4>
-                <h1 class="display-4 mb-0">Everything You Need to Know 🤔</h1>
+                <h4 class="text-primary">Frequently Asked Questions</h4>
+                <h1 class="display-4 mb-0">Everything You Need to Know</h1>
               </div>
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
@@ -705,21 +948,20 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseOne"
                       aria-expanded="true"
-                      aria-controls="collapseOne"
                     >
-                      Q: What services does Softorate Coders offer?
+                      What services does Softorate provide?
                     </button>
                   </h2>
                   <div
                     id="collapseOne"
                     class="accordion-collapse collapse show active"
                     aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
                   >
-                    <div class="accordion-body rounded">
-                      A: We specialize in custom software development, web & app
-                      development, enterprise solutions, and AI & cloud
-                      integration.
+                    <div class="accordion-body">
+                      We offer comprehensive software solutions including web
+                      development, mobile app development, social media
+                      management, automation solutions, cloud services, and
+                      digital marketing.
                     </div>
                   </div>
                 </div>
@@ -730,20 +972,17 @@
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
                     >
-                      Q: How does Softorate Coders ensure project quality?
+                      How do you ensure project quality?
                     </button>
                   </h2>
                   <div
                     id="collapseTwo"
                     class="accordion-collapse collapse"
                     aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      A: We follow industry best practices, use the latest
+                      We follow industry best practices, use the latest
                       technologies, and conduct rigorous testing to deliver
                       high-quality, scalable solutions.
                     </div>
@@ -756,22 +995,19 @@
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
                     >
-                      Q: Can I get a customized solution for my business?
+                      Can I get a customized solution?
                     </button>
                   </h2>
                   <div
                     id="collapseThree"
                     class="accordion-collapse collapse"
                     aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      A: Absolutely! We tailor our services to meet your
-                      specific business needs and ensure seamless integration
-                      with your existing systems.
+                      Absolutely! We tailor our services to meet your specific
+                      business needs and ensure seamless integration with your
+                      existing systems.
                     </div>
                   </div>
                 </div>
@@ -779,7 +1015,7 @@
             </div>
           </div>
           <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-            <img src="img/faq.png" class="img-fluid w-100" alt="" />
+            <img src="img/faq.png" class="img-fluid w-100" alt="FAQ" />
           </div>
         </div>
       </div>
@@ -810,9 +1046,6 @@
                   target="_blank"
                   ><i class="fab fa-github"></i
                 ></a>
-                <!-- <a class="btn btn-sm-square rounded-circle me-2" href="#"
-                  ><i class="fab fa-facebook-f"></i
-                ></a> -->
                 <a
                   class="btn btn-sm-square rounded-circle me-2"
                   href="https://www.instagram.com/_softorate/"
@@ -833,19 +1066,19 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="/about.html"
+              <a href="about.html"
                 ><i class="fas fa-angle-right me-2"></i> About Us</a
               >
-              <a href="/feature.html"
-                ><i class="fas fa-angle-right me-2"></i> Features</a
-              >
-              <a href="/service.html"
+              <a href="service.html"
                 ><i class="fas fa-angle-right me-2"></i> Services</a
               >
-              <a href="/FAQ.html"
+              <a href="portfolio.html"
+                ><i class="fas fa-angle-right me-2"></i> Portfolio</a
+              >
+              <a href="FAQ.html"
                 ><i class="fas fa-angle-right me-2"></i> FAQ's</a
               >
-              <a href="/contact.html"
+              <a href="contact.html"
                 ><i class="fas fa-angle-right me-2"></i> Contact</a
               >
             </div>
@@ -931,7 +1164,6 @@
         </div>
       </div>
     </div>
-
     <!-- Footer End -->
 
     <!-- Copyright Start -->
@@ -939,12 +1171,11 @@
       <div class="container">
         <div class="row g-4 align-items-center">
           <div class="col-md-6 text-center text-md-end mb-md-0">
-            <span class="text-body"
-              ><a href="#" class="border-bottom text-white"
-                ><i class="fas fa-copyright text-light me-2"></i>Softorate
-                Coder</a
-              >, All right reserved.</span
-            >
+            <span class="text-body">
+              <a href="#" class="border-bottom text-white">
+                <i class="fas fa-copyright text-light me-2"></i>Softorate </a
+              >, All right reserved.
+            </span>
           </div>
         </div>
       </div>
@@ -952,9 +1183,12 @@
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"
-      ><i class="fa fa-arrow-up"></i
-    ></a>
+    <a
+      href="#"
+      class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+    >
+      <i class="fa fa-arrow-up"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -965,6 +1199,80 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Counter Animation Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth counting animation
+        function animateCounter(counter, target, duration = 2000) {
+          let start = 0;
+          const startTime = performance.now();
+
+          function updateCounter(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            // Easing function for smooth start and stop
+            const easeOutQuart = 1 - Math.pow(1 - progress, 3);
+            const currentValue = Math.floor(target * easeOutQuart);
+
+            counter.textContent = currentValue;
+
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target;
+            }
+          }
+
+          requestAnimationFrame(updateCounter);
+        }
+
+        // Check if element is partially visible
+        function isElementPartiallyInViewport(el) {
+          const rect = el.getBoundingClientRect();
+          const windowHeight =
+            window.innerHeight || document.documentElement.clientHeight;
+
+          return rect.top <= windowHeight && rect.bottom >= 0;
+        }
+
+        const counters = document.querySelectorAll(".counter");
+        let animationStarted = false;
+
+        function startCounters() {
+          if (animationStarted) return;
+
+          const statsSection = document.querySelector(".stats-section");
+          if (statsSection && isElementPartiallyInViewport(statsSection)) {
+            counters.forEach((counter) => {
+              const target = parseInt(counter.getAttribute("data-target"));
+              animateCounter(counter, target, 2000);
+            });
+            animationStarted = true;
+          }
+        }
+
+        // Check on scroll
+        window.addEventListener("scroll", function () {
+          if (!animationStarted) {
+            startCounters();
+          }
+        });
+
+        // Check on page load
+        startCounters();
+        setTimeout(startCounters, 500);
+
+        // Initialize WOW
+        new WOW().init();
+
+        // Hide spinner
+        setTimeout(() => {
+          document.getElementById("spinner").classList.remove("show");
+        }, 1000);
+      });
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

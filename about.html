@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>softorate.com</title>
+    <title>About Us - Softorate Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta content="software company about, web development agency, software solutions team" name="keywords" />
+    <meta content="Learn about Softorate - a leading software solutions agency providing custom development, mobile apps, and digital transformation services." name="description" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,6 +35,207 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+      /* Page Header - Matching hero section style */
+      .page-header {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 60px 40px;
+        border-radius: 18px;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        text-align: center;
+      }
+      
+      .page-header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      
+      .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.95;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      
+      .breadcrumb {
+        background: transparent;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .breadcrumb-item,
+      .breadcrumb-item a {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      
+      .breadcrumb-item.active {
+        color: #fff;
+      }
+      
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      
+      /* Mission & Vision Cards */
+      .mission-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 100%;
+        text-align: center;
+      }
+      
+      .mission-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      }
+      
+      .mission-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 25px;
+        color: white;
+        font-size: 2rem;
+      }
+      
+      /* Values Section */
+      .value-item {
+        text-align: center;
+        padding: 25px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+        height: 100%;
+      }
+      
+      .value-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      
+      .value-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: white;
+        font-size: 1.5rem;
+      }
+      
+      /* Stats Cards */
+      .counter-item {
+        background: #fff;
+        border-radius: 12px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+        height: 100%;
+      }
+      
+      .counter-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      }
+      
+      .counter-counting {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--bs-primary);
+        margin-bottom: 10px;
+      }
+      
+      .counter-counting span {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      
+      /* Timeline */
+      .timeline {
+        position: relative;
+        padding: 20px 0;
+      }
+      
+      .timeline-item {
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 40px;
+      }
+      
+      .timeline-item:last-child {
+        margin-bottom: 0;
+      }
+      
+      .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+      }
+      
+      .timeline-item:last-child::before {
+        display: none;
+      }
+      
+      .timeline-dot {
+        position: absolute;
+        left: 12px;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        border: 3px solid #fff;
+        box-shadow: 0 0 0 2px #203a43;
+        z-index: 1;
+      }
+      
+      .timeline-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+      
+      .timeline-year {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--bs-primary);
+        margin-bottom: 10px;
+      }
+      
+      @media (max-width: 768px) {
+        .page-header {
+          padding: 40px 25px;
+        }
+        
+        .page-header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -45,7 +246,7 @@
     >
       <div
         class="spinner-border text-primary"
-        style="inline-size: 3rem; block-size: 3rem"
+        style="width: 3rem; height: 3rem"
         role="status"
       >
         <span class="sr-only">Loading...</span>
@@ -53,15 +254,14 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar Start -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="#" class="navbar-brand p-0">
+          <a href="index.html" class="navbar-brand p-0">
             <h1 class="text-primary mb-0">
               <i class="fab fa-free-code-camp me-2"></i> Softorate
             </h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
           </a>
           <button
             class="navbar-toggler"
@@ -73,9 +273,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav bg-white mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
-              <a href="about.html" class="nav-item nav-link">About</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
+              <a href="about.html" class="nav-item nav-link active">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
+              <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+              <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
               <a href="FAQ.html" class="nav-item nav-link">FAQs</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
@@ -87,11 +289,8 @@
               data-wow-delay=".9s"
             >
               <i class="fa fa-phone-alt fa-2x"></i>
-              <div
-                class="position-absolute"
-                style="inset-block-start: 7px; inset-inline-end: 12px"
-              >
-                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+              <div class="position-absolute" style="top: 7px; right: 12px">
+                <span><i class="fa fa-comment-dots"></i></span>
               </div>
             </a>
             <div class="d-flex flex-column ms-3">
@@ -104,545 +303,336 @@
         </nav>
       </div>
     </div>
-    <!-- Navbar & Hero End -->
+    <!-- Navbar End -->
 
-    <!-- Modal Search Start -->
-    <!-- <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center bg-primary">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span
-                id="search-icon-1"
-                class="btn bg-light border nput-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Modal Search End -->
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-      <div class="container text-center py-5" style="max-inline-size: 900px">
-        <h4
-          class="text-white display-4 mb-4 wow fadeInDown"
-          data-wow-delay="0.1s"
-        >
-          About Us
-        </h4>
+    <!-- Page Header - Matching hero section style -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="wow fadeInUp" data-wow-delay="0.2s">About Softorate</h1>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">We're on a mission to transform businesses through innovative software solutions</p>
+        <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">About Us</li>
+          </ol>
+        </nav>
       </div>
     </div>
-    <!-- Header End -->
 
-    <!-- About Start -->
-    <div class="container-fluid bg-light about pb-5">
-      <div class="container pb-5">
-        <div class="row g-5">
-          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="about-item-content bg-white rounded p-5 h-100">
-              <h4 class="text-primary">About Our Company</h4>
-              <h1 class="display-4 mb-4">Crafting the Future with Code</h1>
-              <p>
-                At Softorate Coders, we are passionate about building
-                high-quality digital solutions that drive businesses forward.
-                Our team of skilled professionals transforms ideas into
-                scalable, secure, and innovative applications tailored to modern
-                needs.
-              </p>
-              <p>
-                With a commitment to excellence, we focus on delivering
-                user-centric solutions that push the boundaries of technology.
-                From custom development to enterprise solutions, we bring
-                expertise and creativity to every project.
-              </p>
-              <p class="text-dark">
-                <i class="fa fa-check text-primary me-3"></i>We turn ideas into
-                reality.
-              </p>
-              <p class="text-dark">
-                <i class="fa fa-check text-primary me-3"></i>Building scalable
-                and secure solutions.
-              </p>
-              <p class="text-dark mb-4">
-                <i class="fa fa-check text-primary me-3"></i>Empowering
-                businesses with technology.
-              </p>
-              <a class="btn btn-primary rounded-pill py-3 px-5" href="#"
-                >More Information</a
-              >
-            </div>
-          </div>
-          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-            <div class="bg-white rounded p-5 h-100">
-              <div class="row g-4 justify-content-center">
-                <div class="col-12">
-                  <div class="rounded bg-light">
-                    <img
-                      src="img/about-company-1.png"
-                      class="img-fluid rounded w-100"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="counter-item bg-light rounded p-3 h-100">
-                    <div class="counter-counting">
-                      <span
-                        class="text-primary fs-2 fw-bold"
-                        data-toggle="counter-up"
-                        >100</span
-                      >
-                      <span class="h1 fw-bold text-primary">+</span>
-                    </div>
-                    <h4 class="mb-0 text-dark">
-                      Successful Projects Delivered
-                    </h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="counter-item bg-light rounded p-3 h-100">
-                    <div class="counter-counting">
-                      <span
-                        class="text-primary fs-2 fw-bold"
-                        data-toggle="counter-up"
-                        >99</span
-                      >
-                      <span class="h1 fw-bold text-primary">+</span>
-                    </div>
-                    <h4 class="mb-0 text-dark">Satisfied Clients Worldwide</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="counter-item bg-light rounded p-3 h-100">
-                    <div class="counter-counting">
-                      <span
-                        class="text-primary fs-2 fw-bold"
-                        data-toggle="counter-up"
-                        >50</span
-                      >
-                      <span class="h1 fw-bold text-primary">+</span>
-                    </div>
-                    <h4 class="mb-0 text-dark">
-                      Innovative Tech Solutions Developed
-                    </h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="counter-item bg-light rounded p-3 h-100">
-                    <div class="counter-counting">
-                      <span
-                        class="text-primary fs-2 fw-bold"
-                        data-toggle="counter-up"
-                        >4</span
-                      >
-                      <span class="h1 fw-bold text-primary">+</span>
-                    </div>
-                    <h4 class="mb-0 text-dark">Years of Industry Experience</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Feature Start -->
-    <div class="container-fluid feature bg-light py-5">
-      <div class="container py-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Our Features</h4>
-          <h1 class="display-4 mb-4">Powering Innovation with Code</h1>
-          <p class="mb-0">
-            At Softorate Coders, we build future-ready solutions with precision,
-            creativity, and expertise. From custom development to scalable and
-            secure applications, we turn ideas into reality! 🚀
-          </p>
-        </div>
-        <div class="row g-4">
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="far fa-handshake fa-3x"></i>
-              </div>
-              <h4 class="mb-4">Innovative Solutions</h4>
-              <p class="mb-4">
-                We craft cutting-edge software tailored to your needs
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.4s"
-          >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fa fa-dollar-sign fa-3x"></i>
-              </div>
-              <h4 class="mb-4">Scalable & Secure</h4>
-              <p class="mb-4">
-                Robust solutions built for performance and security
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.6s"
-          >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fa fa-bullseye fa-3x"></i>
-              </div>
-              <h4 class="mb-4">Custom Development</h4>
-              <p class="mb-4">
-                Tailored web and software solutions for businesses
-              </p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
-            <div class="feature-item p-4 pt-0">
-              <div class="feature-icon p-4 mb-4">
-                <i class="fa fa-headphones fa-3x"></i>
-              </div>
-              <h4 class="mb-4">24/7 Support</h4>
-              <p class="mb-4">Dedicated assistance whenever you need it</p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                >Learn More</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Feature End -->
-
-    <!-- FAQs Start -->
-    <div class="container-fluid faq-section bg-light py-5">
+    <!-- About Story Start -->
+    <div class="container-fluid py-5">
       <div class="container py-5">
         <div class="row g-5 align-items-center">
-          <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="h-100">
-              <div class="mb-5">
-                <h4 class="text-primary">Some Important FAQ's</h4>
-                <h1 class="display-4 mb-0">Everything You Need to Know 🤔</h1>
+          <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+            <h4 class="text-primary">Our Story</h4>
+            <h1 class="display-4 mb-4">Crafting Digital Excellence Since 2020</h1>
+            <p class="mb-4">Softorate was founded with a simple yet powerful vision: to bridge the gap between complex technology and business growth. What started as a small team of passionate developers has grown into a full-service software agency trusted by businesses worldwide.</p>
+            <p class="mb-4">We believe in the transformative power of technology. Every line of code we write, every solution we design, is crafted with the goal of helping our clients succeed in an increasingly digital world.</p>
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-check-circle text-primary fa-2x"></i>
+                  </div>
+                  <div class="ms-3">
+                    <h5>Mission-Driven</h5>
+                    <p class="mb-0">Creating technology that matters</p>
+                  </div>
+                </div>
               </div>
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button border-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Q: What services does Softorate Coders offer?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show active"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body rounded">
-                      A: We specialize in custom software development, web & app
-                      development, enterprise solutions, and AI & cloud
-                      integration.
-                    </div>
+              <div class="col-sm-6">
+                <div class="d-flex">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-check-circle text-primary fa-2x"></i>
                   </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      Q: How does Softorate Coders ensure project quality?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      A: We follow industry best practices, use the latest
-                      technologies, and conduct rigorous testing to deliver
-                      high-quality, scalable solutions.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Q: Can I get a customized solution for my business?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      A: Absolutely! We tailor our services to meet your
-                      specific business needs and ensure seamless integration
-                      with your existing systems.
-                    </div>
+                  <div class="ms-3">
+                    <h5>Client-Focused</h5>
+                    <p class="mb-0">Your success is our success</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
-            <img src="img/faq.png" class="img-fluid w-100" alt="" />
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+            <img src="img/about-company-1.png" class="img-fluid rounded-3" alt="About Softorate" onerror="this.src='https://via.placeholder.com/600x400/0f2027/ffffff?text=About+Softorate'">
           </div>
         </div>
       </div>
     </div>
-    <!-- FAQs End -->
+    <!-- About Story End -->
 
-    <!-- Team Start -->
-    <!-- <div class="container-fluid team py-5">
+    <!-- Mission & Vision Start -->
+    <div class="container-fluid bg-light py-5">
       <div class="container py-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-inline-size: 800px"
-        >
-          <h4 class="text-primary">Our Team</h4>
-          <h1 class="display-4 mb-4">Meet Our Expert Team Members</h1>
-          <p class="mb-0">
-            At Softorate Coders, we build future-ready solutions with precision,
-            creativity, and expertise. From custom development to scalable and
-            secure applications, we turn ideas into reality! 🚀
-          </p>
-        </div>
         <div class="row g-4">
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team-1.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="team-icon">
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-0"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i class="fas fa-bullseye"></i>
               </div>
-              <div class="team-title p-4">
-                <h4 class="mb-0">David James</h4>
-                <p class="mb-0">Profession</p>
-              </div>
+              <h3 class="mb-4">Our Mission</h3>
+              <p class="mb-0">To empower businesses with innovative, scalable, and secure software solutions that drive growth, efficiency, and digital transformation. We strive to make technology accessible and impactful for every client we serve.</p>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.4s"
-          >
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team-2.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="team-icon">
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-0"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i class="fas fa-eye"></i>
               </div>
-              <div class="team-title p-4">
-                <h4 class="mb-0">David James</h4>
-                <p class="mb-0">Profession</p>
-              </div>
+              <h3 class="mb-4">Our Vision</h3>
+              <p class="mb-0">To be the most trusted partner for businesses seeking digital excellence. We envision a world where technology seamlessly integrates with business processes, creating opportunities and solving real-world challenges.</p>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.6s"
-          >
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team-3.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="team-icon">
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-0"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mission & Vision End -->
+
+    <!-- Stats Start - Matching index.html style -->
+    <!-- <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="counter-item">
+              <div class="counter-counting">
+                <span data-toggle="counter-up">100</span>+
               </div>
-              <div class="team-title p-4">
-                <h4 class="mb-0">David James</h4>
-                <p class="mb-0">Profession</p>
-              </div>
+              <h5 class="mb-0">Projects Delivered</h5>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
-            <div class="team-item">
-              <div class="team-img">
-                <img
-                  src="img/team-4.jpg"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="team-icon">
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-2"
-                    href=""
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    class="btn btn-primary btn-sm-square rounded-pill mb-0"
-                    href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
+          <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="counter-item">
+              <div class="counter-counting">
+                <span data-toggle="counter-up">99</span>+
               </div>
-              <div class="team-title p-4">
-                <h4 class="mb-0">David James</h4>
-                <p class="mb-0">Profession</p>
+              <h5 class="mb-0">Happy Clients</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="counter-item">
+              <div class="counter-counting">
+                <span data-toggle="counter-up">50</span>+
               </div>
+              <h5 class="mb-0">Team Members</h5>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="counter-item">
+              <div class="counter-counting">
+                <span data-toggle="counter-up">4</span>+
+              </div>
+              <h5 class="mb-0">Years Experience</h5>
             </div>
           </div>
         </div>
       </div>
     </div> -->
-    <!-- Team End -->
+    <!-- Stats End -->
+
+    <!-- Values Start -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+          <h4 class="text-primary">Our Core Values</h4>
+          <h1 class="display-4 mb-4">What Drives Us Forward</h1>
+          <p class="mb-0">These principles guide every decision we make and every solution we build.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="value-item">
+              <div class="value-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4>Innovation</h4>
+              <p class="mb-0">Constantly pushing boundaries to find better solutions</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="value-item">
+              <div class="value-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h4>Integrity</h4>
+              <p class="mb-0">Honest, transparent, and ethical in all we do</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="value-item">
+              <div class="value-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Collaboration</h4>
+              <p class="mb-0">Working together to achieve exceptional results</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="value-item">
+              <div class="value-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>Excellence</h4>
+              <p class="mb-0">Never settling for anything less than our best</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Values End -->
+
+    <!-- Timeline Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+          <h4 class="text-primary">Our Journey</h4>
+          <h1 class="display-4 mb-4">The Road to Excellence</h1>
+          <p class="mb-0">Every milestone has shaped who we are today.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="timeline">
+              <div class="timeline-item wow fadeInUp" data-wow-delay="0.2s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-year">2020</div>
+                  <h4>The Beginning</h4>
+                  <p class="mb-0">Softorate was founded with a vision to deliver quality software solutions. Started with 2 passionate developers.</p>
+                </div>
+              </div>
+              <div class="timeline-item wow fadeInUp" data-wow-delay="0.4s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-year">2021</div>
+                  <h4>First Major Milestone</h4>
+                  <p class="mb-0">Completed 25+ projects and expanded team to 10 members. Launched our first enterprise solution.</p>
+                </div>
+              </div>
+              <div class="timeline-item wow fadeInUp" data-wow-delay="0.6s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-year">2022</div>
+                  <h4>Expansion & Growth</h4>
+                  <p class="mb-0">Opened new office, grew team to 30+ members. Started offering social media management services.</p>
+                </div>
+              </div>
+              <div class="timeline-item wow fadeInUp" data-wow-delay="0.8s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-year">2023</div>
+                  <h4>Global Recognition</h4>
+                  <p class="mb-0">Served clients across 10+ countries. Launched AI and cloud integration services.</p>
+                </div>
+              </div>
+              <div class="timeline-item wow fadeInUp" data-wow-delay="1.0s">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-year">2024</div>
+                  <h4>Today & Beyond</h4>
+                  <p class="mb-0">100+ projects delivered, 50+ team members, and continuing to innovate every day.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Timeline End -->
+
+    <!-- Team Preview Start -->
+    <!-- <div class="container-fluid bg-light py-5">
+      <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+          <h4 class="text-primary">Our Team</h4>
+          <h1 class="display-4 mb-4">Meet the Experts Behind the Code</h1>
+          <p class="mb-0">Talented individuals passionate about creating exceptional digital experiences.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" class="img-fluid w-100" alt="Team Member" onerror="this.src='https://via.placeholder.com/300x300/0f2027/ffffff?text=Team'">
+                <div class="team-icon">
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="#"><i class="fab fa-github"></i></a>
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-title p-4">
+                <h4 class="mb-0">John Smith</h4>
+                <p class="mb-0">Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-2.jpg" class="img-fluid w-100" alt="Team Member" onerror="this.src='https://via.placeholder.com/300x300/203a43/ffffff?text=Team'">
+                <div class="team-icon">
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="#"><i class="fab fa-github"></i></a>
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-title p-4">
+                <h4 class="mb-0">Sarah Johnson</h4>
+                <p class="mb-0">Technical Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-3.jpg" class="img-fluid w-100" alt="Team Member" onerror="this.src='https://via.placeholder.com/300x300/2c5364/ffffff?text=Team'">
+                <div class="team-icon">
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="#"><i class="fab fa-github"></i></a>
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-title p-4">
+                <h4 class="mb-0">Mike Chen</h4>
+                <p class="mb-0">Lead Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-4.jpg" class="img-fluid w-100" alt="Team Member" onerror="this.src='https://via.placeholder.com/300x300/0f2027/ffffff?text=Team'">
+                <div class="team-icon">
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href="#"><i class="fab fa-github"></i></a>
+                  <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-title p-4">
+                <h4 class="mb-0">Emily Davis</h4>
+                <p class="mb-0">UX Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a href="team.html" class="btn btn-primary rounded-pill py-3 px-5">Meet the Full Team</a>
+        </div>
+      </div>
+    </div> -->
+    <!-- Team Preview End -->
+
+    <!-- CTA Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay="0.2s">
+            <h4 class="text-primary">Ready to Start Your Project?</h4>
+            <h1 class="display-4 mb-4">Let's Build Something Amazing Together</h1>
+            <p class="mb-4">Whether you have a clear vision or need help shaping your ideas, our team is here to help.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5 me-3">Get in Touch</a>
+            <a href="portfolio.html" class="btn btn-outline-primary rounded-pill py-3 px-5">View Our Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -657,9 +647,7 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation
-                solutions—high performance, scalable, and user-friendly to help
-                your business grow.
+                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -668,9 +656,6 @@
                   target="_blank"
                   ><i class="fab fa-github"></i
                 ></a>
-                <!-- <a class="btn btn-sm-square rounded-circle me-2" href="#"
-                  ><i class="fab fa-facebook-f"></i
-                ></a> -->
                 <a
                   class="btn btn-sm-square rounded-circle me-2"
                   href="https://www.instagram.com/_softorate/"
@@ -691,21 +676,12 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="/about.html"
-                ><i class="fas fa-angle-right me-2"></i> About Us</a
-              >
-              <a href="/feature.html"
-                ><i class="fas fa-angle-right me-2"></i> Features</a
-              >
-              <a href="/service.html"
-                ><i class="fas fa-angle-right me-2"></i> Services</a
-              >
-              <a href="/FAQ.html"
-                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
-              >
-              <a href="/contact.html"
-                ><i class="fas fa-angle-right me-2"></i> Contact</a
-              >
+              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
+              <!-- <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a> -->
+              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
             </div>
           </div>
 
@@ -798,8 +774,7 @@
           <div class="col-md-6 text-center text-md-end mb-md-0">
             <span class="text-body"
               ><a href="#" class="border-bottom text-white"
-                ><i class="fas fa-copyright text-light me-2"></i>Softorate
-                Coder</a
+                ><i class="fas fa-copyright text-light me-2"></i>Softorate</a
               >, All right reserved.</span
             >
           </div>
@@ -825,5 +800,23 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Hide spinner
+        setTimeout(() => {
+          document.getElementById('spinner').classList.remove('show');
+        }, 1000);
+        
+        // Initialize WOW
+        new WOW().init();
+        
+        // Counter Up initialization
+        $('[data-toggle="counter-up"]').counterUp({
+          delay: 10,
+          time: 2000
+        });
+      });
+    </script>
   </body>
 </html>

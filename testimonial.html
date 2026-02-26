@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>softorate.com</title>
+    <title>Client Testimonials - Softorate Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta content="client testimonials, customer reviews, software agency reviews, client feedback, success stories, legal firm testimonials, real estate testimonials, F&B testimonials" name="keywords" />
+    <meta content="Read what our clients say about working with Softorate. Real feedback from businesses across legal, real estate, F&B, education, and technology sectors." name="description" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,6 +35,310 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+      /* Page Header - Matching hero section style */
+      .page-header {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 60px 40px;
+        border-radius: 18px;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        text-align: center;
+      }
+      
+      .page-header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      
+      .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.95;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      
+      .breadcrumb {
+        background: transparent;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .breadcrumb-item,
+      .breadcrumb-item a {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      
+      .breadcrumb-item.active {
+        color: #fff;
+      }
+      
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      
+      /* Stats Section */
+      .stats-section {
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        color: white;
+        padding: 60px 0;
+        margin: 40px 0;
+        border-radius: 18px;
+      }
+      
+      .stat-item {
+        text-align: center;
+      }
+      
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      
+      .stat-label {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+      
+      /* Industry Filter */
+      .industry-filter {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+      
+      .filter-btn {
+        background: transparent;
+        border: 2px solid var(--bs-primary);
+        color: var(--bs-primary);
+        padding: 10px 25px;
+        margin: 5px;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        cursor: pointer;
+        display: inline-block;
+      }
+      
+      .filter-btn:hover,
+      .filter-btn.active {
+        background: var(--bs-primary);
+        color: white;
+      }
+      
+      /* Testimonial Cards */
+      .testimonial-section {
+        padding: 40px 0;
+      }
+      
+      .industry-title {
+        margin: 40px 0 30px;
+        position: relative;
+        padding-bottom: 15px;
+        color: #16243d;
+        font-weight: 700;
+      }
+      
+      .industry-title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+      }
+      
+      .testimonial-card {
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 100%;
+        position: relative;
+        border-left: 4px solid transparent;
+        background: linear-gradient(white, white) padding-box,
+                    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        border-left: 4px solid transparent;
+      }
+      
+      .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      }
+      
+      .testimonial-card::before {
+        content: '\201C';
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        font-size: 120px;
+        font-family: serif;
+        color: rgba(1, 95, 201, 0.1);
+        z-index: 1;
+      }
+      
+      .client-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 2;
+      }
+      
+      .client-avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+        border: 3px solid var(--bs-primary);
+        padding: 3px;
+        background: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .client-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      
+      .client-avatar .initials {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      
+      .client-details h4 {
+        color: #16243d;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        font-weight: 700;
+      }
+      
+      .client-details .position {
+        color: var(--bs-primary);
+        font-size: 0.9rem;
+        margin-bottom: 2px;
+        font-weight: 600;
+      }
+      
+      .client-details .company {
+        color: #787878;
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+      }
+      
+      .client-details .website {
+        color: #787878;
+        font-size: 0.8rem;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      
+      .client-details .website:hover {
+        color: var(--bs-primary);
+      }
+      
+      .rating {
+        color: #ffc107;
+        margin-bottom: 15px;
+      }
+      
+      .testimonial-content {
+        position: relative;
+        z-index: 2;
+      }
+      
+      .testimonial-content p {
+        color: #787878;
+        line-height: 1.8;
+        font-style: italic;
+        margin-bottom: 0;
+      }
+      
+      /* Industry Icons */
+      .industry-icon {
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      
+      .industry-legal {
+        background: #e3f2fd;
+        color: #1976d2;
+      }
+      
+      .industry-realestate {
+        background: #e8f5e9;
+        color: #388e3c;
+      }
+      
+      .industry-fnb {
+        background: #fff3e0;
+        color: #f57c00;
+      }
+      
+      .industry-tech {
+        background: #f3e5f5;
+        color: #8e24aa;
+      }
+      
+      .industry-education {
+        background: #e0f2f1;
+        color: #009688;
+      }
+      
+      @media (max-width: 768px) {
+        .page-header {
+          padding: 40px 25px;
+        }
+        
+        .page-header h1 {
+          font-size: 2rem;
+        }
+        
+        .client-info {
+          flex-direction: column;
+          text-align: center;
+        }
+        
+        .client-avatar {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+        
+        .industry-title:after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -53,15 +357,14 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar Start -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="#" class="navbar-brand p-0">
+          <a href="index.html" class="navbar-brand p-0">
             <h1 class="text-primary mb-0">
               <i class="fab fa-free-code-camp me-2"></i> Softorate
             </h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
           </a>
           <button
             class="navbar-toggler"
@@ -73,9 +376,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav bg-white mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
+              <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+              <a href="blog.html" class="nav-item nav-link">Blog</a>
+              <a href="testimonial.html" class="nav-item nav-link active">Testimonials</a>
               <a href="FAQ.html" class="nav-item nav-link">FAQs</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
@@ -88,7 +394,7 @@
             >
               <i class="fa fa-phone-alt fa-2x"></i>
               <div class="position-absolute" style="top: 7px; right: 12px">
-                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                <span><i class="fa fa-comment-dots"></i></span>
               </div>
             </a>
             <div class="d-flex flex-column ms-3">
@@ -101,183 +407,535 @@
         </nav>
       </div>
     </div>
-    <!-- Navbar & Hero End -->
+    <!-- Navbar End -->
 
-    <!-- Modal Search Start -->
-    <!-- <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center bg-primary">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span
-                id="search-icon-1"
-                class="btn bg-light border nput-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Client Testimonials</h1>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">Real feedback from businesses we've helped transform through innovative software solutions</p>
+        <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Testimonials</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <!-- <div class="container-fluid py-3">
+      <div class="container">
+        <div class="stats-section wow fadeInUp" data-wow-delay="0.2s">
+          <div class="row g-4">
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number"><span class="counter" data-target="50">0</span>+</div>
+                <div class="stat-label">Happy Clients</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number"><span class="counter" data-target="100">0</span>+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number"><span class="counter" data-target="12">0</span>+</div>
+                <div class="stat-label">Industries Served</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="stat-item">
+                <div class="stat-number"><span class="counter" data-target="98">0</span>%</div>
+                <div class="stat-label">Client Satisfaction</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div> -->
-    <!-- Modal Search End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-      <div class="container text-center py-5" style="max-width: 900px">
-        <h4
-          class="text-white display-4 mb-4 wow fadeInDown"
-          data-wow-delay="0.1s"
-        >
-          Our Testimonial
-        </h4>
+    <!-- Industry Filter -->
+    <div class="container">
+      <div class="industry-filter wow fadeInUp" data-wow-delay="0.2s">
+        <button class="filter-btn active" data-filter="all">All Industries</button>
+        <button class="filter-btn" data-filter="legal">Legal</button>
+        <button class="filter-btn" data-filter="realestate">Real Estate</button>
+        <button class="filter-btn" data-filter="fnb">F&B / Cafe</button>
+        <button class="filter-btn" data-filter="tech">Tech / Startup</button>
+        <button class="filter-btn" data-filter="education">Education</button>
       </div>
     </div>
-    <!-- Header End -->
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid testimonial py-5">
-      <div class="container py-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Testimonial</h4>
-          <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
-          <p class="mb-0">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-            adipisci facilis cupiditate recusandae aperiam temporibus
-            Softorateris itaque quis facere, numquam, ad culpa deserunt sint
-            dolorem autem obcaecati, ipsam mollitia hic.
-          </p>
-        </div>
-        <div
-          class="owl-carousel testimonial-carousel wow fadeInUp"
-          data-wow-delay="0.2s"
-        >
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="img/testimonial-1.jpg"
-                    class="img-fluid h-100 rounded"
-                    style="object-fit: cover"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-8 col-lg-8 col-xl-9">
-                <div class="d-flex flex-column my-auto text-start p-4">
-                  <h4 class="text-dark mb-0">Client Name</h4>
-                  <p class="mb-3">Profession</p>
-                  <div class="d-flex text-primary mb-3">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+    <!-- Testimonials Content -->
+    <div class="container-fluid testimonial-section">
+      <div class="container">
+        <!-- Legal Industry -->
+        <div class="industry-section" data-industry="legal">
+          <h2 class="industry-title wow fadeInUp" data-wow-delay="0.2s">
+            <i class="fas fa-gavel me-3 text-primary"></i>Legal & Law Firms
+          </h2>
+          <div class="row">
+            <!-- Mr. Jayesh Badnakhe - Solomon & Co. -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">JB</div>
                   </div>
-                  <p class="mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim error molestiae aut modi corrupti fugit eaque rem nulla
-                    incidunt temporibus quisquam,
-                  </p>
+                  <div class="client-details">
+                    <h4>Mr. Jayesh Badnakhe</h4>
+                    <div class="position">Partner</div>
+                    <div class="company">Solomon & Co., Pune</div>
+                    <span class="industry-icon industry-legal"><i class="fas fa-gavel me-1"></i>Legal</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"In the legal profession, credibility and clarity are everything. When we decided to strengthen our digital presence, we wanted a website that reflected our legacy, professionalism, and depth of expertise. Softorate understood these expectations perfectly. Their team ensured that our website was structured with precision — clear practice areas, detailed team profiles, and an interface that communicates trust and authority. They handled the process with confidentiality and professionalism, which is crucial in our line of work. The transition to a stronger online presence has significantly improved how clients and corporate stakeholders perceive and reach us. Softorate delivered exactly what a law firm requires — sophistication, security, and simplicity."</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="img/testimonial-2.jpg"
-                    class="img-fluid h-100 rounded"
-                    style="object-fit: cover"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-8 col-lg-8 col-xl-9">
-                <div class="d-flex flex-column my-auto text-start p-4">
-                  <h4 class="text-dark mb-0">Client Name</h4>
-                  <p class="mb-3">Profession</p>
-                  <div class="d-flex text-primary mb-3">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star text-body"></i>
+
+            <!-- Amit Dhingra - DUA Associates -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">AD</div>
                   </div>
-                  <p class="mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim error molestiae aut modi corrupti fugit eaque rem nulla
-                    incidunt temporibus quisquam,
-                  </p>
+                  <div class="client-details">
+                    <h4>Amit Dhingra</h4>
+                    <div class="position">Partner</div>
+                    <div class="company">DUA Associates</div>
+                    <span class="industry-icon industry-legal"><i class="fas fa-gavel me-1"></i>Legal</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"For a law firm, a website is not just a digital brochure — it is a reflection of its standards and reputation. Softorate approached our project with strategic insight and a clear understanding of how legal services should be presented online. They ensured the website was structured in a way that communicates our areas of practice, experience, and thought leadership effectively. The design remains professional and understated, exactly as a reputed law firm should be represented. Their team was responsive, detail-oriented, and efficient throughout the process. Going live with our updated digital presence has strengthened our visibility and accessibility for clients across jurisdictions."</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="img/testimonial-3.jpg"
-                    class="img-fluid h-100 rounded"
-                    style="object-fit: cover"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-8 col-lg-8 col-xl-9">
-                <div class="d-flex flex-column my-auto text-start p-4">
-                  <h4 class="text-dark mb-0">Client Name</h4>
-                  <p class="mb-3">Profession</p>
-                  <div class="d-flex text-primary mb-3">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star text-body"></i>
-                    <i class="fas fa-star text-body"></i>
+
+            <!-- Rishabh Gandhi - RGAA -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">RG</div>
                   </div>
-                  <p class="mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim error molestiae aut modi corrupti fugit eaque rem nulla
-                    incidunt temporibus quisquam,
-                  </p>
+                  <div class="client-details">
+                    <h4>Rishabh Gandhi</h4>
+                    <div class="position">Founder</div>
+                    <div class="company">RGAA (Rishabh Gandhi & Associates), Pune</div>
+                    <span class="industry-icon industry-legal"><i class="fas fa-gavel me-1"></i>Legal</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"As a growing law firm, it was important for us to build a digital identity that reflects our modern approach while maintaining the integrity of the profession. Softorate helped us translate that vision into a strong, well-structured website. From content alignment to clean, professional design, they ensured every element projected credibility and trust. The process was seamless, and the team was proactive in guiding us through technical aspects in a clear and efficient manner. Since launching the website, we have seen improved inquiries and a stronger brand presence in Pune's legal landscape. I would highly recommend Softorate to firms looking to establish or upgrade their online presence."</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Real Estate Industry -->
+        <div class="industry-section" data-industry="realestate">
+          <h2 class="industry-title wow fadeInUp" data-wow-delay="0.2s">
+            <i class="fas fa-building me-3 text-primary"></i>Real Estate
+          </h2>
+          <div class="row">
+            <!-- Leena Loungani - Qubic Properties -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">LL</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Leena Loungani</h4>
+                    <div class="position">Founder & Managing Director</div>
+                    <div class="company">Qubic Properties</div>
+                    <span class="industry-icon industry-realestate"><i class="fas fa-building me-1"></i>Real Estate</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"In the real estate industry, credibility and presentation play a crucial role in building client trust. When we decided to strengthen our online presence, we needed a website that reflected our professionalism, portfolio strength, and client-first approach. Softorate delivered exactly that. Their team understood the nuances of real estate marketing — from showcasing projects clearly to structuring information in a way that builds confidence among buyers and investors. The design is clean, modern, and aligned with our brand positioning. Since going live, our digital presence has become much stronger, and clients now find it easier to explore our offerings. Softorate made the entire journey smooth and efficient."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mr. Deepak Panjabi - Shevi Group -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">DP</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Mr. Deepak Panjabi</h4>
+                    <div class="position">Founder & Director</div>
+                    <div class="company">Shevi Group</div>
+                    <span class="industry-icon industry-realestate"><i class="fas fa-building me-1"></i>Real Estate</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"For a real estate brand, the website is often the first interaction a potential buyer has with the company. We wanted that first impression to be impactful, structured, and trustworthy. Softorate helped us achieve exactly that. Their team carefully designed our website to showcase our projects, values, and track record with clarity and elegance. They were professional in their execution and attentive to every detail — from layout to performance. The launch of our website has significantly enhanced our brand image and improved inbound inquiries. I would confidently recommend Softorate to any real estate company looking to build a strong digital foundation."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mr. Sachin Garg - Saheel Properties -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">SG</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Mr. Sachin Garg</h4>
+                    <div class="position">Chairman & Founder</div>
+                    <div class="company">Saheel Properties</div>
+                    <span class="industry-icon industry-realestate"><i class="fas fa-building me-1"></i>Real Estate</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"Real estate today demands not just physical presence but also a strong digital footprint. We wanted a website that represents our legacy, scale, and commitment to quality. Softorate understood our vision and translated it into a powerful online platform. The website is structured to communicate our journey, completed projects, and ongoing developments in a seamless manner. Their team ensured the platform is user-friendly, visually refined, and aligned with our brand ethos. Since the website launch, our brand visibility and credibility have strengthened significantly. Softorate proved to be a reliable and strategic digital partner."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- F&B / Cafe Industry -->
+        <div class="industry-section" data-industry="fnb">
+          <h2 class="industry-title wow fadeInUp" data-wow-delay="0.2s">
+            <i class="fas fa-utensils me-3 text-primary"></i>F&B / Cafe
+          </h2>
+          <div class="row">
+            <!-- Pranav Kotak - AUR Coffee -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">PK</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Pranav Kotak</h4>
+                    <div class="position">Founder</div>
+                    <div class="company">AUR Coffee, Pune</div>
+                    <span class="industry-icon industry-fnb"><i class="fas fa-coffee me-1"></i>F&B</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"When we started AUR Coffee, our focus was always on creating a minimal, experience-driven café space. We wanted our website to reflect that same warmth and design philosophy. Softorate truly understood our vision and translated it beautifully into a digital experience. From structuring our brand story to building a clean, high-performance website, their team handled everything seamlessly. The process was smooth, timelines were respected, and the final result felt authentically 'AUR'. Going live felt like opening another outlet — this time online. If you're a café founder looking to establish a strong digital presence without the usual tech headaches, Softorate is the right team to trust."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pravishta Nadella - Katha Coffee -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">PN</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Pravishta Nadella</h4>
+                    <div class="position">Co-Founder</div>
+                    <div class="company">Katha Coffee, Hyderabad</div>
+                    <span class="industry-icon industry-fnb"><i class="fas fa-coffee me-1"></i>F&B</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"At Katha Coffee, storytelling is at the heart of our brand. We wanted our website to narrate our journey, our sourcing philosophy, and the experience we create for our community. Softorate didn't just build us a website — they helped us bring our story to life digitally. Their clarity in communication, attention to design details, and understanding of the F&B space made the entire journey effortless. They ensured our website was fast, responsive, and optimized so customers could easily discover us online. Launching our website with Softorate was a big milestone for Katha Coffee. It has strengthened our credibility and helped us reach a wider audience beyond Hyderabad."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Taha Khan - Le Flamington -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">TK</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Taha Khan</h4>
+                    <div class="position">Owner</div>
+                    <div class="company">Le Flamington, Pune</div>
+                    <span class="industry-icon industry-fnb"><i class="fas fa-cake me-1"></i>F&B</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"As a dessert and café brand, visual appeal is everything for us. We needed a website that looked as premium as our products and made online discovery simple for our customers. Softorate exceeded our expectations. They understood our brand personality immediately and created a website that feels elegant, modern, and easy to navigate. From design to deployment, everything was handled professionally and efficiently. Since going live, our brand presence has become much stronger. Customers now find us easily online, and it has helped build more trust in the brand. I highly recommend Softorate to any F&B founder looking to establish a strong digital foundation."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech / Startup Industry -->
+        <div class="industry-section" data-industry="tech">
+          <h2 class="industry-title wow fadeInUp" data-wow-delay="0.2s">
+            <i class="fas fa-laptop-code me-3 text-primary"></i>Tech & Startups
+          </h2>
+          <div class="row">
+            <!-- Shubham Sagar - Investment Banker & Author -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">SS</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Shubham Sagar</h4>
+                    <div class="position">Investment Banker & Author</div>
+                    <div class="company">Effortless Game Theory</div>
+                    <a href="https://shubhamsagar.com" target="_blank" class="website">shubhamsagar.com</a>
+                    <span class="industry-icon industry-tech"><i class="fas fa-chart-line me-1"></i>Finance</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"As an Investment Banker and author, I require a very high level of accuracy, strategy, and design elegance in all my endeavors. Softorate has met this requirement perfectly in creating my website, shubhamsagar.com. The team at Softorate has been outstanding in capturing the intricate themes of my writings, including the concepts in Effortless Game Theory, and creating a website experience that is both functional and effective. They have achieved this feat by creating a flawless blend of a professional platform for my investment banking background and a creative platform for my writing. The strategy and efficiency of Softorate have been impeccable. They have not only offered a service but also a partnership that has resulted in the creation of a technically sound website with a seamless and elegant user interface. I would recommend Softorate to any professional who is passionate about excellence and requires a website that mirrors their intellectual and professional achievements."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sushant More - TECHNOPATH -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">SM</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Sushant More</h4>
+                    <div class="position">Founder & CEO</div>
+                    <div class="company">TECHNOPATH</div>
+                    <a href="https://technopath.in" target="_blank" class="website">technopath.in</a>
+                    <span class="industry-icon industry-tech"><i class="fas fa-microchip me-1"></i>Tech</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"We at TechnoPath.in are extremely pleased with the outstanding website designed and developed by Softorate. From the initial consultation to the final launch, their team demonstrated exceptional creativity, technical expertise, and attention to detail. They perfectly understood our vision and transformed it into a modern, user-friendly, and performance-driven website that truly represents our brand. The design is clean, professional, and optimized for both user experience and business growth. What impressed us most was their commitment to quality, timely delivery, and proactive communication throughout the project. Their strategic approach and innovative ideas added immense value beyond just design. I highly recommend Softorate to anyone looking for a reliable and talented web design partner."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rushikesh Rane - Tatya App -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">RR</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Rushikesh Rane</h4>
+                    <div class="position">Founder</div>
+                    <div class="company">Tatya App</div>
+                    <span class="industry-icon industry-tech"><i class="fas fa-mobile-alt me-1"></i>Mobile App</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"We at Tatya App are extremely pleased with the outstanding app development services provided by Softorate. From concept to deployment, their team demonstrated strong technical expertise, creativity, and a clear understanding of our requirements. They transformed our vision into a smooth, user-friendly, and high-performing mobile application that truly represents our brand. Their attention to detail, timely communication, and commitment to quality made the entire development process seamless. The app runs efficiently, offers an excellent user experience, and has helped us better engage with our users. We highly recommend Softorate to anyone looking for reliable and innovative app development solutions."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education & Drone Technology -->
+        <div class="industry-section" data-industry="education">
+          <h2 class="industry-title wow fadeInUp" data-wow-delay="0.2s">
+            <i class="fas fa-graduation-cap me-3 text-primary"></i>Education & Drone Technology
+          </h2>
+          <div class="row">
+            <!-- Rushikesh Rane - Ujjwal Viman -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">RR</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Rushikesh Rane</h4>
+                    <div class="position">Founder</div>
+                    <div class="company">Ujjwal Viman</div>
+                    <span class="industry-icon industry-education"><i class="fas fa-plane me-1"></i>Drone Tech</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"We at Ujjwal Viman are delighted to share our experience working with Softorate for the design and development of our website. From the very beginning, their team understood our vision and translated it into a clean, modern, and highly functional website that truly represents our brand. Their creative approach, technical expertise, and attention to detail ensured that every aspect of the site was thoughtfully crafted. The process was smooth and transparent, with timely communication and consistent support at every stage. The final website not only looks professional but also offers a seamless user experience across all devices, helping us better connect with our audience. We sincerely appreciate the dedication and professionalism shown by Softorate and would highly recommend their services to anyone looking for high-quality web design and development solutions."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rushikesh Rane - Krushi Drone Shala -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">RR</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Rushikesh Rane</h4>
+                    <div class="position">Founder</div>
+                    <div class="company">Krushi Drone Shala</div>
+                    <span class="industry-icon industry-education"><i class="fas fa-tractor me-1"></i>Agri-Tech</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"We at Krushi Drone Shala are extremely pleased with the outstanding website designed and developed by Softorate. From the initial consultation to the final launch, their team demonstrated professionalism, creativity, and a deep understanding of our vision. As an organization dedicated to agricultural drone training and innovation, it was important for us to have a website that clearly communicates our mission, courses, and services. Softorate delivered a modern, user-friendly, and visually impressive platform that truly represents Krushi Drone Shala's identity and values. Their attention to detail, responsiveness, and technical expertise made the entire process smooth and efficient. The website not only looks excellent but also performs seamlessly across devices, helping us connect better with students, farmers, and industry partners. We highly recommend Softorate to any organization looking for reliable and innovative web design services."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rushikesh Rane - Drone Bajar -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="testimonial-card">
+                <div class="client-info">
+                  <div class="client-avatar">
+                    <div class="initials">RR</div>
+                  </div>
+                  <div class="client-details">
+                    <h4>Rushikesh Rane</h4>
+                    <div class="position">Founder</div>
+                    <div class="company">Drone Bajar</div>
+                    <span class="industry-icon industry-education"><i class="fas fa-shopping-cart me-1"></i>E-Commerce</span>
+                  </div>
+                </div>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="testimonial-content">
+                  <p>"We at Drone Bajar are extremely satisfied with the website designed and developed by Softorate. Their team clearly understood our business requirements and delivered a modern, visually appealing, and highly functional website that perfectly represents our brand in the drone industry. The layout, product presentation, and overall user experience were thoughtfully designed to ensure easy navigation for our customers. Throughout the project, their professionalism, timely communication, and technical expertise stood out. The website is fast, responsive, and works seamlessly across all devices, significantly strengthening our online presence. We truly appreciate the dedication and quality work delivered by Softorate and highly recommend them for website design and development services."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Testimonial End -->
+
+    <!-- CTA Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay="0.2s">
+            <h4 class="text-primary">Ready to Join Our Happy Clients?</h4>
+            <h2 class="mb-4">Let's Create Your Success Story</h2>
+            <p class="mb-4">Whether you have a clear vision or need help shaping your ideas, our team is ready to help you achieve your goals.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5 me-3">Start Your Project</a>
+            <a href="portfolio.html" class="btn btn-outline-primary rounded-pill py-3 px-5">View Our Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -292,9 +950,7 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation
-                solutions—high performance, scalable, and user-friendly to help
-                your business grow.
+                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -303,9 +959,6 @@
                   target="_blank"
                   ><i class="fab fa-github"></i
                 ></a>
-                <!-- <a class="btn btn-sm-square rounded-circle me-2" href="#"
-                  ><i class="fab fa-facebook-f"></i
-                ></a> -->
                 <a
                   class="btn btn-sm-square rounded-circle me-2"
                   href="https://www.instagram.com/_softorate/"
@@ -326,21 +979,14 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="/about.html"
-                ><i class="fas fa-angle-right me-2"></i> About Us</a
-              >
-              <a href="/feature.html"
-                ><i class="fas fa-angle-right me-2"></i> Features</a
-              >
-              <a href="/service.html"
-                ><i class="fas fa-angle-right me-2"></i> Services</a
-              >
-              <a href="/FAQ.html"
-                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
-              >
-              <a href="/contact.html"
-                ><i class="fas fa-angle-right me-2"></i> Contact</a
-              >
+              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
+              <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
+              <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonials</a>
+              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+              <a href="team.html"><i class="fas fa-angle-right me-2"></i> Our Team</a>
             </div>
           </div>
 
@@ -433,8 +1079,7 @@
           <div class="col-md-6 text-center text-md-end mb-md-0">
             <span class="text-body"
               ><a href="#" class="border-bottom text-white"
-                ><i class="fas fa-copyright text-light me-2"></i>Softorate
-                Coder</a
+                ><i class="fas fa-copyright text-light me-2"></i>Softorate</a
               >, All right reserved.</span
             >
           </div>
@@ -460,5 +1105,52 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Hide spinner
+        setTimeout(() => {
+          document.getElementById('spinner').classList.remove('show');
+        }, 1000);
+        
+        // Initialize WOW
+        new WOW().init();
+        
+        // Counter Up initialization
+        $('[data-toggle="counter-up"]').counterUp({
+          delay: 10,
+          time: 2000
+        });
+        
+        // Industry filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const industrySections = document.querySelectorAll('.industry-section');
+        
+        filterButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            const filterValue = button.getAttribute('data-filter');
+            
+            if (filterValue === 'all') {
+              industrySections.forEach(section => {
+                section.style.display = 'block';
+              });
+            } else {
+              industrySections.forEach(section => {
+                if (section.getAttribute('data-industry') === filterValue) {
+                  section.style.display = 'block';
+                } else {
+                  section.style.display = 'none';
+                }
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

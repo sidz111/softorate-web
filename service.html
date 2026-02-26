@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>softorate.com</title>
+    <title>Services - Softorate Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+    <meta content="software development services, web development, mobile app development, social media management, cloud solutions" name="keywords" />
+    <meta content="Explore our comprehensive software solutions including web development, mobile apps, social media management, cloud integration, and custom software development." name="description" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,6 +35,227 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+      /* Page Header - Matching hero section style from index.html */
+      .page-header {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 60px 40px;
+        border-radius: 18px;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        color: #ffffff;
+        text-align: center;
+      }
+      
+      .page-header h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      
+      .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.95;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      
+      .breadcrumb {
+        background: transparent;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .breadcrumb-item,
+      .breadcrumb-item a {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      
+      .breadcrumb-item.active {
+        color: #fff;
+      }
+      
+      .breadcrumb-item + .breadcrumb-item::before {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      
+      /* Service Card Enhancements */
+      .service-item {
+        transition: 0.3s;
+        height: 100%;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      
+      .service-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      }
+      
+      .service-img {
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+      }
+      
+      .service-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+      }
+      
+      .service-item:hover .service-img img {
+        transform: scale(1.1);
+      }
+      
+      .service-icon {
+        position: absolute;
+        bottom: -30px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        z-index: 2;
+      }
+      
+      .service-item:hover .service-icon {
+        transform: rotate(360deg);
+        background: var(--bs-primary);
+      }
+      
+      .service-content {
+        padding: 30px 20px 20px;
+        position: relative;
+      }
+      
+      .service-content h4 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        color: #16243d;
+      }
+      
+      .service-content p {
+        color: #787878;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+      
+      .service-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px;
+      }
+      
+      .service-features li {
+        padding: 5px 0;
+        color: #666;
+        font-size: 0.95rem;
+      }
+      
+      .service-features li i {
+        color: var(--bs-primary);
+        margin-right: 8px;
+        font-size: 0.8rem;
+      }
+      
+      /* Process Section */
+      .process-step {
+        text-align: center;
+        padding: 30px 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        height: 100%;
+        position: relative;
+      }
+      
+      .process-step:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+      }
+      
+      .step-number {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      
+      .process-step h4 {
+        margin-bottom: 15px;
+        color: #16243d;
+      }
+      
+      .process-step p {
+        color: #787878;
+        margin-bottom: 0;
+      }
+      
+      /* Technologies Section */
+      .tech-item {
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+      }
+      
+      .tech-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      
+      .tech-icon {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: var(--bs-primary);
+      }
+      
+      .tech-item h5 {
+        font-size: 1rem;
+        margin-bottom: 0;
+        color: #16243d;
+      }
+      
+      @media (max-width: 768px) {
+        .page-header {
+          padding: 40px 25px;
+        }
+        
+        .page-header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -53,15 +274,14 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Navbar & Hero Start -->
+    <!-- Navbar Start -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="#" class="navbar-brand p-0">
+          <a href="index.html" class="navbar-brand p-0">
             <h1 class="text-primary mb-0">
               <i class="fab fa-free-code-camp me-2"></i> Softorate
             </h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
           </a>
           <button
             class="navbar-toggler"
@@ -73,9 +293,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav bg-white mx-0 mx-lg-auto">
-              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
-              <a href="service.html" class="nav-item nav-link">Services</a>
+              <a href="service.html" class="nav-item nav-link active">Services</a>
+              <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+              <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
               <a href="FAQ.html" class="nav-item nav-link">FAQs</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
@@ -88,7 +310,7 @@
             >
               <i class="fa fa-phone-alt fa-2x"></i>
               <div class="position-absolute" style="top: 7px; right: 12px">
-                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                <span><i class="fa fa-comment-dots"></i></span>
               </div>
             </a>
             <div class="d-flex flex-column ms-3">
@@ -101,330 +323,335 @@
         </nav>
       </div>
     </div>
-    <!-- Navbar & Hero End -->
+    <!-- Navbar End -->
 
-    <!-- Modal Search Start -->
-    <!-- <div
-      class="modal fade"
-      id="searchModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Search by keyword
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body d-flex align-items-center bg-primary">
-            <div class="input-group w-75 mx-auto d-flex">
-              <input
-                type="search"
-                class="form-control p-3"
-                placeholder="keywords"
-                aria-describedby="search-icon-1"
-              />
-              <span
-                id="search-icon-1"
-                class="btn bg-light border nput-group-text p-3"
-                ><i class="fa fa-search"></i
-              ></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- Modal Search End -->
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-      <div class="container text-center py-5" style="max-width: 900px">
-        <h4
-          class="text-white display-4 mb-4 wow fadeInDown"
-          data-wow-delay="0.1s"
-        >
-          Our Services
-        </h4>
+    <!-- Page Header - Matching hero section style -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Our Services</h1>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">Comprehensive software solutions tailored to your business needs</p>
+        <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Services</li>
+          </ol>
+        </nav>
       </div>
     </div>
-    <!-- Header End -->
 
-    <!-- Service Start -->
-    <div class="container-fluid service py-5">
+    <!-- Services Overview Start -->
+    <div class="container-fluid py-5">
       <div class="container py-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Our Services</h4>
-          <h1 class="display-4 mb-4">Transforming Ideas into Reality 🚀</h1>
-          <p class="mb-0">
-            At Softorate Coders, we offer top-notch development services to help
-            businesses thrive in the digital world. Our expertise ensures
-            innovative, scalable, and high-performance solutions tailored to
-            your needs.
-          </p>
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+          <h4 class="text-primary">What We Offer</h4>
+          <h1 class="display-4 mb-4">Transforming Ideas into Digital Reality</h1>
+          <p class="mb-0">From concept to deployment, we provide end-to-end software development services that help businesses innovate, scale, and succeed in the digital age.</p>
         </div>
-        <div class="row g-4 justify-content-center">
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.2s"
-          >
+
+        <div class="row g-4">
+          <!-- Service 1 - Custom Software -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="service-item">
               <div class="service-img">
-                <img
-                  src="img/custom-software.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-users fa-2x"></i>
+                <img src="img/custom-software.png" class="img-fluid w-100" alt="Custom Software Development" onerror="this.src='https://via.placeholder.com/400x300/0f2027/ffffff?text=Custom+Software'">
+                <div class="service-icon">
+                  <i class="fas fa-laptop-code"></i>
                 </div>
               </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4"
-                    >Custom Software Development</a
-                  >
-                  <p class="mb-4">
-                    Tailored solutions to streamline your business operations.
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
+              <div class="service-content">
+                <h4>Custom Software Development</h4>
+                <p>Tailored solutions designed to streamline your unique business processes and drive efficiency.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Enterprise Applications</li>
+                  <li><i class="fas fa-check"></i> Business Process Automation</li>
+                  <li><i class="fas fa-check"></i> Legacy System Integration</li>
+                </ul>
+                <a href="#custom-software" class="btn btn-primary rounded-pill py-2 px-4" onclick="showServiceDetail('custom')">Learn More</a>
               </div>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.4s"
-          >
+
+          <!-- Service 2 - Web & App Development -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="service-item">
               <div class="service-img">
-                <img
-                  src="img/web-app-dev.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-hospital fa-2x"></i>
+                <img src="img/web-app-dev.png" class="img-fluid w-100" alt="Web & App Development" onerror="this.src='https://via.placeholder.com/400x300/203a43/ffffff?text=Web+%26+App+Dev'">
+                <div class="service-icon">
+                  <i class="fas fa-mobile-alt"></i>
                 </div>
               </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4"
-                    >Web & App Development</a
-                  >
-                  <p class="mb-4">
-                    Modern, responsive, and user-friendly applications.
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
+              <div class="service-content">
+                <h4>Web & Mobile App Development</h4>
+                <p>Modern, responsive applications that provide seamless experiences across all devices.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Progressive Web Apps</li>
+                  <li><i class="fas fa-check"></i> iOS & Android Native Apps</li>
+                  <li><i class="fas fa-check"></i> Cross-Platform Solutions</li>
+                </ul>
+                <a href="#web-app" class="btn btn-primary rounded-pill py-2 px-4" onclick="showServiceDetail('web')">Learn More</a>
               </div>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.6s"
-          >
+
+          <!-- Service 3 - Social Media Management -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="service-item">
               <div class="service-img">
-                <img
-                  src="img/enterprise-sol.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-car fa-2x"></i>
+                <img src="img/enterprise-sol.png" class="img-fluid w-100" alt="Social Media Management" onerror="this.src='https://via.placeholder.com/400x300/2c5364/ffffff?text=Social+Media'">
+                <div class="service-icon">
+                  <i class="fas fa-hashtag"></i>
                 </div>
               </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4">
-                    Enterprise Solutions</a
-                  >
-                  <p class="mb-4">
-                    Scalable and secure systems for growing businesses.
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
+              <div class="service-content">
+                <h4>Social Media Management</h4>
+                <p>Strategic social media solutions to build your brand and engage with your audience effectively.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Content Strategy</li>
+                  <li><i class="fas fa-check"></i> Community Management</li>
+                  <li><i class="fas fa-check"></i> Analytics & Reporting</li>
+                </ul>
+                <a href="#social-media" class="btn btn-primary rounded-pill py-2 px-4" onclick="showServiceDetail('social')">Learn More</a>
               </div>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp"
-            data-wow-delay="0.8s"
-          >
+
+          <!-- Service 4 - Enterprise Solutions -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="service-item">
               <div class="service-img">
-                <img
-                  src="img/ai.png"
-                  class="img-fluid rounded-top w-100"
-                  alt=""
-                />
-                <div class="service-icon p-3">
-                  <i class="fa fa-home fa-2x"></i>
+                <img src="img/enterprise-sol.png" class="img-fluid w-100" alt="Enterprise Solutions" onerror="this.src='https://via.placeholder.com/400x300/0f2027/ffffff?text=Enterprise'">
+                <div class="service-icon">
+                  <i class="fas fa-building"></i>
                 </div>
               </div>
-              <div class="service-content p-4">
-                <div class="service-content-inner">
-                  <a href="#" class="d-inline-block h4 mb-4"
-                    >AI & Cloud Integration</a
-                  >
-                  <p class="mb-4">
-                    Advanced technology to enhance efficiency and performance.
-                  </p>
-                  <a class="btn btn-primary rounded-pill py-2 px-4" href="#"
-                    >Read More</a
-                  >
-                </div>
+              <div class="service-content">
+                <h4>Enterprise Solutions</h4>
+                <p>Scalable and secure systems designed for growing businesses and large organizations.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> ERP Systems</li>
+                  <li><i class="fas fa-check"></i> CRM Solutions</li>
+                  <li><i class="fas fa-check"></i> Business Intelligence</li>
+                </ul>
+                <a href="#enterprise" class="btn btn-primary rounded-pill py-2 px-4" onclick="showServiceDetail('enterprise')">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-            <a class="btn btn-primary rounded-pill py-3 px-5" href="#"
-              >More Services</a
-            >
+
+          <!-- Service 5 - AI & Cloud Integration -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="service-item">
+              <div class="service-img">
+                <img src="img/ai.png" class="img-fluid w-100" alt="AI & Cloud Integration" onerror="this.src='https://via.placeholder.com/400x300/203a43/ffffff?text=AI+%26+Cloud'">
+                <div class="service-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h4>AI & Cloud Integration</h4>
+                <p>Harness the power of artificial intelligence and cloud computing to transform your business.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> Machine Learning Solutions</li>
+                  <li><i class="fas fa-check"></i> Cloud Migration</li>
+                  <li><i class="fas fa-check"></i> AI-Powered Analytics</li>
+                </ul>
+                <a href="#ai-cloud" class="btn btn-primary rounded-pill py-2 px-4" onclick="showServiceDetail('ai')">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 - Automation Solutions -->
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="service-item">
+              <div class="service-img">
+                <img src="img/ai.png" class="img-fluid w-100" alt="Automation Solutions" onerror="this.src='https://via.placeholder.com/400x300/2c5364/ffffff?text=Automation'">
+                <div class="service-icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+              </div>
+              <div class="service-content">
+                <h4>Automation Solutions</h4>
+                <p>Streamline your operations with intelligent automation and custom bot development.</p>
+                <ul class="service-features">
+                  <li><i class="fas fa-check"></i> WhatsApp & Telegram Bots</li>
+                  <li><i class="fas fa-check"></i> Workflow Automation</li>
+                  <li><i class="fas fa-check"></i> RPA Solutions</li>
+                </ul>
+                <a href="#automation" class="btn btn-primary rounded-pill py-2 px-4" onclick="showServiceDetail('automation')">Learn More</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Service End -->
+    <!-- Services Overview End -->
 
-    <!-- Testimonial Start -->
-    <!-- <div class="container-fluid testimonial pb-5">
-      <div class="container pb-5">
-        <div
-          class="text-center mx-auto pb-5 wow fadeInUp"
-          data-wow-delay="0.2s"
-          style="max-width: 800px"
-        >
-          <h4 class="text-primary">Testimonial</h4>
-          <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
-          <p class="mb-0">
-            At Softorate Coders, we build future-ready solutions with precision,
-            creativity, and expertise. From custom development to scalable and
-            secure applications, we turn ideas into reality! 🚀
-          </p>
+    <!-- Process Start -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+          <h4 class="text-primary">Our Process</h4>
+          <h1 class="display-4 mb-4">How We Bring Your Ideas to Life</h1>
+          <p class="mb-0">A systematic approach that ensures quality, transparency, and successful project delivery.</p>
         </div>
-        <div
-          class="owl-carousel testimonial-carousel wow fadeInUp"
-          data-wow-delay="0.2s"
-        >
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="img/testimonial-1.jpg"
-                    class="img-fluid h-100 rounded"
-                    style="object-fit: cover"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-8 col-lg-8 col-xl-9">
-                <div class="d-flex flex-column my-auto text-start p-4">
-                  <h4 class="text-dark mb-0">Client Name</h4>
-                  <p class="mb-3">Profession</p>
-                  <div class="d-flex text-primary mb-3">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <p class="mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim error molestiae aut modi corrupti fugit eaque rem nulla
-                    incidunt temporibus quisquam,
-                  </p>
-                </div>
-              </div>
+        <div class="row g-4">
+          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="process-step">
+              <div class="step-number">1</div>
+              <h4>Discovery</h4>
+              <p>We understand your requirements, goals, and target audience through in-depth consultation.</p>
             </div>
           </div>
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="img/testimonial-2.jpg"
-                    class="img-fluid h-100 rounded"
-                    style="object-fit: cover"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-8 col-lg-8 col-xl-9">
-                <div class="d-flex flex-column my-auto text-start p-4">
-                  <h4 class="text-dark mb-0">Client Name</h4>
-                  <p class="mb-3">Profession</p>
-                  <div class="d-flex text-primary mb-3">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star text-body"></i>
-                  </div>
-                  <p class="mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim error molestiae aut modi corrupti fugit eaque rem nulla
-                    incidunt temporibus quisquam,
-                  </p>
-                </div>
-              </div>
+          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="process-step">
+              <div class="step-number">2</div>
+              <h4>Planning</h4>
+              <p>We create a detailed roadmap, architecture, and design that aligns with your vision.</p>
             </div>
           </div>
-          <div class="testimonial-item bg-light rounded">
-            <div class="row g-0">
-              <div class="col-4 col-lg-4 col-xl-3">
-                <div class="h-100">
-                  <img
-                    src="img/testimonial-3.jpg"
-                    class="img-fluid h-100 rounded"
-                    style="object-fit: cover"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-8 col-lg-8 col-xl-9">
-                <div class="d-flex flex-column my-auto text-start p-4">
-                  <h4 class="text-dark mb-0">Client Name</h4>
-                  <p class="mb-3">Profession</p>
-                  <div class="d-flex text-primary mb-3">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star text-body"></i>
-                    <i class="fas fa-star text-body"></i>
-                  </div>
-                  <p class="mb-0">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Enim error molestiae aut modi corrupti fugit eaque rem nulla
-                    incidunt temporibus quisquam,
-                  </p>
-                </div>
-              </div>
+          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="process-step">
+              <div class="step-number">3</div>
+              <h4>Development</h4>
+              <p>Our experts build your solution using agile methodology with regular updates.</p>
+            </div>
+          </div>
+          <div class="col-md-3 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="process-step">
+              <div class="step-number">4</div>
+              <h4>Delivery & Support</h4>
+              <p>We deploy, test, and provide ongoing support to ensure your success.</p>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
-    <!-- Testimonial End -->
+    </div>
+    <!-- Process End -->
+
+    <!-- Technologies Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+          <h4 class="text-primary">Technologies We Use</h4>
+          <h1 class="display-4 mb-4">Cutting-Edge Tech Stack</h1>
+          <p class="mb-0">We leverage the latest technologies to build robust, scalable, and future-proof solutions.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h5>React</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-node-js"></i>
+              </div>
+              <h5>Node.js</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <h5>Python</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-java"></i>
+              </div>
+              <h5>Java</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h5>MongoDB</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h5>AWS</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-angular"></i>
+              </div>
+              <h5>Angular</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="0.9s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-vuejs"></i>
+              </div>
+              <h5>Vue.js</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="1.0s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h5>PostgreSQL</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="1.1s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-docker"></i>
+              </div>
+              <h5>Docker</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="1.2s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-kubernetes"></i>
+              </div>
+              <h5>Kubernetes</h5>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4 wow fadeInUp" data-wow-delay="1.3s">
+            <div class="tech-item">
+              <div class="tech-icon">
+                <i class="fab fa-android"></i>
+              </div>
+              <h5>Android</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Technologies End -->
+
+    <!-- CTA Start -->
+    <div class="container-fluid bg-light py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay="0.2s">
+            <h4 class="text-primary">Ready to Get Started?</h4>
+            <h1 class="display-4 mb-4">Let's Discuss Your Project</h1>
+            <p class="mb-4">Whether you have a clear vision or need help shaping your ideas, our team is here to help you choose the right solution.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5 me-3">Get Free Consultation</a>
+            <a href="portfolio.html" class="btn btn-outline-primary rounded-pill py-3 px-5">View Our Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -439,9 +666,7 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation
-                solutions—high performance, scalable, and user-friendly to help
-                your business grow.
+                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -450,9 +675,6 @@
                   target="_blank"
                   ><i class="fab fa-github"></i
                 ></a>
-                <!-- <a class="btn btn-sm-square rounded-circle me-2" href="#"
-                  ><i class="fab fa-facebook-f"></i
-                ></a> -->
                 <a
                   class="btn btn-sm-square rounded-circle me-2"
                   href="https://www.instagram.com/_softorate/"
@@ -473,21 +695,12 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="/about.html"
-                ><i class="fas fa-angle-right me-2"></i> About Us</a
-              >
-              <a href="/feature.html"
-                ><i class="fas fa-angle-right me-2"></i> Features</a
-              >
-              <a href="/service.html"
-                ><i class="fas fa-angle-right me-2"></i> Services</a
-              >
-              <a href="/FAQ.html"
-                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
-              >
-              <a href="/contact.html"
-                ><i class="fas fa-angle-right me-2"></i> Contact</a
-              >
+              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
+              <!-- <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a> -->
+              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
             </div>
           </div>
 
@@ -580,8 +793,7 @@
           <div class="col-md-6 text-center text-md-end mb-md-0">
             <span class="text-body"
               ><a href="#" class="border-bottom text-white"
-                ><i class="fas fa-copyright text-light me-2"></i>Softorate
-                Coder</a
+                ><i class="fas fa-copyright text-light me-2"></i>Softorate</a
               >, All right reserved.</span
             >
           </div>
@@ -607,5 +819,23 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Hide spinner
+        setTimeout(() => {
+          document.getElementById('spinner').classList.remove('show');
+        }, 1000);
+        
+        // Initialize WOW
+        new WOW().init();
+      });
+
+      function showServiceDetail(service) {
+        // This function can be expanded to show service details in a modal or navigate to a service detail page
+        console.log('Show details for:', service);
+        // You can add modal functionality here if needed
+      }
+    </script>
   </body>
 </html>
