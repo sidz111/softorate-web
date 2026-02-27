@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>404 - Page Not Found | Softorate Software Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="404 error, page not found, software agency error page" name="keywords" />
-    <meta content="The page you're looking for could not be found. Return to Softorate homepage or explore our services." name="description" />
+    <meta
+      content="404 error, page not found, software agency error page"
+      name="keywords"
+    />
+    <meta
+      content="The page you're looking for could not be found. Return to Softorate homepage or explore our services."
+      name="description"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +41,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    
+
     <style>
       /* Page Header - Matching hero section style */
       .page-header {
@@ -44,41 +50,44 @@
         margin: 40px auto;
         padding: 60px 40px;
         border-radius: 18px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         color: #ffffff;
         text-align: center;
       }
-      
+
       .page-header h1 {
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 20px;
         color: #fff;
       }
-      
+
       .page-header p {
         font-size: 1.2rem;
         opacity: 0.95;
         max-width: 700px;
         margin: 0 auto;
       }
-      
+
       .breadcrumb {
         background: transparent;
         justify-content: center;
         margin-top: 20px;
       }
-      
+
       .breadcrumb-item,
       .breadcrumb-item a {
         color: rgba(255, 255, 255, 0.8);
       }
-      
+
       .breadcrumb-item.active {
         color: #fff;
       }
-      
+
       .breadcrumb-item + .breadcrumb-item::before {
         color: rgba(255, 255, 255, 0.5);
       }
@@ -89,14 +98,14 @@
         display: flex;
         align-items: center;
       }
-      
+
       .error-icon {
         font-size: 8rem;
         color: var(--bs-primary);
         opacity: 0.2;
         animation: float 3s ease-in-out infinite;
       }
-      
+
       @keyframes float {
         0% {
           transform: translateY(0px);
@@ -108,12 +117,15 @@
           transform: translateY(0px);
         }
       }
-      
+
       .error-code {
         font-size: 12rem;
         font-weight: 800;
         line-height: 1;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -121,7 +133,7 @@
         text-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         animation: pulse 2s ease-in-out infinite;
       }
-      
+
       @keyframes pulse {
         0% {
           transform: scale(1);
@@ -133,14 +145,14 @@
           transform: scale(1);
         }
       }
-      
+
       .error-title {
         font-size: 2.5rem;
         color: #16243d;
         margin-bottom: 20px;
         font-weight: 700;
       }
-      
+
       .error-message {
         color: #787878;
         font-size: 1.1rem;
@@ -148,46 +160,49 @@
         margin: 0 auto 30px;
         line-height: 1.8;
       }
-      
+
       .search-box {
         max-width: 500px;
         margin: 30px auto;
       }
-      
+
       .search-box .input-group {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         border-radius: 50px;
         overflow: hidden;
       }
-      
+
       .search-box input {
         border: none;
         padding: 15px 25px;
         font-size: 1rem;
       }
-      
+
       .search-box input:focus {
         box-shadow: none;
         outline: none;
       }
-      
+
       .search-box button {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         color: white;
         border: none;
         padding: 15px 30px;
         font-weight: 600;
         transition: 0.3s;
       }
-      
+
       .search-box button:hover {
         transform: scale(1.05);
       }
-      
+
       .action-buttons {
         margin-top: 30px;
       }
-      
+
       .action-buttons .btn {
         margin: 0 10px;
         padding: 12px 30px;
@@ -195,29 +210,32 @@
         font-weight: 600;
         transition: 0.3s;
       }
-      
+
       .action-buttons .btn-primary {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border: none;
       }
-      
+
       .action-buttons .btn-primary:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       }
-      
+
       .action-buttons .btn-outline-primary {
         border: 2px solid var(--bs-primary);
         color: var(--bs-primary);
       }
-      
+
       .action-buttons .btn-outline-primary:hover {
         background: var(--bs-primary);
         color: white;
         transform: translateY(-3px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       }
-      
+
       /* Quick Links */
       .quick-links {
         background: white;
@@ -226,19 +244,19 @@
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         margin-top: 50px;
       }
-      
+
       .quick-links h3 {
         color: #16243d;
         margin-bottom: 25px;
         font-size: 1.5rem;
       }
-      
+
       .quick-link-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 20px;
       }
-      
+
       .quick-link-item {
         display: block;
         padding: 15px;
@@ -249,7 +267,7 @@
         transition: 0.3s;
         text-align: center;
       }
-      
+
       .quick-link-item i {
         display: block;
         font-size: 2rem;
@@ -257,50 +275,53 @@
         margin-bottom: 10px;
         transition: 0.3s;
       }
-      
+
       .quick-link-item span {
         font-weight: 600;
       }
-      
+
       .quick-link-item:hover {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         color: white;
         transform: translateY(-5px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       }
-      
+
       .quick-link-item:hover i {
         color: white;
       }
-      
+
       @media (max-width: 768px) {
         .page-header {
           padding: 40px 25px;
         }
-        
+
         .page-header h1 {
           font-size: 2rem;
         }
-        
+
         .error-code {
           font-size: 8rem;
         }
-        
+
         .error-title {
           font-size: 1.8rem;
         }
-        
+
         .action-buttons .btn {
           display: block;
           width: 100%;
           margin: 10px 0;
         }
-        
+
         .quick-link-grid {
           grid-template-columns: repeat(2, 1fr);
         }
       }
-      
+
       @media (max-width: 480px) {
         .quick-link-grid {
           grid-template-columns: 1fr;
@@ -330,9 +351,12 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a href="index.html" class="navbar-brand p-0">
-            <h1 class="text-primary mb-0">
-              <i class="fab fa-free-code-camp me-2"></i> Softorate
-            </h1>
+            <img
+              src="img/LOGO.jpeg"
+              alt="Softorate Logo"
+              class="img-fluid"
+              style="height: 80px"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -377,7 +401,7 @@
     <!-- Navbar End -->
 
     <!-- Page Header - Simplified for 404 -->
-    <div class="page-header" style="margin-bottom: 0;">
+    <div class="page-header" style="margin-bottom: 0">
       <div class="container">
         <h1 class="wow fadeInUp" data-wow-delay="0.2s">404 Error</h1>
         <p class="wow fadeInUp" data-wow-delay="0.4s">Oops! Page Not Found</p>
@@ -401,19 +425,25 @@
             <div class="error-code">404</div>
             <h1 class="error-title">Page Not Found</h1>
             <p class="error-message">
-              We couldn't find the page you were looking for. The link might be broken, or the page may have been moved or deleted.
+              We couldn't find the page you were looking for. The link might be
+              broken, or the page may have been moved or deleted.
             </p>
-            
+
             <!-- Search Box -->
             <div class="search-box">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search our website..." aria-label="Search">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search our website..."
+                  aria-label="Search"
+                />
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-search"></i> Search
                 </button>
               </div>
             </div>
-            
+
             <!-- Action Buttons -->
             <div class="action-buttons">
               <a href="index.html" class="btn btn-primary">
@@ -425,7 +455,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Quick Links -->
         <div class="quick-links wow fadeInUp" data-wow-delay="0.5s">
           <h3>You might be looking for:</h3>
@@ -473,7 +503,9 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
+                We deliver custom software, web applications, and automation
+                solutions—high performance, scalable, and user-friendly to help
+                your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -502,14 +534,30 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
-              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
-              <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
-              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
-              <a href="team.html"><i class="fas fa-angle-right me-2"></i> Our Team</a>
-              <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonials</a>
+              <a href="about.html"
+                ><i class="fas fa-angle-right me-2"></i> About Us</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Services</a
+              >
+              <a href="portfolio.html"
+                ><i class="fas fa-angle-right me-2"></i> Portfolio</a
+              >
+              <a href="blog.html"
+                ><i class="fas fa-angle-right me-2"></i> Blog</a
+              >
+              <a href="FAQ.html"
+                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-right me-2"></i> Contact</a
+              >
+              <a href="team.html"
+                ><i class="fas fa-angle-right me-2"></i> Our Team</a
+              >
+              <a href="testimonial.html"
+                ><i class="fas fa-angle-right me-2"></i> Testimonials</a
+              >
             </div>
           </div>
 
@@ -628,31 +676,38 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    
+
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener("DOMContentLoaded", function () {
         // Hide spinner
         setTimeout(() => {
-          document.getElementById('spinner').classList.remove('show');
+          document.getElementById("spinner").classList.remove("show");
         }, 1000);
-        
+
         // Initialize WOW
         new WOW().init();
-        
+
         // Search functionality (placeholder)
-        document.querySelector('.search-box button').addEventListener('click', function() {
-          const searchTerm = document.querySelector('.search-box input').value;
-          if (searchTerm.trim() !== '') {
-            window.location.href = 'https://www.google.com/search?q=site:softorate.com+' + encodeURIComponent(searchTerm);
-          }
-        });
-        
+        document
+          .querySelector(".search-box button")
+          .addEventListener("click", function () {
+            const searchTerm =
+              document.querySelector(".search-box input").value;
+            if (searchTerm.trim() !== "") {
+              window.location.href =
+                "https://www.google.com/search?q=site:softorate.com+" +
+                encodeURIComponent(searchTerm);
+            }
+          });
+
         // Allow Enter key in search
-        document.querySelector('.search-box input').addEventListener('keypress', function(e) {
-          if (e.key === 'Enter') {
-            document.querySelector('.search-box button').click();
-          }
-        });
+        document
+          .querySelector(".search-box input")
+          .addEventListener("keypress", function (e) {
+            if (e.key === "Enter") {
+              document.querySelector(".search-box button").click();
+            }
+          });
       });
     </script>
   </body>

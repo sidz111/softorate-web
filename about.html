@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>About Us - Softorate Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="software company about, web development agency, software solutions team" name="keywords" />
-    <meta content="Learn about Softorate - a leading software solutions agency providing custom development, mobile apps, and digital transformation services." name="description" />
+    <meta
+      content="software company about, web development agency, software solutions team"
+      name="keywords"
+    />
+    <meta
+      content="Learn about Softorate - a leading software solutions agency providing custom development, mobile apps, and digital transformation services."
+      name="description"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +41,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    
+
     <style>
       /* Page Header - Matching hero section style */
       .page-header {
@@ -44,45 +50,48 @@
         margin: 40px auto;
         padding: 60px 40px;
         border-radius: 18px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         color: #ffffff;
         text-align: center;
       }
-      
+
       .page-header h1 {
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 20px;
         color: #fff;
       }
-      
+
       .page-header p {
         font-size: 1.2rem;
         opacity: 0.95;
         max-width: 700px;
         margin: 0 auto;
       }
-      
+
       .breadcrumb {
         background: transparent;
         justify-content: center;
         margin-top: 20px;
       }
-      
+
       .breadcrumb-item,
       .breadcrumb-item a {
         color: rgba(255, 255, 255, 0.8);
       }
-      
+
       .breadcrumb-item.active {
         color: #fff;
       }
-      
+
       .breadcrumb-item + .breadcrumb-item::before {
         color: rgba(255, 255, 255, 0.5);
       }
-      
+
       /* Mission & Vision Cards */
       .mission-card {
         background: #fff;
@@ -93,16 +102,19 @@
         height: 100%;
         text-align: center;
       }
-      
+
       .mission-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
       }
-      
+
       .mission-icon {
         width: 80px;
         height: 80px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -111,7 +123,7 @@
         color: white;
         font-size: 2rem;
       }
-      
+
       /* Values Section */
       .value-item {
         text-align: center;
@@ -122,16 +134,19 @@
         transition: 0.3s;
         height: 100%;
       }
-      
+
       .value-item:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       }
-      
+
       .value-icon {
         width: 60px;
         height: 60px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -140,7 +155,7 @@
         color: white;
         font-size: 1.5rem;
       }
-      
+
       /* Stats Cards */
       .counter-item {
         background: #fff;
@@ -151,54 +166,57 @@
         transition: 0.3s;
         height: 100%;
       }
-      
+
       .counter-item:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
       }
-      
+
       .counter-counting {
         font-size: 2.5rem;
         font-weight: 700;
         color: var(--bs-primary);
         margin-bottom: 10px;
       }
-      
+
       .counter-counting span {
         font-size: 2.5rem;
         font-weight: 700;
       }
-      
+
       /* Timeline */
       .timeline {
         position: relative;
         padding: 20px 0;
       }
-      
+
       .timeline-item {
         position: relative;
         padding-left: 50px;
         margin-bottom: 40px;
       }
-      
+
       .timeline-item:last-child {
         margin-bottom: 0;
       }
-      
+
       .timeline-item::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 20px;
         top: 0;
         bottom: 0;
         width: 2px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
       }
-      
+
       .timeline-item:last-child::before {
         display: none;
       }
-      
+
       .timeline-dot {
         position: absolute;
         left: 12px;
@@ -206,31 +224,34 @@
         width: 16px;
         height: 16px;
         border-radius: 50%;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border: 3px solid #fff;
         box-shadow: 0 0 0 2px #203a43;
         z-index: 1;
       }
-      
+
       .timeline-content {
         background: #fff;
         padding: 20px;
         border-radius: 12px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
       }
-      
+
       .timeline-year {
         font-size: 1.2rem;
         font-weight: 700;
         color: var(--bs-primary);
         margin-bottom: 10px;
       }
-      
+
       @media (max-width: 768px) {
         .page-header {
           padding: 40px 25px;
         }
-        
+
         .page-header h1 {
           font-size: 2rem;
         }
@@ -259,9 +280,12 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a href="index.html" class="navbar-brand p-0">
-            <h1 class="text-primary mb-0">
-              <i class="fab fa-free-code-camp me-2"></i> Softorate
-            </h1>
+            <img
+              src="img/LOGO.jpeg"
+              alt="Softorate Logo"
+              class="img-fluid"
+              style="height: 80px"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -309,7 +333,10 @@
     <div class="page-header">
       <div class="container">
         <h1 class="wow fadeInUp" data-wow-delay="0.2s">About Softorate</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.4s">We're on a mission to transform businesses through innovative software solutions</p>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">
+          We're on a mission to transform businesses through innovative software
+          solutions
+        </p>
         <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -325,9 +352,21 @@
         <div class="row g-5 align-items-center">
           <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
             <h4 class="text-primary">Our Story</h4>
-            <h1 class="display-4 mb-4">Crafting Digital Excellence Since 2020</h1>
-            <p class="mb-4">Softorate was founded with a simple yet powerful vision: to bridge the gap between complex technology and business growth. What started as a small team of passionate developers has grown into a full-service software agency trusted by businesses worldwide.</p>
-            <p class="mb-4">We believe in the transformative power of technology. Every line of code we write, every solution we design, is crafted with the goal of helping our clients succeed in an increasingly digital world.</p>
+            <h1 class="display-4 mb-4">
+              Crafting Digital Excellence Since 2020
+            </h1>
+            <p class="mb-4">
+              Softorate was founded with a simple yet powerful vision: to bridge
+              the gap between complex technology and business growth. What
+              started as a small team of passionate developers has grown into a
+              full-service software agency trusted by businesses worldwide.
+            </p>
+            <p class="mb-4">
+              We believe in the transformative power of technology. Every line
+              of code we write, every solution we design, is crafted with the
+              goal of helping our clients succeed in an increasingly digital
+              world.
+            </p>
             <div class="row g-4">
               <div class="col-sm-6">
                 <div class="d-flex">
@@ -354,7 +393,15 @@
             </div>
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-            <img src="img/about-company-1.png" class="img-fluid rounded-3" alt="About Softorate" onerror="this.src='https://via.placeholder.com/600x400/0f2027/ffffff?text=About+Softorate'">
+            <img
+              src="img/about-company-1.png"
+              class="img-fluid rounded-3"
+              alt="About Softorate"
+              onerror="
+                this.src =
+                  'https://via.placeholder.com/600x400/0f2027/ffffff?text=About+Softorate'
+              "
+            />
           </div>
         </div>
       </div>
@@ -371,7 +418,12 @@
                 <i class="fas fa-bullseye"></i>
               </div>
               <h3 class="mb-4">Our Mission</h3>
-              <p class="mb-0">To empower businesses with innovative, scalable, and secure software solutions that drive growth, efficiency, and digital transformation. We strive to make technology accessible and impactful for every client we serve.</p>
+              <p class="mb-0">
+                To empower businesses with innovative, scalable, and secure
+                software solutions that drive growth, efficiency, and digital
+                transformation. We strive to make technology accessible and
+                impactful for every client we serve.
+              </p>
             </div>
           </div>
           <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -380,7 +432,12 @@
                 <i class="fas fa-eye"></i>
               </div>
               <h3 class="mb-4">Our Vision</h3>
-              <p class="mb-0">To be the most trusted partner for businesses seeking digital excellence. We envision a world where technology seamlessly integrates with business processes, creating opportunities and solving real-world challenges.</p>
+              <p class="mb-0">
+                To be the most trusted partner for businesses seeking digital
+                excellence. We envision a world where technology seamlessly
+                integrates with business processes, creating opportunities and
+                solving real-world challenges.
+              </p>
             </div>
           </div>
         </div>
@@ -432,10 +489,17 @@
     <!-- Values Start -->
     <div class="container-fluid bg-light py-5">
       <div class="container py-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
           <h4 class="text-primary">Our Core Values</h4>
           <h1 class="display-4 mb-4">What Drives Us Forward</h1>
-          <p class="mb-0">These principles guide every decision we make and every solution we build.</p>
+          <p class="mb-0">
+            These principles guide every decision we make and every solution we
+            build.
+          </p>
         </div>
         <div class="row g-4">
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
@@ -444,7 +508,9 @@
                 <i class="fas fa-lightbulb"></i>
               </div>
               <h4>Innovation</h4>
-              <p class="mb-0">Constantly pushing boundaries to find better solutions</p>
+              <p class="mb-0">
+                Constantly pushing boundaries to find better solutions
+              </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -462,7 +528,9 @@
                 <i class="fas fa-users"></i>
               </div>
               <h4>Collaboration</h4>
-              <p class="mb-0">Working together to achieve exceptional results</p>
+              <p class="mb-0">
+                Working together to achieve exceptional results
+              </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
@@ -482,7 +550,11 @@
     <!-- Timeline Start -->
     <div class="container-fluid py-5">
       <div class="container py-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
           <h4 class="text-primary">Our Journey</h4>
           <h1 class="display-4 mb-4">The Road to Excellence</h1>
           <p class="mb-0">Every milestone has shaped who we are today.</p>
@@ -495,7 +567,10 @@
                 <div class="timeline-content">
                   <div class="timeline-year">2020</div>
                   <h4>The Beginning</h4>
-                  <p class="mb-0">Softorate was founded with a vision to deliver quality software solutions. Started with 2 passionate developers.</p>
+                  <p class="mb-0">
+                    Softorate was founded with a vision to deliver quality
+                    software solutions. Started with 2 passionate developers.
+                  </p>
                 </div>
               </div>
               <div class="timeline-item wow fadeInUp" data-wow-delay="0.4s">
@@ -503,7 +578,10 @@
                 <div class="timeline-content">
                   <div class="timeline-year">2021</div>
                   <h4>First Major Milestone</h4>
-                  <p class="mb-0">Completed 25+ projects and expanded team to 10 members. Launched our first enterprise solution.</p>
+                  <p class="mb-0">
+                    Completed 25+ projects and expanded team to 10 members.
+                    Launched our first enterprise solution.
+                  </p>
                 </div>
               </div>
               <div class="timeline-item wow fadeInUp" data-wow-delay="0.6s">
@@ -511,7 +589,10 @@
                 <div class="timeline-content">
                   <div class="timeline-year">2022</div>
                   <h4>Expansion & Growth</h4>
-                  <p class="mb-0">Opened new office, grew team to 30+ members. Started offering social media management services.</p>
+                  <p class="mb-0">
+                    Opened new office, grew team to 30+ members. Started
+                    offering social media management services.
+                  </p>
                 </div>
               </div>
               <div class="timeline-item wow fadeInUp" data-wow-delay="0.8s">
@@ -519,7 +600,10 @@
                 <div class="timeline-content">
                   <div class="timeline-year">2023</div>
                   <h4>Global Recognition</h4>
-                  <p class="mb-0">Served clients across 10+ countries. Launched AI and cloud integration services.</p>
+                  <p class="mb-0">
+                    Served clients across 10+ countries. Launched AI and cloud
+                    integration services.
+                  </p>
                 </div>
               </div>
               <div class="timeline-item wow fadeInUp" data-wow-delay="1.0s">
@@ -527,7 +611,10 @@
                 <div class="timeline-content">
                   <div class="timeline-year">2024</div>
                   <h4>Today & Beyond</h4>
-                  <p class="mb-0">100+ projects delivered, 50+ team members, and continuing to innovate every day.</p>
+                  <p class="mb-0">
+                    100+ projects delivered, 50+ team members, and continuing to
+                    innovate every day.
+                  </p>
                 </div>
               </div>
             </div>
@@ -624,10 +711,23 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay="0.2s">
             <h4 class="text-primary">Ready to Start Your Project?</h4>
-            <h1 class="display-4 mb-4">Let's Build Something Amazing Together</h1>
-            <p class="mb-4">Whether you have a clear vision or need help shaping your ideas, our team is here to help.</p>
-            <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5 me-3">Get in Touch</a>
-            <a href="portfolio.html" class="btn btn-outline-primary rounded-pill py-3 px-5">View Our Work</a>
+            <h1 class="display-4 mb-4">
+              Let's Build Something Amazing Together
+            </h1>
+            <p class="mb-4">
+              Whether you have a clear vision or need help shaping your ideas,
+              our team is here to help.
+            </p>
+            <a
+              href="contact.html"
+              class="btn btn-primary rounded-pill py-3 px-5 me-3"
+              >Get in Touch</a
+            >
+            <a
+              href="portfolio.html"
+              class="btn btn-outline-primary rounded-pill py-3 px-5"
+              >View Our Work</a
+            >
           </div>
         </div>
       </div>
@@ -647,7 +747,9 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
+                We deliver custom software, web applications, and automation
+                solutions—high performance, scalable, and user-friendly to help
+                your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -676,12 +778,22 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
-              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
+              <a href="about.html"
+                ><i class="fas fa-angle-right me-2"></i> About Us</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Services</a
+              >
+              <a href="portfolio.html"
+                ><i class="fas fa-angle-right me-2"></i> Portfolio</a
+              >
               <!-- <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a> -->
-              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+              <a href="FAQ.html"
+                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-right me-2"></i> Contact</a
+              >
             </div>
           </div>
 
@@ -800,21 +912,21 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    
+
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener("DOMContentLoaded", function () {
         // Hide spinner
         setTimeout(() => {
-          document.getElementById('spinner').classList.remove('show');
+          document.getElementById("spinner").classList.remove("show");
         }, 1000);
-        
+
         // Initialize WOW
         new WOW().init();
-        
+
         // Counter Up initialization
         $('[data-toggle="counter-up"]').counterUp({
           delay: 10,
-          time: 2000
+          time: 2000,
         });
       });
     </script>

@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>FAQs - Softorate Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="frequently asked questions, software development faq, web development questions, agency faq, pricing questions" name="keywords" />
-    <meta content="Find answers to commonly asked questions about Softorate's services, development process, pricing, timelines, and more. Get the information you need." name="description" />
+    <meta
+      content="frequently asked questions, software development faq, web development questions, agency faq, pricing questions"
+      name="keywords"
+    />
+    <meta
+      content="Find answers to commonly asked questions about Softorate's services, development process, pricing, timelines, and more. Get the information you need."
+      name="description"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +41,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    
+
     <style>
       /* Page Header - Matching hero section style */
       .page-header {
@@ -44,45 +50,48 @@
         margin: 40px auto;
         padding: 60px 40px;
         border-radius: 18px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         color: #ffffff;
         text-align: center;
       }
-      
+
       .page-header h1 {
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 20px;
         color: #fff;
       }
-      
+
       .page-header p {
         font-size: 1.2rem;
         opacity: 0.95;
         max-width: 700px;
         margin: 0 auto;
       }
-      
+
       .breadcrumb {
         background: transparent;
         justify-content: center;
         margin-top: 20px;
       }
-      
+
       .breadcrumb-item,
       .breadcrumb-item a {
         color: rgba(255, 255, 255, 0.8);
       }
-      
+
       .breadcrumb-item.active {
         color: #fff;
       }
-      
+
       .breadcrumb-item + .breadcrumb-item::before {
         color: rgba(255, 255, 255, 0.5);
       }
-      
+
       /* FAQ Categories */
       .faq-categories {
         display: flex;
@@ -91,7 +100,7 @@
         margin-bottom: 40px;
         flex-wrap: wrap;
       }
-      
+
       .category-btn {
         padding: 12px 30px;
         border: 2px solid var(--bs-primary);
@@ -102,18 +111,18 @@
         cursor: pointer;
         transition: 0.3s;
       }
-      
+
       .category-btn:hover,
       .category-btn.active {
         background: var(--bs-primary);
         color: white;
       }
-      
+
       /* FAQ Accordion */
       .faq-section {
         background: #f8f9fa;
       }
-      
+
       .accordion-item {
         border: none;
         margin-bottom: 20px;
@@ -121,7 +130,7 @@
         overflow: hidden;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
       }
-      
+
       .accordion-button {
         padding: 20px 25px;
         font-weight: 600;
@@ -129,34 +138,37 @@
         background: white;
         font-size: 1.1rem;
       }
-      
+
       .accordion-button:not(.collapsed) {
         color: white;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         box-shadow: none;
       }
-      
+
       .accordion-button:focus {
         box-shadow: none;
-        border-color: rgba(0,0,0,0.125);
+        border-color: rgba(0, 0, 0, 0.125);
       }
-      
+
       .accordion-button::after {
         background-size: 1.2rem;
         transition: 0.3s;
       }
-      
+
       .accordion-button:not(.collapsed)::after {
         filter: brightness(0) invert(1);
       }
-      
+
       .accordion-body {
         padding: 25px;
         background: white;
         color: #787878;
         line-height: 1.8;
       }
-      
+
       /* Quick Answers Section */
       .quick-answer-card {
         background: white;
@@ -167,16 +179,19 @@
         transition: 0.3s;
         height: 100%;
       }
-      
+
       .quick-answer-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
       }
-      
+
       .quick-icon {
         width: 70px;
         height: 70px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -185,17 +200,17 @@
         color: white;
         font-size: 1.8rem;
       }
-      
+
       .quick-answer-card h4 {
         color: #16243d;
         margin-bottom: 15px;
       }
-      
+
       .quick-answer-card p {
         color: #787878;
         margin-bottom: 20px;
       }
-      
+
       .quick-link {
         color: var(--bs-primary);
         font-weight: 600;
@@ -204,41 +219,44 @@
         align-items: center;
         transition: 0.3s;
       }
-      
+
       .quick-link i {
         margin-left: 5px;
         transition: 0.3s;
       }
-      
+
       .quick-link:hover {
         color: #0f2027;
       }
-      
+
       .quick-link:hover i {
         transform: translateX(5px);
       }
-      
+
       /* Still Have Questions */
       .contact-box {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border-radius: 18px;
         padding: 50px;
         color: white;
         text-align: center;
       }
-      
+
       .contact-box h2 {
         font-size: 2.2rem;
         margin-bottom: 20px;
       }
-      
+
       .contact-box p {
         font-size: 1.1rem;
         opacity: 0.95;
         max-width: 600px;
         margin: 0 auto 30px;
       }
-      
+
       .contact-box .btn-light {
         background: white;
         color: #0f2027;
@@ -249,12 +267,12 @@
         transition: 0.3s;
         margin: 0 10px;
       }
-      
+
       .contact-box .btn-light:hover {
         transform: scale(1.05);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       }
-      
+
       .contact-box .btn-outline-light {
         border: 2px solid white;
         color: white;
@@ -265,13 +283,13 @@
         margin: 0 10px;
         background: transparent;
       }
-      
+
       .contact-box .btn-outline-light:hover {
         background: white;
         color: #0f2027;
         transform: scale(1.05);
       }
-      
+
       /* Support Info */
       .support-info {
         background: white;
@@ -280,20 +298,20 @@
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         height: 100%;
       }
-      
+
       .support-info h4 {
         color: #16243d;
         margin-bottom: 20px;
         padding-bottom: 10px;
         border-bottom: 2px solid #e9ecef;
       }
-      
+
       .support-item {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
       }
-      
+
       .support-icon {
         width: 50px;
         height: 50px;
@@ -307,51 +325,54 @@
         font-size: 1.2rem;
         transition: 0.3s;
       }
-      
+
       .support-item:hover .support-icon {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         color: white;
       }
-      
+
       .support-text h5 {
         color: #16243d;
         font-size: 1rem;
         margin-bottom: 5px;
       }
-      
+
       .support-text p {
         color: #787878;
         margin-bottom: 0;
         font-size: 0.9rem;
       }
-      
+
       .support-text a {
         color: #787878;
         text-decoration: none;
         transition: 0.3s;
       }
-      
+
       .support-text a:hover {
         color: var(--bs-primary);
       }
-      
+
       @media (max-width: 768px) {
         .page-header {
           padding: 40px 25px;
         }
-        
+
         .page-header h1 {
           font-size: 2rem;
         }
-        
+
         .contact-box {
           padding: 30px 20px;
         }
-        
+
         .contact-box h2 {
           font-size: 1.8rem;
         }
-        
+
         .contact-box .btn-light,
         .contact-box .btn-outline-light {
           display: block;
@@ -383,9 +404,12 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a href="index.html" class="navbar-brand p-0">
-            <h1 class="text-primary mb-0">
-              <i class="fab fa-free-code-camp me-2"></i> Softorate
-            </h1>
+            <img
+              src="img/LOGO.jpeg"
+              alt="Softorate Logo"
+              class="img-fluid"
+              style="height: 80px"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -432,8 +456,13 @@
     <!-- Page Header -->
     <div class="page-header">
       <div class="container">
-        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Frequently Asked Questions</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.4s">Find answers to common questions about our services, process, and how we work</p>
+        <h1 class="wow fadeInUp" data-wow-delay="0.2s">
+          Frequently Asked Questions
+        </h1>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">
+          Find answers to common questions about our services, process, and how
+          we work
+        </p>
         <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -446,10 +475,17 @@
     <!-- Quick Answers Start -->
     <div class="container-fluid py-5">
       <div class="container py-3">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
           <h4 class="text-primary">Quick Answers</h4>
           <h1 class="display-4 mb-4">Most Commonly Asked Questions</h1>
-          <p class="mb-0">Get instant answers to the most frequently asked questions about our services and process.</p>
+          <p class="mb-0">
+            Get instant answers to the most frequently asked questions about our
+            services and process.
+          </p>
         </div>
         <div class="row g-4">
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
@@ -458,8 +494,16 @@
                 <i class="fas fa-clock"></i>
               </div>
               <h4>Project Timeline</h4>
-              <p>Most projects take 4-12 weeks depending on complexity and requirements.</p>
-              <a href="#timeline" class="quick-link" onclick="scrollToFAQ('timeline')">Learn More <i class="fas fa-arrow-right"></i></a>
+              <p>
+                Most projects take 4-12 weeks depending on complexity and
+                requirements.
+              </p>
+              <a
+                href="#timeline"
+                class="quick-link"
+                onclick="scrollToFAQ('timeline')"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
@@ -468,8 +512,16 @@
                 <i class="fas fa-dollar-sign"></i>
               </div>
               <h4>Pricing</h4>
-              <p>We offer flexible pricing models including fixed price and hourly rates.</p>
-              <a href="#pricing" class="quick-link" onclick="scrollToFAQ('pricing')">Learn More <i class="fas fa-arrow-right"></i></a>
+              <p>
+                We offer flexible pricing models including fixed price and
+                hourly rates.
+              </p>
+              <a
+                href="#pricing"
+                class="quick-link"
+                onclick="scrollToFAQ('pricing')"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
@@ -478,8 +530,16 @@
                 <i class="fas fa-headset"></i>
               </div>
               <h4>Support</h4>
-              <p>24/7 support available for all clients with dedicated account managers.</p>
-              <a href="#support" class="quick-link" onclick="scrollToFAQ('support')">Learn More <i class="fas fa-arrow-right"></i></a>
+              <p>
+                24/7 support available for all clients with dedicated account
+                managers.
+              </p>
+              <a
+                href="#support"
+                class="quick-link"
+                onclick="scrollToFAQ('support')"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -491,9 +551,13 @@
     <div class="container-fluid py-3">
       <div class="container">
         <div class="faq-categories wow fadeInUp" data-wow-delay="0.2s">
-          <button class="category-btn active" data-category="all">All Questions</button>
+          <button class="category-btn active" data-category="all">
+            All Questions
+          </button>
           <button class="category-btn" data-category="general">General</button>
-          <button class="category-btn" data-category="services">Services</button>
+          <button class="category-btn" data-category="services">
+            Services
+          </button>
           <button class="category-btn" data-category="process">Process</button>
           <button class="category-btn" data-category="pricing">Pricing</button>
           <button class="category-btn" data-category="support">Support</button>
@@ -512,13 +576,25 @@
               <div class="faq-item" data-category="general">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                    >
                       What services does Softorate offer?
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
-                      We offer a comprehensive range of software solutions including:
+                      We offer a comprehensive range of software solutions
+                      including:
                       <ul class="mt-3">
                         <li>Custom Software Development</li>
                         <li>Web & Mobile App Development</li>
@@ -527,7 +603,8 @@
                         <li>AI & Cloud Integration</li>
                         <li>Automation Solutions</li>
                       </ul>
-                      Each service is tailored to meet your specific business needs and goals.
+                      Each service is tailored to meet your specific business
+                      needs and goals.
                     </div>
                   </div>
                 </div>
@@ -536,13 +613,27 @@
               <div class="faq-item" data-category="general">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
                   <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                    >
                       How long has Softorate been in business?
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
-                      Softorate has been delivering exceptional software solutions since 2020. With over 4+ years of experience, we've successfully completed 100+ projects for clients across various industries, from startups to established enterprises.
+                      Softorate has been delivering exceptional software
+                      solutions since 2020. With over 4+ years of experience,
+                      we've successfully completed 100+ projects for clients
+                      across various industries, from startups to established
+                      enterprises.
                     </div>
                   </div>
                 </div>
@@ -552,18 +643,38 @@
               <div class="faq-item" data-category="services">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
                   <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                    >
                       Can you handle both web and mobile app development?
                     </button>
                   </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
-                      Absolutely! Our team has expertise in both web and mobile development:
+                      Absolutely! Our team has expertise in both web and mobile
+                      development:
                       <ul class="mt-3">
-                        <li><strong>Web Development:</strong> React, Angular, Vue.js, Node.js, Python, PHP</li>
-                        <li><strong>Mobile Development:</strong> iOS (Swift), Android (Kotlin), Cross-platform (React Native, Flutter)</li>
+                        <li>
+                          <strong>Web Development:</strong> React, Angular,
+                          Vue.js, Node.js, Python, PHP
+                        </li>
+                        <li>
+                          <strong>Mobile Development:</strong> iOS (Swift),
+                          Android (Kotlin), Cross-platform (React Native,
+                          Flutter)
+                        </li>
                       </ul>
-                      We can build responsive web applications, native mobile apps, or cross-platform solutions based on your requirements.
+                      We can build responsive web applications, native mobile
+                      apps, or cross-platform solutions based on your
+                      requirements.
                     </div>
                   </div>
                 </div>
@@ -572,13 +683,24 @@
               <div class="faq-item" data-category="services" id="timeline">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
                   <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                    >
                       Do you offer social media management services?
                     </button>
                   </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
-                      Yes, we provide comprehensive social media management including:
+                      Yes, we provide comprehensive social media management
+                      including:
                       <ul class="mt-3">
                         <li>Content Strategy & Creation</li>
                         <li>Community Management</li>
@@ -586,7 +708,8 @@
                         <li>Paid Advertising Campaigns</li>
                         <li>Influencer Partnerships</li>
                       </ul>
-                      Our social media experts help build your brand presence and engage with your target audience effectively.
+                      Our social media experts help build your brand presence
+                      and engage with your target audience effectively.
                     </div>
                   </div>
                 </div>
@@ -596,22 +719,51 @@
               <div class="faq-item" data-category="process">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
                   <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                    >
                       What is your development process?
                     </button>
                   </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFive"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
-                      Our development process follows agile methodology with these key phases:
+                      Our development process follows agile methodology with
+                      these key phases:
                       <ol class="mt-3">
-                        <li><strong>Discovery:</strong> Understanding your requirements and goals</li>
-                        <li><strong>Planning:</strong> Creating project roadmap and architecture</li>
-                        <li><strong>Design:</strong> UI/UX design and prototyping</li>
-                        <li><strong>Development:</strong> Sprint-based development with regular updates</li>
-                        <li><strong>Testing:</strong> Rigorous QA and user acceptance testing</li>
-                        <li><strong>Deployment:</strong> Launch and post-launch support</li>
+                        <li>
+                          <strong>Discovery:</strong> Understanding your
+                          requirements and goals
+                        </li>
+                        <li>
+                          <strong>Planning:</strong> Creating project roadmap
+                          and architecture
+                        </li>
+                        <li>
+                          <strong>Design:</strong> UI/UX design and prototyping
+                        </li>
+                        <li>
+                          <strong>Development:</strong> Sprint-based development
+                          with regular updates
+                        </li>
+                        <li>
+                          <strong>Testing:</strong> Rigorous QA and user
+                          acceptance testing
+                        </li>
+                        <li>
+                          <strong>Deployment:</strong> Launch and post-launch
+                          support
+                        </li>
                       </ol>
-                      We maintain transparent communication throughout the process.
+                      We maintain transparent communication throughout the
+                      process.
                     </div>
                   </div>
                 </div>
@@ -620,15 +772,27 @@
               <div class="faq-item" data-category="process">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
                   <h2 class="accordion-header" id="headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                    >
                       How do you ensure project quality?
                     </button>
                   </h2>
-                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSix"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
                       We ensure quality through multiple measures:
                       <ul class="mt-3">
-                        <li>Following industry best practices and coding standards</li>
+                        <li>
+                          Following industry best practices and coding standards
+                        </li>
                         <li>Automated and manual testing at every stage</li>
                         <li>Code reviews by senior developers</li>
                         <li>Continuous integration and deployment</li>
@@ -644,19 +808,40 @@
               <div class="faq-item" data-category="pricing" id="pricing">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
                   <h2 class="accordion-header" id="headingSeven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven"
+                    >
                       How much does a typical project cost?
                     </button>
                   </h2>
-                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseSeven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSeven"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
-                      Project costs vary based on complexity, features, and requirements. We offer:
+                      Project costs vary based on complexity, features, and
+                      requirements. We offer:
                       <ul class="mt-3">
-                        <li><strong>Fixed Price:</strong> For well-defined projects with clear requirements</li>
-                        <li><strong>Hourly Rate:</strong> For ongoing development and maintenance</li>
-                        <li><strong>Monthly Retainer:</strong> For continuous support and updates</li>
+                        <li>
+                          <strong>Fixed Price:</strong> For well-defined
+                          projects with clear requirements
+                        </li>
+                        <li>
+                          <strong>Hourly Rate:</strong> For ongoing development
+                          and maintenance
+                        </li>
+                        <li>
+                          <strong>Monthly Retainer:</strong> For continuous
+                          support and updates
+                        </li>
                       </ul>
-                      Contact us for a free consultation and detailed quote tailored to your needs.
+                      Contact us for a free consultation and detailed quote
+                      tailored to your needs.
                     </div>
                   </div>
                 </div>
@@ -665,13 +850,28 @@
               <div class="faq-item" data-category="pricing">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="0.9s">
                   <h2 class="accordion-header" id="headingEight">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEight"
+                    >
                       Do you require payment upfront?
                     </button>
                   </h2>
-                  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseEight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingEight"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
-                      Yes, we typically require a 30-50% deposit to start the project, with the remaining balance tied to milestone completions. This ensures commitment from both sides and aligns our interests with your project's success. Payment schedules are customized based on project scope and duration.
+                      Yes, we typically require a 30-50% deposit to start the
+                      project, with the remaining balance tied to milestone
+                      completions. This ensures commitment from both sides and
+                      aligns our interests with your project's success. Payment
+                      schedules are customized based on project scope and
+                      duration.
                     </div>
                   </div>
                 </div>
@@ -681,11 +881,21 @@
               <div class="faq-item" data-category="support" id="support">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="1.0s">
                   <h2 class="accordion-header" id="headingNine">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseNine"
+                    >
                       What kind of post-launch support do you provide?
                     </button>
                   </h2>
-                  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseNine"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingNine"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
                       We offer comprehensive post-launch support including:
                       <ul class="mt-3">
@@ -705,11 +915,21 @@
               <div class="faq-item" data-category="support">
                 <div class="accordion-item wow fadeInUp" data-wow-delay="1.1s">
                   <h2 class="accordion-header" id="headingTen">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTen"
+                    >
                       How quickly do you respond to support requests?
                     </button>
                   </h2>
-                  <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+                  <div
+                    id="collapseTen"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTen"
+                    data-bs-parent="#faqAccordion"
+                  >
                     <div class="accordion-body">
                       We pride ourselves on quick response times:
                       <ul class="mt-3">
@@ -718,7 +938,8 @@
                         <li>Normal priority: Within 24 hours</li>
                         <li>Low priority: Within 48 hours</li>
                       </ul>
-                      Our support team is available 24/7 to ensure your business runs smoothly.
+                      Our support team is available 24/7 to ensure your business
+                      runs smoothly.
                     </div>
                   </div>
                 </div>
@@ -737,9 +958,14 @@
           <div class="col-lg-8 mx-auto">
             <div class="contact-box wow fadeInUp" data-wow-delay="0.2s">
               <h2>Still Have Questions?</h2>
-              <p>Can't find the answer you're looking for? Our team is here to help with any questions you may have.</p>
+              <p>
+                Can't find the answer you're looking for? Our team is here to
+                help with any questions you may have.
+              </p>
               <a href="contact.html" class="btn btn-light mb-2">Contact Us</a>
-              <a href="tel:+919552750465" class="btn btn-outline-light mb-2">Call Us Now</a>
+              <a href="tel:+919552750465" class="btn btn-outline-light mb-2"
+                >Call Us Now</a
+              >
             </div>
           </div>
         </div>
@@ -753,14 +979,20 @@
         <div class="row">
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="support-info">
-              <h4><i class="fas fa-envelope me-2 text-primary"></i> Email Support</h4>
+              <h4>
+                <i class="fas fa-envelope me-2 text-primary"></i> Email Support
+              </h4>
               <div class="support-item">
                 <div class="support-icon">
                   <i class="fas fa-envelope"></i>
                 </div>
                 <div class="support-text">
                   <h5>General Inquiries</h5>
-                  <p><a href="mailto:softorate.contact@gmail.com">softorate.contact@gmail.com</a></p>
+                  <p>
+                    <a href="mailto:softorate.contact@gmail.com"
+                      >softorate.contact@gmail.com</a
+                    >
+                  </p>
                 </div>
               </div>
               <div class="support-item">
@@ -769,14 +1001,20 @@
                 </div>
                 <div class="support-text">
                   <h5>Support</h5>
-                  <p><a href="mailto:support@softorate.com">support@softorate.com</a></p>
+                  <p>
+                    <a href="mailto:support@softorate.com"
+                      >support@softorate.com</a
+                    >
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s">
             <div class="support-info">
-              <h4><i class="fas fa-phone me-2 text-primary"></i> Phone Support</h4>
+              <h4>
+                <i class="fas fa-phone me-2 text-primary"></i> Phone Support
+              </h4>
               <div class="support-item">
                 <div class="support-icon">
                   <i class="fas fa-phone-alt"></i>
@@ -799,7 +1037,9 @@
           </div>
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s">
             <div class="support-info">
-              <h4><i class="fas fa-comment me-2 text-primary"></i> Live Chat</h4>
+              <h4>
+                <i class="fas fa-comment me-2 text-primary"></i> Live Chat
+              </h4>
               <div class="support-item">
                 <div class="support-icon">
                   <i class="fas fa-comment-dots"></i>
@@ -838,7 +1078,9 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
+                We deliver custom software, web applications, and automation
+                solutions—high performance, scalable, and user-friendly to help
+                your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -867,13 +1109,25 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
-              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
+              <a href="about.html"
+                ><i class="fas fa-angle-right me-2"></i> About Us</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Services</a
+              >
+              <a href="portfolio.html"
+                ><i class="fas fa-angle-right me-2"></i> Portfolio</a
+              >
               <!-- <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a> -->
-              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
-              <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonials</a>
+              <a href="FAQ.html"
+                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-right me-2"></i> Contact</a
+              >
+              <a href="testimonial.html"
+                ><i class="fas fa-angle-right me-2"></i> Testimonials</a
+              >
             </div>
           </div>
 
@@ -992,35 +1246,38 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    
+
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener("DOMContentLoaded", function () {
         // Hide spinner
         setTimeout(() => {
-          document.getElementById('spinner').classList.remove('show');
+          document.getElementById("spinner").classList.remove("show");
         }, 1000);
-        
+
         // Initialize WOW
         new WOW().init();
-        
+
         // FAQ Category Filtering
-        const categoryBtns = document.querySelectorAll('.category-btn');
-        const faqItems = document.querySelectorAll('.faq-item');
-        
-        categoryBtns.forEach(btn => {
-          btn.addEventListener('click', () => {
+        const categoryBtns = document.querySelectorAll(".category-btn");
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        categoryBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
             // Remove active class from all buttons
-            categoryBtns.forEach(b => b.classList.remove('active'));
+            categoryBtns.forEach((b) => b.classList.remove("active"));
             // Add active class to clicked button
-            btn.classList.add('active');
-            
-            const category = btn.getAttribute('data-category');
-            
-            faqItems.forEach(item => {
-              if (category === 'all' || item.getAttribute('data-category') === category) {
-                item.style.display = 'block';
+            btn.classList.add("active");
+
+            const category = btn.getAttribute("data-category");
+
+            faqItems.forEach((item) => {
+              if (
+                category === "all" ||
+                item.getAttribute("data-category") === category
+              ) {
+                item.style.display = "block";
               } else {
-                item.style.display = 'none';
+                item.style.display = "none";
               }
             });
           });
@@ -1030,10 +1287,13 @@
       function scrollToFAQ(section) {
         const element = document.getElementById(section);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          element.scrollIntoView({ behavior: "smooth" });
           // Open the accordion item
-          const accordionButton = element.querySelector('.accordion-button');
-          if (accordionButton && accordionButton.classList.contains('collapsed')) {
+          const accordionButton = element.querySelector(".accordion-button");
+          if (
+            accordionButton &&
+            accordionButton.classList.contains("collapsed")
+          ) {
             accordionButton.click();
           }
         }

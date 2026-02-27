@@ -133,12 +133,13 @@
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
+    max-height: 80px;
     transition: .5s;
 }
 
+/* override for container variant, keep same limit */
 .nav-bar .navbar-light .navbar-brand img {
-    max-height: 50px;
+    max-height: 80px;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {

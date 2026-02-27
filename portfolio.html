@@ -4,8 +4,14 @@
     <meta charset="utf-8" />
     <title>Portfolio - Softorate Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="software development portfolio, web development projects, mobile app portfolio, case studies, client work" name="keywords" />
-    <meta content="Explore our portfolio of successful software development projects including web applications, mobile apps, and digital solutions delivered for clients across industries." name="description" />
+    <meta
+      content="software development portfolio, web development projects, mobile app portfolio, case studies, client work"
+      name="keywords"
+    />
+    <meta
+      content="Explore our portfolio of successful software development projects including web applications, mobile apps, and digital solutions delivered for clients across industries."
+      name="description"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +41,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    
+
     <style>
       /* Portfolio specific styles */
       .portfolio-header {
@@ -44,75 +50,81 @@
         margin: 40px auto;
         padding: 60px 40px;
         border-radius: 18px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         color: #ffffff;
         text-align: center;
       }
-      
+
       .portfolio-header h1 {
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 20px;
         color: #fff;
       }
-      
+
       .portfolio-header p {
         font-size: 1.2rem;
         opacity: 0.95;
         max-width: 700px;
         margin: 0 auto;
       }
-      
+
       .breadcrumb {
         background: transparent;
         justify-content: center;
         margin-top: 20px;
       }
-      
+
       .breadcrumb-item,
       .breadcrumb-item a {
         color: rgba(255, 255, 255, 0.8);
       }
-      
+
       .breadcrumb-item.active {
         color: #fff;
       }
-      
+
       .breadcrumb-item + .breadcrumb-item::before {
         color: rgba(255, 255, 255, 0.5);
       }
-      
+
       /* Stats Section */
       .stats-section {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         color: white;
         padding: 60px 0;
         margin: 40px 0;
         border-radius: 18px;
       }
-      
+
       .stat-item {
         text-align: center;
       }
-      
+
       .stat-number {
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 5px;
       }
-      
+
       .stat-label {
         font-size: 1.1rem;
         opacity: 0.9;
       }
-      
+
       /* Portfolio Filter */
       .portfolio-filter {
         margin-bottom: 40px;
         text-align: center;
       }
-      
+
       .filter-btn {
         background: transparent;
         border: 2px solid var(--bs-primary);
@@ -125,13 +137,13 @@
         cursor: pointer;
         display: inline-block;
       }
-      
+
       .filter-btn:hover,
       .filter-btn.active {
         background: var(--bs-primary);
         color: white;
       }
-      
+
       /* Portfolio Cards */
       .portfolio-card {
         background: #fff;
@@ -141,46 +153,50 @@
         transition: 0.3s;
         height: 100%;
       }
-      
+
       .portfolio-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
       }
-      
+
       .portfolio-image {
         position: relative;
         overflow: hidden;
         height: 200px;
       }
-      
+
       .portfolio-image img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         transition: 0.5s;
       }
-      
+
       .portfolio-card:hover .portfolio-image img {
         transform: scale(1.1);
       }
-      
+
       .portfolio-overlay {
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);display: flex;
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
+        display: flex;
         align-items: center;
         justify-content: center;
         opacity: 0;
         transition: 0.3s;
       }
-      
+
       .portfolio-card:hover .portfolio-overlay {
         opacity: 1;
       }
-      
+
       .portfolio-links a {
         width: 50px;
         height: 50px;
@@ -195,17 +211,17 @@
         transition: 0.3s;
         text-decoration: none;
       }
-      
+
       .portfolio-links a:hover {
         transform: scale(1.1);
         background: var(--bs-primary);
         color: white;
       }
-      
+
       .portfolio-content {
         padding: 20px;
       }
-      
+
       .portfolio-category {
         color: var(--bs-primary);
         font-size: 0.9rem;
@@ -214,25 +230,25 @@
         letter-spacing: 1px;
         margin-bottom: 10px;
       }
-      
+
       .portfolio-content h3 {
         font-size: 1.3rem;
         margin-bottom: 10px;
         color: #16243d;
       }
-      
+
       .portfolio-content p {
         color: #787878;
         margin-bottom: 15px;
         line-height: 1.6;
       }
-      
+
       .portfolio-tech {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
       }
-      
+
       .tech-tag {
         background: #f2f5f9;
         padding: 4px 12px;
@@ -240,13 +256,13 @@
         font-size: 0.8rem;
         color: #16243d;
       }
-      
+
       /* Pagination */
       .pagination {
         margin-top: 50px;
         justify-content: center;
       }
-      
+
       .page-link {
         color: var(--bs-primary);
         border: none;
@@ -259,91 +275,97 @@
         justify-content: center;
         font-weight: 600;
       }
-      
+
       .page-link:hover {
         background: var(--bs-primary);
         color: white;
       }
-      
+
       .page-item.active .page-link {
         background: var(--bs-primary);
         border-color: var(--bs-primary);
         color: white;
       }
-      
+
       /* Modal Styles */
       .portfolio-modal .modal-content {
         border-radius: 20px;
         overflow: hidden;
       }
-      
+
       .portfolio-modal .modal-header {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         color: white;
         border: none;
         padding: 20px 30px;
       }
-      
+
       .portfolio-modal .modal-header .btn-close {
         background: white;
         opacity: 0.8;
       }
-      
+
       .portfolio-modal .modal-body {
         padding: 30px;
       }
-      
+
       .portfolio-modal .modal-image {
         width: 100%;
         border-radius: 15px;
         margin-bottom: 25px;
       }
-      
+
       .project-details {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         margin: 25px 0;
       }
-      
+
       .detail-item {
         flex: 1;
         min-width: 120px;
       }
-      
+
       .detail-label {
         font-size: 0.9rem;
         color: #787878;
         margin-bottom: 5px;
       }
-      
+
       .detail-value {
         font-size: 1.1rem;
         font-weight: 600;
         color: #16243d;
       }
-      
+
       /* CTA Section */
       .cta-section {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border-radius: 18px;
         padding: 60px;
         color: white;
         text-align: center;
       }
-      
+
       .cta-section h2 {
         font-size: 2.2rem;
         margin-bottom: 20px;
       }
-      
+
       .cta-section p {
         font-size: 1.1rem;
         opacity: 0.95;
         max-width: 700px;
         margin: 0 auto 30px;
       }
-      
+
       .cta-section .btn-light {
         background: white;
         color: #0f2027;
@@ -354,12 +376,12 @@
         transition: 0.3s;
         margin: 0 10px;
       }
-      
+
       .cta-section .btn-light:hover {
         transform: scale(1.05);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       }
-      
+
       .cta-section .btn-outline-light {
         border: 2px solid white;
         color: white;
@@ -370,34 +392,34 @@
         margin: 0 10px;
         background: transparent;
       }
-      
+
       .cta-section .btn-outline-light:hover {
         background: white;
         color: #0f2027;
         transform: scale(1.05);
       }
-      
+
       @media (max-width: 768px) {
         .portfolio-header {
           padding: 40px 25px;
         }
-        
+
         .portfolio-header h1 {
           font-size: 2rem;
         }
-        
+
         .stat-number {
           font-size: 2rem;
         }
-        
+
         .cta-section {
           padding: 40px 25px;
         }
-        
+
         .cta-section h2 {
           font-size: 1.8rem;
         }
-        
+
         .cta-section .btn-light,
         .cta-section .btn-outline-light {
           display: block;
@@ -429,9 +451,12 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a href="index.html" class="navbar-brand p-0">
-            <h1 class="text-primary mb-0">
-              <i class="fab fa-free-code-camp me-2"></i> Softorate
-            </h1>
+            <img
+              src="img/LOGO.jpeg"
+              alt="Softorate Logo"
+              class="img-fluid"
+              style="height: 80px"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -446,7 +471,9 @@
               <a href="index.html" class="nav-item nav-link">Home</a>
               <a href="about.html" class="nav-item nav-link">About</a>
               <a href="service.html" class="nav-item nav-link">Services</a>
-              <a href="portfolio.html" class="nav-item nav-link active">Portfolio</a>
+              <a href="portfolio.html" class="nav-item nav-link active"
+                >Portfolio</a
+              >
               <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
               <a href="FAQ.html" class="nav-item nav-link">FAQs</a>
               <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -478,7 +505,10 @@
     <!-- Portfolio Header with Breadcrumb -->
     <div class="portfolio-header">
       <h1 class="wow fadeInUp" data-wow-delay="0.2s">Our Portfolio</h1>
-      <p class="wow fadeInUp" data-wow-delay="0.4s">Explore our latest projects and see how we've helped businesses transform their ideas into reality</p>
+      <p class="wow fadeInUp" data-wow-delay="0.4s">
+        Explore our latest projects and see how we've helped businesses
+        transform their ideas into reality
+      </p>
       <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -525,7 +555,9 @@
     <div class="container py-5">
       <!-- Filter Buttons -->
       <div class="portfolio-filter wow fadeInUp" data-wow-delay="0.2s">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn active" data-filter="all">
+          All Projects
+        </button>
         <button class="filter-btn" data-filter="web">Web Development</button>
         <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
         <button class="filter-btn" data-filter="automation">Automation</button>
@@ -538,10 +570,25 @@
         <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
           <div class="portfolio-card">
             <div class="portfolio-image">
-              <img src="img/custom-software.png" class="img-fluid w-100" alt="E-Commerce Platform" onerror="this.src='https://via.placeholder.com/400x300/0f2027/ffffff?text=E-Commerce'">
+              <img
+                src="img/custom-software.png"
+                class="img-fluid w-100"
+                alt="E-Commerce Platform"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x300/0f2027/ffffff?text=E-Commerce'
+                "
+              />
               <div class="portfolio-overlay">
                 <div class="portfolio-links">
-                  <a href="#" onclick="openProjectModal(1); return false;"><i class="fas fa-search"></i></a>
+                  <a
+                    href="#"
+                    onclick="
+                      openProjectModal(1);
+                      return false;
+                    "
+                    ><i class="fas fa-search"></i
+                  ></a>
                   <a href="#"><i class="fas fa-link"></i></a>
                 </div>
               </div>
@@ -549,7 +596,10 @@
             <div class="portfolio-content">
               <div class="portfolio-category">Web Development</div>
               <h3>E-Commerce Platform</h3>
-              <p>Modern online store with inventory management and payment integration.</p>
+              <p>
+                Modern online store with inventory management and payment
+                integration.
+              </p>
               <div class="portfolio-tech">
                 <span class="tech-tag">React</span>
                 <span class="tech-tag">Node.js</span>
@@ -563,10 +613,25 @@
         <div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
           <div class="portfolio-card">
             <div class="portfolio-image">
-              <img src="img/web-app-dev.png" class="img-fluid w-100" alt="Fitness Tracker App" onerror="this.src='https://via.placeholder.com/400x300/203a43/ffffff?text=Fitness+App'">
+              <img
+                src="img/web-app-dev.png"
+                class="img-fluid w-100"
+                alt="Fitness Tracker App"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x300/203a43/ffffff?text=Fitness+App'
+                "
+              />
               <div class="portfolio-overlay">
                 <div class="portfolio-links">
-                  <a href="#" onclick="openProjectModal(2); return false;"><i class="fas fa-search"></i></a>
+                  <a
+                    href="#"
+                    onclick="
+                      openProjectModal(2);
+                      return false;
+                    "
+                    ><i class="fas fa-search"></i
+                  ></a>
                   <a href="#"><i class="fas fa-link"></i></a>
                 </div>
               </div>
@@ -574,7 +639,10 @@
             <div class="portfolio-content">
               <div class="portfolio-category">Mobile App</div>
               <h3>Fitness Tracker App</h3>
-              <p>Cross-platform fitness tracking with workout plans and progress monitoring.</p>
+              <p>
+                Cross-platform fitness tracking with workout plans and progress
+                monitoring.
+              </p>
               <div class="portfolio-tech">
                 <span class="tech-tag">Flutter</span>
                 <span class="tech-tag">Firebase</span>
@@ -585,13 +653,31 @@
         </div>
 
         <!-- Portfolio Item 3 -->
-        <div class="col-lg-4 col-md-6 portfolio-item" data-category="automation">
+        <div
+          class="col-lg-4 col-md-6 portfolio-item"
+          data-category="automation"
+        >
           <div class="portfolio-card">
             <div class="portfolio-image">
-              <img src="img/ai.png" class="img-fluid w-100" alt="WhatsApp Business Bot" onerror="this.src='https://via.placeholder.com/400x300/2c5364/ffffff?text=WhatsApp+Bot'">
+              <img
+                src="img/ai.png"
+                class="img-fluid w-100"
+                alt="WhatsApp Business Bot"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x300/2c5364/ffffff?text=WhatsApp+Bot'
+                "
+              />
               <div class="portfolio-overlay">
                 <div class="portfolio-links">
-                  <a href="#" onclick="openProjectModal(3); return false;"><i class="fas fa-search"></i></a>
+                  <a
+                    href="#"
+                    onclick="
+                      openProjectModal(3);
+                      return false;
+                    "
+                    ><i class="fas fa-search"></i
+                  ></a>
                   <a href="#"><i class="fas fa-link"></i></a>
                 </div>
               </div>
@@ -599,7 +685,10 @@
             <div class="portfolio-content">
               <div class="portfolio-category">Automation</div>
               <h3>WhatsApp Business Bot</h3>
-              <p>Automated customer support and marketing bot for WhatsApp Business.</p>
+              <p>
+                Automated customer support and marketing bot for WhatsApp
+                Business.
+              </p>
               <div class="portfolio-tech">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">Twilio</span>
@@ -613,10 +702,25 @@
         <div class="col-lg-4 col-md-6 portfolio-item" data-category="social">
           <div class="portfolio-card">
             <div class="portfolio-image">
-              <img src="img/enterprise-sol.png" class="img-fluid w-100" alt="Social Media Campaign" onerror="this.src='https://via.placeholder.com/400x300/0f2027/ffffff?text=Social+Media'">
+              <img
+                src="img/enterprise-sol.png"
+                class="img-fluid w-100"
+                alt="Social Media Campaign"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x300/0f2027/ffffff?text=Social+Media'
+                "
+              />
               <div class="portfolio-overlay">
                 <div class="portfolio-links">
-                  <a href="#" onclick="openProjectModal(4); return false;"><i class="fas fa-search"></i></a>
+                  <a
+                    href="#"
+                    onclick="
+                      openProjectModal(4);
+                      return false;
+                    "
+                    ><i class="fas fa-search"></i
+                  ></a>
                   <a href="#"><i class="fas fa-link"></i></a>
                 </div>
               </div>
@@ -624,7 +728,10 @@
             <div class="portfolio-content">
               <div class="portfolio-category">Social Media</div>
               <h3>Brand Growth Campaign</h3>
-              <p>Comprehensive social media strategy that increased engagement by 200%.</p>
+              <p>
+                Comprehensive social media strategy that increased engagement by
+                200%.
+              </p>
               <div class="portfolio-tech">
                 <span class="tech-tag">Instagram</span>
                 <span class="tech-tag">LinkedIn</span>
@@ -638,10 +745,25 @@
         <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
           <div class="portfolio-card">
             <div class="portfolio-image">
-              <img src="img/custom-software.png" class="img-fluid w-100" alt="CRM System" onerror="this.src='https://via.placeholder.com/400x300/203a43/ffffff?text=CRM+System'">
+              <img
+                src="img/custom-software.png"
+                class="img-fluid w-100"
+                alt="CRM System"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x300/203a43/ffffff?text=CRM+System'
+                "
+              />
               <div class="portfolio-overlay">
                 <div class="portfolio-links">
-                  <a href="#" onclick="openProjectModal(5); return false;"><i class="fas fa-search"></i></a>
+                  <a
+                    href="#"
+                    onclick="
+                      openProjectModal(5);
+                      return false;
+                    "
+                    ><i class="fas fa-search"></i
+                  ></a>
                   <a href="#"><i class="fas fa-link"></i></a>
                 </div>
               </div>
@@ -649,7 +771,10 @@
             <div class="portfolio-content">
               <div class="portfolio-category">Web Development</div>
               <h3>Custom CRM System</h3>
-              <p>Tailored CRM solution for sales pipeline and customer relationship management.</p>
+              <p>
+                Tailored CRM solution for sales pipeline and customer
+                relationship management.
+              </p>
               <div class="portfolio-tech">
                 <span class="tech-tag">Vue.js</span>
                 <span class="tech-tag">Laravel</span>
@@ -663,10 +788,25 @@
         <div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
           <div class="portfolio-card">
             <div class="portfolio-image">
-              <img src="img/web-app-dev.png" class="img-fluid w-100" alt="Food Delivery App" onerror="this.src='https://via.placeholder.com/400x300/2c5364/ffffff?text=Delivery+App'">
+              <img
+                src="img/web-app-dev.png"
+                class="img-fluid w-100"
+                alt="Food Delivery App"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x300/2c5364/ffffff?text=Delivery+App'
+                "
+              />
               <div class="portfolio-overlay">
                 <div class="portfolio-links">
-                  <a href="#" onclick="openProjectModal(6); return false;"><i class="fas fa-search"></i></a>
+                  <a
+                    href="#"
+                    onclick="
+                      openProjectModal(6);
+                      return false;
+                    "
+                    ><i class="fas fa-search"></i
+                  ></a>
                   <a href="#"><i class="fas fa-link"></i></a>
                 </div>
               </div>
@@ -686,12 +826,20 @@
       </div>
 
       <!-- Pagination -->
-      <nav aria-label="Portfolio pagination" class="wow fadeInUp" data-wow-delay="0.2s">
+      <nav
+        aria-label="Portfolio pagination"
+        class="wow fadeInUp"
+        data-wow-delay="0.2s"
+      >
         <ul class="pagination">
           <li class="page-item active"><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
+          <li class="page-item">
+            <a class="page-link" href="#"
+              ><i class="fas fa-chevron-right"></i
+            ></a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -701,7 +849,10 @@
       <div class="container py-3">
         <div class="cta-section wow fadeInUp" data-wow-delay="0.2s">
           <h2>Ready to Start Your Project?</h2>
-          <p>Have a project in mind? We'd love to discuss how we can help bring your ideas to life with our expertise and experience.</p>
+          <p>
+            Have a project in mind? We'd love to discuss how we can help bring
+            your ideas to life with our expertise and experience.
+          </p>
           <a href="contact.html" class="btn-light">Start a Project</a>
           <a href="service.html" class="btn-outline-light">Our Services</a>
         </div>
@@ -714,7 +865,12 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="projectModalTitle">Project Details</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body" id="projectModalBody">
             <!-- Content will be loaded dynamically -->
@@ -736,12 +892,29 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
+                We deliver custom software, web applications, and automation
+                solutions—high performance, scalable, and user-friendly to help
+                your business grow.
               </p>
               <div class="d-flex">
-                <a class="btn btn-sm-square rounded-circle me-2" href="https://github.com/sidz111" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="btn btn-sm-square rounded-circle me-2" href="https://www.instagram.com/_softorate/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-sm-square rounded-circle" href="https://www.linkedin.com/company/softorate/about/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a
+                  class="btn btn-sm-square rounded-circle me-2"
+                  href="https://github.com/sidz111"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  class="btn btn-sm-square rounded-circle me-2"
+                  href="https://www.instagram.com/_softorate/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  class="btn btn-sm-square rounded-circle"
+                  href="https://www.linkedin.com/company/softorate/about/?viewAsMember=true"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -750,14 +923,28 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
-              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
+              <a href="about.html"
+                ><i class="fas fa-angle-right me-2"></i> About Us</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Services</a
+              >
+              <a href="portfolio.html"
+                ><i class="fas fa-angle-right me-2"></i> Portfolio</a
+              >
               <!-- <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a> -->
-              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
-              <a href="team.html"><i class="fas fa-angle-right me-2"></i> Our Team</a>
-              <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonials</a>
+              <a href="FAQ.html"
+                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-right me-2"></i> Contact</a
+              >
+              <a href="team.html"
+                ><i class="fas fa-angle-right me-2"></i> Our Team</a
+              >
+              <a href="testimonial.html"
+                ><i class="fas fa-angle-right me-2"></i> Testimonials</a
+              >
             </div>
           </div>
 
@@ -766,7 +953,9 @@
             <div class="row g-4">
               <div class="col-sm-6">
                 <div class="d-flex">
-                  <div class="btn-xl-square bg-primary text-white rounded p-3 me-3">
+                  <div
+                    class="btn-xl-square bg-primary text-white rounded p-3 me-3"
+                  >
                     <i class="fas fa-map-marker-alt fa-lg"></i>
                   </div>
                   <div>
@@ -777,7 +966,9 @@
               </div>
               <div class="col-sm-6">
                 <div class="d-flex">
-                  <div class="btn-xl-square bg-primary text-white rounded p-3 me-3">
+                  <div
+                    class="btn-xl-square bg-primary text-white rounded p-3 me-3"
+                  >
                     <i class="fas fa-envelope fa-lg"></i>
                   </div>
                   <div>
@@ -788,7 +979,9 @@
               </div>
               <div class="col-sm-6">
                 <div class="d-flex">
-                  <div class="btn-xl-square bg-primary text-white rounded p-3 me-3">
+                  <div
+                    class="btn-xl-square bg-primary text-white rounded p-3 me-3"
+                  >
                     <i class="fa fa-phone-alt fa-lg"></i>
                   </div>
                   <div>
@@ -805,11 +998,31 @@
         <div class="row mt-5">
           <div class="col-lg-6">
             <h4 class="text-white mb-3">Connect with us</h4>
-            <form action="https://api.web3forms.com/submit" method="POST" class="d-flex">
-              <input type="hidden" name="access_key" value="220ba6eb-8726-417b-9dd7-b2bb95d6796a" />
-              <input type="hidden" name="redirect" value="https://www.softorate.com/success.html" />
-              <input type="email" name="email" class="form-control rounded-start-pill" placeholder="Enter your email" required />
-              <button type="submit" class="btn btn-primary rounded-end-pill">Subscribe</button>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="d-flex"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="220ba6eb-8726-417b-9dd7-b2bb95d6796a"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://www.softorate.com/success.html"
+              />
+              <input
+                type="email"
+                name="email"
+                class="form-control rounded-start-pill"
+                placeholder="Enter your email"
+                required
+              />
+              <button type="submit" class="btn btn-primary rounded-end-pill">
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
@@ -824,8 +1037,8 @@
           <div class="col-md-6 text-center text-md-end mb-md-0">
             <span class="text-body">
               <a href="#" class="border-bottom text-white">
-                <i class="fas fa-copyright text-light me-2"></i>Softorate
-              </a>, All right reserved.
+                <i class="fas fa-copyright text-light me-2"></i>Softorate </a
+              >, All right reserved.
             </span>
           </div>
         </div>
@@ -834,7 +1047,10 @@
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top">
+    <a
+      href="#"
+      class="btn btn-primary btn-lg-square rounded-circle back-to-top"
+    >
       <i class="fa fa-arrow-up"></i>
     </a>
 
@@ -851,31 +1067,34 @@
     <!-- Portfolio JavaScript -->
     <script>
       // Portfolio filtering
-      document.addEventListener('DOMContentLoaded', function() {
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-        filterButtons.forEach(button => {
-          button.addEventListener('click', () => {
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
             // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
             // Add active class to clicked button
-            button.classList.add('active');
+            button.classList.add("active");
 
-            const filterValue = button.getAttribute('data-filter');
+            const filterValue = button.getAttribute("data-filter");
 
-            portfolioItems.forEach(item => {
-              if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                item.style.display = 'block';
+            portfolioItems.forEach((item) => {
+              if (
+                filterValue === "all" ||
+                item.getAttribute("data-category") === filterValue
+              ) {
+                item.style.display = "block";
                 setTimeout(() => {
-                  item.style.opacity = '1';
-                  item.style.transform = 'scale(1)';
+                  item.style.opacity = "1";
+                  item.style.transform = "scale(1)";
                 }, 50);
               } else {
-                item.style.opacity = '0';
-                item.style.transform = 'scale(0.8)';
+                item.style.opacity = "0";
+                item.style.transform = "scale(0.8)";
                 setTimeout(() => {
-                  item.style.display = 'none';
+                  item.style.display = "none";
                 }, 300);
               }
             });
@@ -884,16 +1103,16 @@
 
         // Initialize WOW
         new WOW().init();
-        
+
         // Hide spinner
         setTimeout(() => {
-          document.getElementById('spinner').classList.remove('show');
+          document.getElementById("spinner").classList.remove("show");
         }, 1000);
-        
+
         // Counter Up initialization
         $('[data-toggle="counter-up"]').counterUp({
           delay: 10,
-          time: 2000
+          time: 2000,
         });
       });
 
@@ -906,10 +1125,13 @@
           client: "Fashion Store India",
           duration: "3 months",
           technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
-          description: "A modern e-commerce platform built for a fashion retailer. Features include product catalog, shopping cart, secure payment processing, order management, and admin dashboard.",
-          challenge: "The client needed a scalable platform that could handle high traffic during sale events and provide seamless mobile experience.",
-          solution: "We built a responsive PWA with React and implemented caching strategies. The backend uses Node.js with MongoDB for flexible product management.",
-          link: "#"
+          description:
+            "A modern e-commerce platform built for a fashion retailer. Features include product catalog, shopping cart, secure payment processing, order management, and admin dashboard.",
+          challenge:
+            "The client needed a scalable platform that could handle high traffic during sale events and provide seamless mobile experience.",
+          solution:
+            "We built a responsive PWA with React and implemented caching strategies. The backend uses Node.js with MongoDB for flexible product management.",
+          link: "#",
         },
         2: {
           title: "Fitness Tracker App",
@@ -918,10 +1140,13 @@
           client: "FitLife Gym Chain",
           duration: "4 months",
           technologies: ["Flutter", "Firebase", "Dart", "Google Fit API"],
-          description: "Cross-platform fitness tracking application with personalized workout plans, progress tracking, and social features.",
-          challenge: "Creating an intuitive UI for workout tracking and real-time synchronization across devices.",
-          solution: "Used Flutter for beautiful native-like UI and Firebase for real-time data sync and authentication.",
-          link: "#"
+          description:
+            "Cross-platform fitness tracking application with personalized workout plans, progress tracking, and social features.",
+          challenge:
+            "Creating an intuitive UI for workout tracking and real-time synchronization across devices.",
+          solution:
+            "Used Flutter for beautiful native-like UI and Firebase for real-time data sync and authentication.",
+          link: "#",
         },
         3: {
           title: "WhatsApp Business Bot",
@@ -930,10 +1155,13 @@
           client: "Retail Chain Store",
           duration: "2 months",
           technologies: ["Python", "Twilio", "OpenAI", "MongoDB"],
-          description: "Automated customer support bot for WhatsApp Business that handles FAQs, order status, and product recommendations.",
-          challenge: "Integrating with WhatsApp Business API and creating natural conversation flows.",
-          solution: "Used Twilio API for WhatsApp integration and OpenAI for intelligent responses. Implemented fallback to human agents for complex queries.",
-          link: "#"
+          description:
+            "Automated customer support bot for WhatsApp Business that handles FAQs, order status, and product recommendations.",
+          challenge:
+            "Integrating with WhatsApp Business API and creating natural conversation flows.",
+          solution:
+            "Used Twilio API for WhatsApp integration and OpenAI for intelligent responses. Implemented fallback to human agents for complex queries.",
+          link: "#",
         },
         4: {
           title: "Brand Growth Campaign",
@@ -942,10 +1170,13 @@
           client: "Tech Startup",
           duration: "6 months",
           technologies: ["Instagram", "LinkedIn", "Facebook Ads", "Analytics"],
-          description: "Comprehensive social media strategy that increased brand engagement by 200% and generated 500+ qualified leads.",
-          challenge: "Building brand awareness in a competitive tech market with limited budget.",
-          solution: "Created targeted content strategy, optimized ad campaigns, and leveraged influencer partnerships for maximum ROI.",
-          link: "#"
+          description:
+            "Comprehensive social media strategy that increased brand engagement by 200% and generated 500+ qualified leads.",
+          challenge:
+            "Building brand awareness in a competitive tech market with limited budget.",
+          solution:
+            "Created targeted content strategy, optimized ad campaigns, and leveraged influencer partnerships for maximum ROI.",
+          link: "#",
         },
         5: {
           title: "Custom CRM System",
@@ -954,10 +1185,13 @@
           client: "Real Estate Agency",
           duration: "5 months",
           technologies: ["Vue.js", "Laravel", "MySQL", "REST API"],
-          description: "Tailored CRM solution for real estate agency to manage properties, clients, and sales pipeline.",
-          challenge: "Complex reporting requirements and integration with multiple property listing platforms.",
-          solution: "Built modular architecture with Vue.js frontend and Laravel REST API. Implemented custom reporting engine.",
-          link: "#"
+          description:
+            "Tailored CRM solution for real estate agency to manage properties, clients, and sales pipeline.",
+          challenge:
+            "Complex reporting requirements and integration with multiple property listing platforms.",
+          solution:
+            "Built modular architecture with Vue.js frontend and Laravel REST API. Implemented custom reporting engine.",
+          link: "#",
         },
         6: {
           title: "Food Delivery App",
@@ -966,27 +1200,32 @@
           client: "Local Restaurant Chain",
           duration: "4 months",
           technologies: ["React Native", "Node.js", "Socket.io", "PostgreSQL"],
-          description: "On-demand food delivery platform with real-time order tracking, payment integration, and restaurant dashboard.",
-          challenge: "Real-time updates and efficient route optimization for deliveries.",
-          solution: "Used Socket.io for real-time communication and integrated Google Maps API for route optimization.",
-          link: "#"
-        }
+          description:
+            "On-demand food delivery platform with real-time order tracking, payment integration, and restaurant dashboard.",
+          challenge:
+            "Real-time updates and efficient route optimization for deliveries.",
+          solution:
+            "Used Socket.io for real-time communication and integrated Google Maps API for route optimization.",
+          link: "#",
+        },
       };
 
       function openProjectModal(projectId) {
         const project = projectData[projectId];
         if (!project) return;
 
-        const modalTitle = document.getElementById('projectModalTitle');
-        const modalBody = document.getElementById('projectModalBody');
+        const modalTitle = document.getElementById("projectModalTitle");
+        const modalBody = document.getElementById("projectModalBody");
 
         modalTitle.textContent = project.title;
 
         // Build modal content
-        const techTags = project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('');
-        
+        const techTags = project.technologies
+          .map((tech) => `<span class="tech-tag">${tech}</span>`)
+          .join("");
+
         modalBody.innerHTML = `
-          <img src="${project.image}" class="modal-image img-fluid" alt="${project.title}" onerror="this.src='https://via.placeholder.com/800x400/0f2027/ffffff?text=${project.title.replace(/ /g, '+')}'">
+          <img src="${project.image}" class="modal-image img-fluid" alt="${project.title}" onerror="this.src='https://via.placeholder.com/800x400/0f2027/ffffff?text=${project.title.replace(/ /g, "+")}'">
           <div class="project-details">
             <div class="detail-item">
               <div class="detail-label">Category</div>
@@ -1020,7 +1259,9 @@
         `;
 
         // Show modal
-        const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+        const modal = new bootstrap.Modal(
+          document.getElementById("projectModal"),
+        );
         modal.show();
       }
     </script>

@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Contact Us - Softorate Software Solutions Agency</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="contact software agency, get in touch, software development inquiry, consultation request, contact form" name="keywords" />
-    <meta content="Get in touch with Softorate for your software development needs. Reach out for consultations, project inquiries, or any questions about our services." name="description" />
+    <meta
+      content="contact software agency, get in touch, software development inquiry, consultation request, contact form"
+      name="keywords"
+    />
+    <meta
+      content="Get in touch with Softorate for your software development needs. Reach out for consultations, project inquiries, or any questions about our services."
+      name="description"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +41,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    
+
     <style>
       /* Page Header - Matching hero section style */
       .page-header {
@@ -44,45 +50,48 @@
         margin: 40px auto;
         padding: 60px 40px;
         border-radius: 18px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         color: #ffffff;
         text-align: center;
       }
-      
+
       .page-header h1 {
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 20px;
         color: #fff;
       }
-      
+
       .page-header p {
         font-size: 1.2rem;
         opacity: 0.95;
         max-width: 700px;
         margin: 0 auto;
       }
-      
+
       .breadcrumb {
         background: transparent;
         justify-content: center;
         margin-top: 20px;
       }
-      
+
       .breadcrumb-item,
       .breadcrumb-item a {
         color: rgba(255, 255, 255, 0.8);
       }
-      
+
       .breadcrumb-item.active {
         color: #fff;
       }
-      
+
       .breadcrumb-item + .breadcrumb-item::before {
         color: rgba(255, 255, 255, 0.5);
       }
-      
+
       /* Contact Info Cards */
       .contact-info-card {
         background: white;
@@ -93,16 +102,19 @@
         transition: 0.3s;
         height: 100%;
       }
-      
+
       .contact-info-card:hover {
         transform: translateY(-10px);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
       }
-      
+
       .info-icon {
         width: 80px;
         height: 80px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -111,27 +123,27 @@
         color: white;
         font-size: 2rem;
       }
-      
+
       .contact-info-card h4 {
         color: #16243d;
         margin-bottom: 15px;
       }
-      
+
       .contact-info-card p {
         color: #787878;
         margin-bottom: 5px;
       }
-      
+
       .contact-info-card a {
         color: #787878;
         text-decoration: none;
         transition: 0.3s;
       }
-      
+
       .contact-info-card a:hover {
         color: var(--bs-primary);
       }
-      
+
       /* Contact Form */
       .contact-form {
         background: white;
@@ -139,34 +151,39 @@
         padding: 40px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       }
-      
+
       .form-floating {
         margin-bottom: 20px;
       }
-      
-      .form-control, .form-select {
+
+      .form-control,
+      .form-select {
         border: 1px solid #e9ecef;
         border-radius: 10px;
         padding: 12px 15px;
         height: auto;
         transition: 0.3s;
       }
-      
-      .form-control:focus, .form-select:focus {
+
+      .form-control:focus,
+      .form-select:focus {
         border-color: var(--bs-primary);
         box-shadow: 0 0 0 0.2rem rgba(1, 95, 201, 0.25);
       }
-      
+
       .form-floating label {
         padding: 12px 15px;
       }
-      
+
       textarea.form-control {
         min-height: 120px;
       }
-      
+
       .btn-submit {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         color: white;
         border: none;
         padding: 15px 30px;
@@ -175,66 +192,69 @@
         width: 100%;
         transition: 0.3s;
       }
-      
+
       .btn-submit:hover {
         transform: scale(1.02);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       }
-      
+
       /* Map Container */
       .map-container {
         border-radius: 16px;
         overflow: hidden;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       }
-      
+
       .map-container iframe {
         width: 100%;
         height: 400px;
         border: 0;
       }
-      
+
       /* Business Hours */
       .hours-card {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border-radius: 16px;
         padding: 30px;
         color: white;
       }
-      
+
       .hours-card h4 {
         color: white;
         margin-bottom: 20px;
       }
-      
+
       .hours-item {
         display: flex;
         justify-content: space-between;
         padding: 10px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       }
-      
+
       .hours-item:last-child {
         border-bottom: none;
       }
-      
+
       .hours-day {
         font-weight: 600;
       }
-      
+
       .hours-time {
         opacity: 0.9;
       }
-      
+
       @media (max-width: 768px) {
         .page-header {
           padding: 40px 25px;
         }
-        
+
         .page-header h1 {
           font-size: 2rem;
         }
-        
+
         .contact-form {
           padding: 25px;
         }
@@ -263,9 +283,12 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a href="index.html" class="navbar-brand p-0">
-            <h1 class="text-primary mb-0">
-              <i class="fab fa-free-code-camp me-2"></i> Softorate
-            </h1>
+            <img
+              src="img/LOGO.jpeg"
+              alt="Softorate Logo"
+              class="img-fluid"
+              style="height: 80px"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -283,7 +306,9 @@
               <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
               <!-- <a href="blog.html" class="nav-item nav-link">Blog</a> -->
               <a href="FAQ.html" class="nav-item nav-link">FAQs</a>
-              <a href="contact.html" class="nav-item nav-link active">Contact</a>
+              <a href="contact.html" class="nav-item nav-link active"
+                >Contact</a
+              >
             </div>
           </div>
           <div class="d-none d-xl-flex flex-shrink-0 ps-4">
@@ -313,7 +338,9 @@
     <div class="page-header">
       <div class="container">
         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Get In Touch</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.4s">We'd love to hear from you. Let's discuss your next project!</p>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">
+          We'd love to hear from you. Let's discuss your next project!
+        </p>
         <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -343,8 +370,14 @@
                 <i class="fas fa-envelope"></i>
               </div>
               <h4>Email Us</h4>
-              <p class="mb-0"><a href="mailto:softorate.contact@gmail.com">softorate.contact@gmail.com</a></p>
-              <p class="mb-0"><a href="mailto:sales@softorate.com">sales@softorate.com</a></p>
+              <p class="mb-0">
+                <a href="mailto:softorate.contact@gmail.com"
+                  >softorate.contact@gmail.com</a
+                >
+              </p>
+              <p class="mb-0">
+                <a href="mailto:sales@softorate.com">sales@softorate.com</a>
+              </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
@@ -353,8 +386,12 @@
                 <i class="fas fa-phone-alt"></i>
               </div>
               <h4>Call Us</h4>
-              <p class="mb-0"><a href="tel:+919552750465">+91 95527 50465</a></p>
-              <p class="mb-0"><a href="tel:+919356494740">+91 93564 94740</a></p>
+              <p class="mb-0">
+                <a href="tel:+919552750465">+91 95527 50465</a>
+              </p>
+              <p class="mb-0">
+                <a href="tel:+919356494740">+91 93564 94740</a>
+              </p>
             </div>
           </div>
         </div>
@@ -369,39 +406,80 @@
           <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
             <div class="contact-form">
               <h4 class="text-primary mb-4">Send Us a Message</h4>
-              <p class="mb-4">Have a question or project in mind? Fill out the form below and we'll get back to you within 24 hours.</p>
-              
+              <p class="mb-4">
+                Have a question or project in mind? Fill out the form below and
+                we'll get back to you within 24 hours.
+              </p>
+
               <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="220ba6eb-8726-417b-9dd7-b2bb95d6796a" />
-                <input type="hidden" name="redirect" value="https://www.softorate.com/success.html" />
-                <input type="hidden" name="subject" value="New Contact Form Submission - Softorate" />
-                
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="220ba6eb-8726-417b-9dd7-b2bb95d6796a"
+                />
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="https://www.softorate.com/success.html"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New Contact Form Submission - Softorate"
+                />
+
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                      />
                       <label for="name">Full Name *</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                      />
                       <label for="email">Email Address *</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating">
-                      <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        placeholder="Your Phone"
+                      />
                       <label for="phone">Phone Number</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-floating">
                       <select class="form-select" id="service" name="service">
-                        <option value="" selected disabled>Select a service</option>
+                        <option value="" selected disabled>
+                          Select a service
+                        </option>
                         <option value="web-development">Web Development</option>
-                        <option value="mobile-app">Mobile App Development</option>
-                        <option value="social-media">Social Media Management</option>
+                        <option value="mobile-app">
+                          Mobile App Development
+                        </option>
+                        <option value="social-media">
+                          Social Media Management
+                        </option>
                         <option value="enterprise">Enterprise Solutions</option>
                         <option value="ai-cloud">AI & Cloud Integration</option>
                         <option value="automation">Automation Solutions</option>
@@ -412,27 +490,54 @@
                   </div>
                   <div class="col-12">
                     <div class="form-floating">
-                      <input type="text" class="form-control" id="company" name="company" placeholder="Company Name">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="company"
+                        name="company"
+                        placeholder="Company Name"
+                      />
                       <label for="company">Company Name</label>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-floating">
-                      <input type="text" class="form-control" id="budget" name="budget" placeholder="Budget Range">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="budget"
+                        name="budget"
+                        placeholder="Budget Range"
+                      />
                       <label for="budget">Budget Range (Optional)</label>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-floating">
-                      <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        placeholder="Your Message"
+                        style="height: 150px"
+                        required
+                      ></textarea>
                       <label for="message">Tell us about your project *</label>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="agree" name="agree" required>
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="agree"
+                        name="agree"
+                        required
+                      />
                       <label class="form-check-label" for="agree">
-                        I agree to the <a href="#" class="text-primary">Privacy Policy</a> and consent to being contacted.
+                        I agree to the
+                        <a href="#" class="text-primary">Privacy Policy</a> and
+                        consent to being contacted.
                       </label>
                     </div>
                   </div>
@@ -445,7 +550,7 @@
               </form>
             </div>
           </div>
-          
+
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
             <!-- Business Hours -->
             <div class="hours-card mb-4">
@@ -467,13 +572,14 @@
                 <span class="hours-time">24/7 Available</span>
               </div>
             </div>
-            
+
             <!-- Map -->
             <div class="map-container">
-              <iframe 
+              <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2610978901617!2d73.69868831484334!3d18.526402787404688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfc0c5d9f8a1%3A0x8f0c1c8c8c8c8c8c!2sPune%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
-                allowfullscreen="" 
-                loading="lazy">
+                allowfullscreen=""
+                loading="lazy"
+              >
               </iframe>
             </div>
           </div>
@@ -489,8 +595,13 @@
           <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay="0.2s">
             <h4 class="text-primary">Still Have Questions?</h4>
             <h2 class="mb-4">Check Our Frequently Asked Questions</h2>
-            <p class="mb-4">We've compiled answers to common questions about our services, process, and pricing in our FAQ section.</p>
-            <a href="FAQ.html" class="btn btn-primary rounded-pill py-3 px-5">View FAQs <i class="fas fa-arrow-right ms-2"></i></a>
+            <p class="mb-4">
+              We've compiled answers to common questions about our services,
+              process, and pricing in our FAQ section.
+            </p>
+            <a href="FAQ.html" class="btn btn-primary rounded-pill py-3 px-5"
+              >View FAQs <i class="fas fa-arrow-right ms-2"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -510,7 +621,9 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
+                We deliver custom software, web applications, and automation
+                solutions—high performance, scalable, and user-friendly to help
+                your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -539,14 +652,28 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
-              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
+              <a href="about.html"
+                ><i class="fas fa-angle-right me-2"></i> About Us</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Services</a
+              >
+              <a href="portfolio.html"
+                ><i class="fas fa-angle-right me-2"></i> Portfolio</a
+              >
               <!-- <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a> -->
-              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
-              <a href="team.html"><i class="fas fa-angle-right me-2"></i> Our Team</a>
-              <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonials</a>
+              <a href="FAQ.html"
+                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-right me-2"></i> Contact</a
+              >
+              <a href="team.html"
+                ><i class="fas fa-angle-right me-2"></i> Our Team</a
+              >
+              <a href="testimonial.html"
+                ><i class="fas fa-angle-right me-2"></i> Testimonials</a
+              >
             </div>
           </div>
 
@@ -665,14 +792,14 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    
+
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener("DOMContentLoaded", function () {
         // Hide spinner
         setTimeout(() => {
-          document.getElementById('spinner').classList.remove('show');
+          document.getElementById("spinner").classList.remove("show");
         }, 1000);
-        
+
         // Initialize WOW
         new WOW().init();
       });

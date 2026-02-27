@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Thank You - Softorate Software Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="form submitted, thank you, success page, contact confirmation" name="keywords" />
-    <meta content="Thank you for contacting Softorate. Your form has been submitted successfully. We'll get back to you soon." name="description" />
+    <meta
+      content="form submitted, thank you, success page, contact confirmation"
+      name="keywords"
+    />
+    <meta
+      content="Thank you for contacting Softorate. Your form has been submitted successfully. We'll get back to you soon."
+      name="description"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +41,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    
+
     <style>
       /* Page Header - Matching hero section style */
       .page-header {
@@ -44,41 +50,44 @@
         margin: 40px auto;
         padding: 60px 40px;
         border-radius: 18px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         color: #ffffff;
         text-align: center;
       }
-      
+
       .page-header h1 {
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 20px;
         color: #fff;
       }
-      
+
       .page-header p {
         font-size: 1.2rem;
         opacity: 0.95;
         max-width: 700px;
         margin: 0 auto;
       }
-      
+
       .breadcrumb {
         background: transparent;
         justify-content: center;
         margin-top: 20px;
       }
-      
+
       .breadcrumb-item,
       .breadcrumb-item a {
         color: rgba(255, 255, 255, 0.8);
       }
-      
+
       .breadcrumb-item.active {
         color: #fff;
       }
-      
+
       .breadcrumb-item + .breadcrumb-item::before {
         color: rgba(255, 255, 255, 0.5);
       }
@@ -90,7 +99,7 @@
         align-items: center;
         padding: 60px 0;
       }
-      
+
       .success-card {
         background: white;
         border-radius: 30px;
@@ -101,21 +110,27 @@
         position: relative;
         overflow: hidden;
       }
-      
+
       .success-card::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         height: 5px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
       }
-      
+
       .success-icon {
         width: 100px;
         height: 100px;
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -125,7 +140,7 @@
         font-size: 3rem;
         animation: pulse 2s ease-in-out infinite;
       }
-      
+
       @keyframes pulse {
         0% {
           transform: scale(1);
@@ -140,21 +155,21 @@
           box-shadow: 0 0 0 0 rgba(32, 58, 67, 0);
         }
       }
-      
+
       .success-card h2 {
         color: #16243d;
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 20px;
       }
-      
+
       .success-message {
         color: #787878;
         font-size: 1.2rem;
         margin-bottom: 15px;
         line-height: 1.8;
       }
-      
+
       .success-detail {
         background: #f8f9fa;
         padding: 20px;
@@ -162,25 +177,25 @@
         margin: 30px 0;
         text-align: left;
       }
-      
+
       .success-detail p {
         color: #16243d;
         margin-bottom: 10px;
         display: flex;
         align-items: center;
       }
-      
+
       .success-detail i {
         color: var(--bs-primary);
         width: 25px;
         margin-right: 10px;
         font-size: 1.1rem;
       }
-      
+
       .action-buttons {
         margin-top: 30px;
       }
-      
+
       .action-buttons .btn {
         margin: 0 10px;
         padding: 12px 30px;
@@ -188,51 +203,54 @@
         font-weight: 600;
         transition: 0.3s;
       }
-      
+
       .action-buttons .btn-primary {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         border: none;
       }
-      
+
       .action-buttons .btn-primary:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       }
-      
+
       .action-buttons .btn-outline-primary {
         border: 2px solid var(--bs-primary);
         color: var(--bs-primary);
       }
-      
+
       .action-buttons .btn-outline-primary:hover {
         background: var(--bs-primary);
         color: white;
         transform: translateY(-3px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       }
-      
+
       .timer-text {
         color: #787878;
         font-size: 0.9rem;
         margin-top: 20px;
       }
-      
+
       .timer-text i {
         color: var(--bs-primary);
         margin-right: 5px;
       }
-      
+
       /* Quick Links */
       .quick-links {
         margin-top: 50px;
       }
-      
+
       .quick-links h4 {
         color: #16243d;
         margin-bottom: 25px;
         font-size: 1.3rem;
       }
-      
+
       .quick-link-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -240,7 +258,7 @@
         max-width: 700px;
         margin: 0 auto;
       }
-      
+
       .quick-link-item {
         display: block;
         padding: 12px;
@@ -252,7 +270,7 @@
         text-align: center;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
       }
-      
+
       .quick-link-item i {
         display: block;
         font-size: 1.5rem;
@@ -260,39 +278,42 @@
         margin-bottom: 5px;
         transition: 0.3s;
       }
-      
+
       .quick-link-item span {
         font-weight: 500;
         font-size: 0.9rem;
       }
-      
+
       .quick-link-item:hover {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         color: white;
         transform: translateY(-3px);
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       }
-      
+
       .quick-link-item:hover i {
         color: white;
       }
-      
+
       /* Social Share */
       .social-share {
         margin-top: 40px;
       }
-      
+
       .social-share p {
         color: #787878;
         margin-bottom: 15px;
       }
-      
+
       .social-icons {
         display: flex;
         justify-content: center;
         gap: 15px;
       }
-      
+
       .social-icons a {
         width: 45px;
         height: 45px;
@@ -306,43 +327,46 @@
         transition: 0.3s;
         text-decoration: none;
       }
-      
+
       .social-icons a:hover {
-        background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center center / cover no-repeat, url(../img/team-work.jpg);
+        background:
+          linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)) center
+            center / cover no-repeat,
+          url(../img/team-work.jpg);
         color: white;
         transform: translateY(-3px);
       }
-      
+
       @media (max-width: 768px) {
         .page-header {
           padding: 40px 25px;
         }
-        
+
         .page-header h1 {
           font-size: 2rem;
         }
-        
+
         .success-card {
           padding: 40px 20px;
           margin: 0 15px;
         }
-        
+
         .success-card h2 {
           font-size: 2rem;
         }
-        
+
         .action-buttons .btn {
           display: block;
           width: 100%;
           margin: 10px 0;
         }
-        
+
         .quick-link-grid {
           grid-template-columns: repeat(2, 1fr);
           padding: 0 15px;
         }
       }
-      
+
       @media (max-width: 480px) {
         .quick-link-grid {
           grid-template-columns: 1fr;
@@ -372,9 +396,12 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a href="index.html" class="navbar-brand p-0">
-            <h1 class="text-primary mb-0">
-              <i class="fab fa-free-code-camp me-2"></i> Softorate
-            </h1>
+            <img
+              src="img/LOGO.jpeg"
+              alt="Softorate Logo"
+              class="img-fluid"
+              style="height: 80px"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -419,10 +446,12 @@
     <!-- Navbar End -->
 
     <!-- Page Header - Simplified for Success -->
-    <div class="page-header" style="margin-bottom: 0;">
+    <div class="page-header" style="margin-bottom: 0">
       <div class="container">
         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Thank You!</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.4s">Your submission was successful</p>
+        <p class="wow fadeInUp" data-wow-delay="0.4s">
+          Your submission was successful
+        </p>
         <nav aria-label="breadcrumb" class="wow fadeInUp" data-wow-delay="0.6s">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -442,16 +471,28 @@
               <div class="success-icon">
                 <i class="fas fa-check-circle"></i>
               </div>
-              
+
               <h2>Form Submitted Successfully!</h2>
-              <p class="success-message">Thank you for reaching out to Softorate. We've received your message and will get back to you within 24 hours.</p>
-              
+              <p class="success-message">
+                Thank you for reaching out to Softorate. We've received your
+                message and will get back to you within 24 hours.
+              </p>
+
               <div class="success-detail">
-                <p><i class="fas fa-envelope"></i> A confirmation email has been sent to your inbox</p>
-                <p><i class="fas fa-clock"></i> Typical response time: 2-4 hours during business hours</p>
-                <p><i class="fas fa-phone-alt"></i> For urgent inquiries, call us: <strong>+91 95527 50465</strong></p>
+                <p>
+                  <i class="fas fa-envelope"></i> A confirmation email has been
+                  sent to your inbox
+                </p>
+                <p>
+                  <i class="fas fa-clock"></i> Typical response time: 2-4 hours
+                  during business hours
+                </p>
+                <p>
+                  <i class="fas fa-phone-alt"></i> For urgent inquiries, call
+                  us: <strong>+91 95527 50465</strong>
+                </p>
               </div>
-              
+
               <div class="action-buttons">
                 <a href="index.html" class="btn btn-primary">
                   <i class="fas fa-home me-2"></i>Back to Home
@@ -460,12 +501,13 @@
                   <i class="fas fa-briefcase me-2"></i>View Our Work
                 </a>
               </div>
-              
+
               <div class="timer-text">
-                <i class="fas fa-redo-alt"></i> You'll be redirected to the homepage in <span id="timer">10</span> seconds
+                <i class="fas fa-redo-alt"></i> You'll be redirected to the
+                homepage in <span id="timer">10</span> seconds
               </div>
             </div>
-            
+
             <!-- Quick Links -->
             <div class="quick-links wow fadeInUp" data-wow-delay="0.5s">
               <h4>While you wait, explore:</h4>
@@ -496,16 +538,26 @@
                 </a>
               </div>
             </div>
-            
+
             <!-- Social Share -->
             <div class="social-share wow fadeInUp" data-wow-delay="0.6s">
               <p>Follow us for updates:</p>
               <div class="social-icons">
-                <a href="https://github.com/sidz111" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/_softorate/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/softorate/about/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/sidz111" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://www.instagram.com/_softorate/" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/softorate/about/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
                 <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -527,7 +579,9 @@
                 </h3>
               </a>
               <p class="text-white mb-4">
-                We deliver custom software, web applications, and automation solutions—high performance, scalable, and user-friendly to help your business grow.
+                We deliver custom software, web applications, and automation
+                solutions—high performance, scalable, and user-friendly to help
+                your business grow.
               </p>
               <div class="d-flex">
                 <a
@@ -556,14 +610,30 @@
           <div class="col-lg-3 col-md-6">
             <div class="footer-item">
               <h4 class="text-white mb-4">Useful Links</h4>
-              <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
-              <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
-              <a href="portfolio.html"><i class="fas fa-angle-right me-2"></i> Portfolio</a>
-              <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Blog</a>
-              <a href="FAQ.html"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-              <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
-              <a href="team.html"><i class="fas fa-angle-right me-2"></i> Our Team</a>
-              <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonials</a>
+              <a href="about.html"
+                ><i class="fas fa-angle-right me-2"></i> About Us</a
+              >
+              <a href="service.html"
+                ><i class="fas fa-angle-right me-2"></i> Services</a
+              >
+              <a href="portfolio.html"
+                ><i class="fas fa-angle-right me-2"></i> Portfolio</a
+              >
+              <a href="blog.html"
+                ><i class="fas fa-angle-right me-2"></i> Blog</a
+              >
+              <a href="FAQ.html"
+                ><i class="fas fa-angle-right me-2"></i> FAQ's</a
+              >
+              <a href="contact.html"
+                ><i class="fas fa-angle-right me-2"></i> Contact</a
+              >
+              <a href="team.html"
+                ><i class="fas fa-angle-right me-2"></i> Our Team</a
+              >
+              <a href="testimonial.html"
+                ><i class="fas fa-angle-right me-2"></i> Testimonials</a
+              >
             </div>
           </div>
 
@@ -682,36 +752,40 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    
+
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener("DOMContentLoaded", function () {
         // Hide spinner
         setTimeout(() => {
-          document.getElementById('spinner').classList.remove('show');
+          document.getElementById("spinner").classList.remove("show");
         }, 1000);
-        
+
         // Initialize WOW
         new WOW().init();
-        
+
         // Auto redirect timer
         let timeLeft = 10;
-        const timerElement = document.getElementById('timer');
-        
+        const timerElement = document.getElementById("timer");
+
         const countdown = setInterval(() => {
           timeLeft--;
           timerElement.textContent = timeLeft;
-          
+
           if (timeLeft <= 0) {
             clearInterval(countdown);
-            window.location.href = 'index.html';
+            window.location.href = "index.html";
           }
         }, 1000);
-        
+
         // Optional: Cancel redirect if user clicks anywhere
-        document.addEventListener('click', function() {
-          // Uncomment to cancel redirect on click
-          // clearInterval(countdown);
-        }, { once: true });
+        document.addEventListener(
+          "click",
+          function () {
+            // Uncomment to cancel redirect on click
+            // clearInterval(countdown);
+          },
+          { once: true },
+        );
       });
     </script>
   </body>
